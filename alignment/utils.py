@@ -42,6 +42,20 @@ def load_config(path: str | os.PathLike, overrides: dict[str, Any] | None = None
     return config
 
 
+def parse_value(text: str) -> Any:
+    """Parse a CLI override like YAML, but also accept floats such as ``1e-6`` (YAML 1.1 reads those as strings)."""
+
+    import yaml
+
+    value = yaml.safe_load(text)
+    if isinstance(value, str):
+        try:
+            return float(value)
+        except ValueError:
+            pass
+    return value
+
+
 def ensure_dir(path: str | os.PathLike) -> Path:
     path = Path(path)
     path.mkdir(parents=True, exist_ok=True)

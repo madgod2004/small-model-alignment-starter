@@ -1,0 +1,37 @@
+# Task 3 SFT configuration (guide values from manual §9.2).
+# gradient_accumulation_steps is derived as
+#   effective_batch_size / (per_device_train_batch_size * num_gpus)
+# so this file gives accumulation 16 on one T4 and 8 on two (DDP); the effective batch is 32 either way.
+run_name: sft
+model_name_or_path: Qwen/Qwen2.5-0.5B
+train_file: data/processed/sft/train.jsonl
+val_file: data/processed/sft/val.jsonl
+output_dir: outputs/sft
+
+max_length: 512
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 8
+effective_batch_size: 32
+gradient_accumulation_steps: null   # null = derive from effective_batch_size
+
+learning_rate: 2.0e-5
+warmup_ratio: 0.03
+lr_scheduler: cosine
+weight_decay: 0.1
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_epsilon: 1.0e-8
+max_grad_norm: 1.0
+num_epochs: 1
+max_steps: null                     # optional cap on optimizer steps (smoke tests)
+
+fp16: true                          # fp16 autocast + GradScaler; trainable weights stay fp32
+gradient_checkpointing: false       # enable only if a T4 runs out of memory
+
+logging_steps: 10
+eval_steps: 100
+eval_at_start: true
+seed: 42
+
+train_limit: null                   # optional: use only the first N train examples (smoke tests)
+val_limit: null
