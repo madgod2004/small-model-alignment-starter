@@ -1,8 +1,7 @@
 """Training infrastructure shared by the SFT and DPO loops (no HF Trainer).
 
-Covers distributed setup (torchrun/DDP or a single device), the optimizer with
-decoupled weight decay, the warmup + cosine/constant schedule, fp16 autocast with
-gradient scaling, and checkpoint saving.
+Covers device selection, the optimizer with decoupled weight decay, the warmup +
+cosine/constant schedule, fp16 autocast with gradient scaling, and checkpoint saving.
 """
 
 from __future__ import annotations
@@ -11,75 +10,24 @@ import contextlib
 import math
 import os
 import shutil
-from dataclasses import dataclass
 from pathlib import Path
 
 import torch
-import torch.distributed as dist
 
 
-@dataclass
-class DistInfo:
-    rank: int = 0
-    world_size: int = 1
-    local_rank: int = 0
-    device: torch.device = torch.device("cpu")
-
-    @property
-    def is_main(self) -> bool:
-        return self.rank == 0
-
-    @property
-    def distributed(self) -> bool:
-        return self.world_size > 1
+def default_device(index: int = 0) -> torch.device:
+    return torch.device("cuda", index) if torch.cuda.is_available() else torch.device("cpu")
 
 
-def setup_distributed() -> DistInfo:
-    """Initialise DDP when launched by torchrun; otherwise run on one device."""
-
-    if "RANK" in os.environ and int(os.environ.get("WORLD_SIZE", "1")) > 1:
-        local_rank = int(os.environ["LOCAL_RANK"])
-        if torch.cuda.is_available():
-            torch.cuda.set_device(local_rank)
-            device = torch.device("cuda", local_rank)
-            backend = "nccl"
-        else:
-            device, backend = torch.device("cpu"), "gloo"
-        dist.init_process_group(backend=backend)
-        return DistInfo(dist.get_rank(), dist.get_world_size(), local_rank, device)
-    device = torch.device("cuda", 0) if torch.cuda.is_available() else torch.device("cpu")
-    return DistInfo(device=device)
-
-
-def cleanup_distributed(info: DistInfo) -> None:
-    if info.distributed and dist.is_initialized():
-        dist.destroy_process_group()
-
-
-def all_reduce_sum(tensor: torch.Tensor, info: DistInfo) -> torch.Tensor:
-    if info.distributed:
-        dist.all_reduce(tensor, op=dist.ReduceOp.SUM)
-    return tensor
-
-
-def barrier(info: DistInfo) -> None:
-    if info.distributed:
-        dist.barrier()
-
-
-def unwrap(model):
-    return model.module if hasattr(model, "module") else model
-
-
-def resolve_accumulation(config: dict, world_size: int) -> int:
-    """Accumulation steps so per_device * accumulation * world_size == effective batch."""
+def resolve_accumulation(config: dict) -> int:
+    """Accumulation steps so that per_device_train_batch_size * accumulation == effective_batch_size."""
 
     if config.get("gradient_accumulation_steps"):
         return int(config["gradient_accumulation_steps"])
-    per_step = config["per_device_train_batch_size"] * world_size
+    per_step = config["per_device_train_batch_size"]
     effective = config["effective_batch_size"]
     if effective % per_step:
-        raise ValueError(f"effective_batch_size={effective} is not divisible by per_device*world_size={per_step}")
+        raise ValueError(f"effective_batch_size={effective} is not divisible by per_device_train_batch_size={per_step}")
     return effective // per_step
 
 
@@ -139,21 +87,13 @@ def make_grad_scaler(device: torch.device, fp16: bool) -> torch.amp.GradScaler:
     return torch.amp.GradScaler("cuda", enabled=fp16 and device.type == "cuda")
 
 
-def shard_indices(num_examples: int, info: DistInfo, seed: int | None) -> list[int]:
-    """Shuffle (if seed is given), pad to a multiple of world_size by wrapping, and take this rank's shard.
+def shuffled_indices(num_examples: int, seed: int) -> list[int]:
+    generator = torch.Generator().manual_seed(seed)
+    return torch.randperm(num_examples, generator=generator).tolist()
 
-    Every rank gets the same number of examples so DDP ranks stay in lock-step.
-    """
 
-    if seed is None:
-        order = list(range(num_examples))
-    else:
-        generator = torch.Generator().manual_seed(seed)
-        order = torch.randperm(num_examples, generator=generator).tolist()
-    remainder = len(order) % info.world_size
-    if remainder:
-        order += order[: info.world_size - remainder]
-    return order[info.rank :: info.world_size]
+def max_memory_gb(device: torch.device) -> float | None:
+    return torch.cuda.max_memory_allocated(device) / 2**30 if device.type == "cuda" else None
 
 
 def save_checkpoint(model, tokenizer, path: str | os.PathLike, extra_state: dict | None = None) -> None:
@@ -165,7 +105,7 @@ def save_checkpoint(model, tokenizer, path: str | os.PathLike, extra_state: dict
     tmp_path = path.with_name(path.name + ".tmp")
     if tmp_path.exists():
         shutil.rmtree(tmp_path)
-    unwrap(model).save_pretrained(tmp_path, safe_serialization=True)
+    model.save_pretrained(tmp_path, safe_serialization=True)
     tokenizer.save_pretrained(tmp_path)
     if extra_state:
         write_json(tmp_path / "training_state.json", extra_state)

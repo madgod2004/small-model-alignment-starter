@@ -1,14 +1,12 @@
 """Supervised fine-tuning loop (Task 3), written without HF Trainer.
 
-One optimizer step consumes ``gradient_accumulation_steps`` micro-batches on each
-rank. The loss for a step is the mean NLL over *all* response tokens in that step
-across micro-batches and GPUs, so the update matches a single batch of
-``effective_batch_size`` examples regardless of how it is split.
+One optimizer step consumes ``gradient_accumulation_steps`` micro-batches. The loss
+for a step is the mean NLL over *all* response tokens in those micro-batches, so the
+update matches a single batch of ``effective_batch_size`` examples.
 """
 
 from __future__ import annotations
 
-import contextlib
 import math
 import time
 from pathlib import Path
@@ -20,17 +18,15 @@ from alignment.batching import build_example, encode_text, get_eos_token_id, get
 from alignment.losses import batch_logprobs
 from alignment.prompting import format_prompt
 from alignment.training import (
-    DistInfo,
-    all_reduce_sum,
     autocast_context,
-    barrier,
     build_optimizer,
     build_scheduler,
+    default_device,
     make_grad_scaler,
+    max_memory_gb,
     resolve_accumulation,
     save_checkpoint,
-    shard_indices,
-    unwrap,
+    shuffled_indices,
 )
 from alignment.utils import append_jsonl, read_jsonl, set_seed, write_json
 
@@ -63,57 +59,52 @@ def count_response_tokens(batch: dict) -> int:
     return int(batch["labels"][:, 1:].ne(-100).sum())
 
 
-def accumulate_window(model, micro_batches: Sequence[dict], window_tokens: int, info: DistInfo, scaler, fp16: bool) -> torch.Tensor:
-    """Backward over one accumulation window; returns this rank's summed NLL (detached).
+def accumulate_window(model, micro_batches: Sequence[dict], scaler, device: torch.device, fp16: bool) -> tuple[float, int]:
+    """Backward over one accumulation window; returns (token-mean NLL, response tokens).
 
-    Each micro-batch contributes ``sum_nll / window_tokens``, where ``window_tokens`` is
-    the response-token total of the window across all ranks. DDP averages gradients
-    over ranks, so the loss is multiplied by ``world_size`` to recover a global token mean.
+    Each micro-batch contributes ``sum_nll / window_tokens``, so the accumulated gradient
+    is that of the token-mean loss over the whole window.
     """
 
-    nll_total = torch.zeros((), device=info.device)
-    for index, batch in enumerate(micro_batches):
-        is_last = index == len(micro_batches) - 1
-        sync = contextlib.nullcontext() if (is_last or not info.distributed) else model.no_sync()
-        with sync:
-            with autocast_context(info.device, fp16):
-                summed_logps, _ = batch_logprobs(model, batch)
-            nll = -summed_logps.sum()
-            loss = nll * info.world_size / max(window_tokens, 1)
-            scaler.scale(loss).backward()
-        nll_total += nll.detach()
-    return nll_total
+    window_tokens = max(sum(count_response_tokens(batch) for batch in micro_batches), 1)
+    nll_total = 0.0
+    for batch in micro_batches:
+        with autocast_context(device, fp16):
+            summed_logps, _ = batch_logprobs(model, batch)
+        nll = -summed_logps.sum()
+        scaler.scale(nll / window_tokens).backward()
+        nll_total += nll.item()
+    return nll_total / window_tokens, window_tokens
 
 
 @torch.no_grad()
-def evaluate_sft(model, examples: Sequence[Example], batch_size: int, pad_token_id: int, info: DistInfo, fp16: bool) -> float:
-    """Token-mean validation NLL over the whole validation set (each rank scores a disjoint shard)."""
+def evaluate_sft(model, examples: Sequence[Example], batch_size: int, pad_token_id: int, device: torch.device, fp16: bool) -> float:
+    """Token-mean validation NLL over the whole validation set."""
 
-    base_model = unwrap(model)
-    was_training = base_model.training
-    base_model.eval()
-    indices = list(range(info.rank, len(examples), info.world_size))  # disjoint, no padding duplicates
-    totals = torch.zeros(2, device=info.device, dtype=torch.float64)
-    for batch in iter_batches(examples, indices, batch_size, pad_token_id):
-        with autocast_context(info.device, fp16):
-            summed_logps, token_counts = batch_logprobs(base_model, batch)
-        totals[0] += -summed_logps.double().sum()
-        totals[1] += token_counts.sum()
-    all_reduce_sum(totals, info)
+    was_training = model.training
+    model.eval()
+    nll_total, token_total = 0.0, 0
+    for batch in iter_batches(examples, range(len(examples)), batch_size, pad_token_id):
+        with autocast_context(device, fp16):
+            summed_logps, token_counts = batch_logprobs(model, batch)
+        nll_total += -summed_logps.double().sum().item()
+        token_total += int(token_counts.sum())
     if was_training:
-        base_model.train()
-    return (totals[0] / totals[1].clamp_min(1)).item()
+        model.train()
+    if device.type == "cuda":
+        torch.cuda.empty_cache()  # release the large eval-logit blocks before training resumes
+    return nll_total / max(token_total, 1)
 
 
-def train_sft(config: dict, info: DistInfo) -> dict:
+def train_sft(config: dict) -> dict:
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
     set_seed(config["seed"])
+    device = default_device()
     output_dir = Path(config["output_dir"])
     checkpoint_dir = output_dir / "checkpoints"
     metrics_path = output_dir / "metrics.jsonl"
     fp16 = bool(config.get("fp16", True))
-    log = print if info.is_main else (lambda *args, **kwargs: None)
 
     # ---- data -------------------------------------------------------------------------
     tokenizer = AutoTokenizer.from_pretrained(config["model_name_or_path"])
@@ -124,10 +115,8 @@ def train_sft(config: dict, info: DistInfo) -> dict:
     val_examples = tokenize_sft_records(tokenizer, val_records, config["max_length"])
 
     batch_size = config["per_device_train_batch_size"]
-    accumulation = resolve_accumulation(config, info.world_size)
-    rank_indices = shard_indices(len(train_examples), info, config["seed"])
-    micro_batches_per_epoch = math.ceil(len(rank_indices) / batch_size)
-    steps_per_epoch = math.ceil(micro_batches_per_epoch / accumulation)
+    accumulation = resolve_accumulation(config)
+    steps_per_epoch = math.ceil(math.ceil(len(train_examples) / batch_size) / accumulation)
     total_steps = steps_per_epoch * config["num_epochs"]
     if config.get("max_steps"):
         total_steps = min(total_steps, config["max_steps"])
@@ -137,48 +126,41 @@ def train_sft(config: dict, info: DistInfo) -> dict:
     model.config.use_cache = False
     if config.get("gradient_checkpointing"):
         model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
-    model.to(info.device).train()
-    if info.distributed:
-        device_ids = [info.local_rank] if info.device.type == "cuda" else None
-        model = torch.nn.parallel.DistributedDataParallel(model, device_ids=device_ids)
+    model.to(device).train()
 
     optimizer = build_optimizer(model, config)
     scheduler = build_scheduler(optimizer, config, total_steps)
-    scaler = make_grad_scaler(info.device, fp16)
+    scaler = make_grad_scaler(device, fp16)
 
     run_info = {
-        "world_size": info.world_size,
+        "device": str(device),
         "per_device_train_batch_size": batch_size,
         "gradient_accumulation_steps": accumulation,
-        "effective_batch_size": batch_size * accumulation * info.world_size,
+        "effective_batch_size": batch_size * accumulation,
         "train_examples": len(train_examples),
         "val_examples": len(val_examples),
         "total_optimizer_steps": total_steps,
         "warmup_steps": math.ceil(config.get("warmup_ratio", 0.0) * total_steps),
         "train_examples_truncated": sum(1 for ids, _ in train_examples if len(ids) == config["max_length"]),
     }
-    if info.is_main:
-        output_dir.mkdir(parents=True, exist_ok=True)
-        if metrics_path.exists():
-            metrics_path.unlink()
-        write_json(output_dir / "config.json", {**config, **run_info})
-    log(f"SFT run: {run_info}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    if metrics_path.exists():
+        metrics_path.unlink()
+    write_json(output_dir / "config.json", {**config, **run_info})
+    print(f"SFT run: {run_info}", flush=True)
 
     best_val_loss = float("inf")
     best_step = None
 
     def run_eval(step: int) -> float:
         nonlocal best_val_loss, best_step
-        val_loss = evaluate_sft(model, val_examples, config["per_device_eval_batch_size"], pad_token_id, info, fp16)
+        val_loss = evaluate_sft(model, val_examples, config["per_device_eval_batch_size"], pad_token_id, device, fp16)
         improved = step > 0 and val_loss < best_val_loss  # step 0 is the untrained base model
-        if info.is_main:
-            append_jsonl(metrics_path, {"type": "eval", "step": step, "val_loss": val_loss, "best": improved})
-            log(f"[eval] step {step}: val_loss={val_loss:.4f}{' (best)' if improved else ''}")
-            if improved:
-                save_checkpoint(model, tokenizer, checkpoint_dir / "best", {"step": step, "val_loss": val_loss})
+        append_jsonl(metrics_path, {"type": "eval", "step": step, "val_loss": val_loss, "best": improved})
+        print(f"[eval] step {step}: val_loss={val_loss:.4f}{' (best)' if improved else ''}", flush=True)
         if improved:
             best_val_loss, best_step = val_loss, step
-        barrier(info)
+            save_checkpoint(model, tokenizer, checkpoint_dir / "best", {"step": step, "val_loss": val_loss})
         return val_loss
 
     if config.get("eval_at_start", True):
@@ -186,21 +168,17 @@ def train_sft(config: dict, info: DistInfo) -> dict:
 
     # ---- training ---------------------------------------------------------------------------
     step = 0
-    start_time = time.time()
+    start_time = log_time = time.time()
     tokens_since_log = 0
-    log_time = start_time
     skipped_steps = 0
     for epoch in range(config["num_epochs"]):
-        epoch_indices = shard_indices(len(train_examples), info, config["seed"] + epoch)
-        batches = list(iter_batches(train_examples, epoch_indices, batch_size, pad_token_id))
+        indices = shuffled_indices(len(train_examples), config["seed"] + epoch)
+        batches = list(iter_batches(train_examples, indices, batch_size, pad_token_id))
         for window_start in range(0, len(batches), accumulation):
             if step >= total_steps:
                 break
             micro_batches = batches[window_start : window_start + accumulation]
-            token_count = torch.tensor(sum(count_response_tokens(b) for b in micro_batches), device=info.device)
-            window_tokens = int(all_reduce_sum(token_count, info).item())
-
-            nll = accumulate_window(model, micro_batches, window_tokens, info, scaler, fp16)
+            train_loss, _ = accumulate_window(model, micro_batches, scaler, device, fp16)
 
             scaler.unscale_(optimizer)
             grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), config["max_grad_norm"])
@@ -212,10 +190,9 @@ def train_sft(config: dict, info: DistInfo) -> dict:
             optimizer.zero_grad(set_to_none=True)
             scheduler.step()
             step += 1
-            tokens_since_log += sum(int(b["attention_mask"].sum()) for b in micro_batches) * info.world_size
+            tokens_since_log += sum(int(batch["attention_mask"].sum()) for batch in micro_batches)
 
             if step % config["logging_steps"] == 0 or step == total_steps:
-                train_loss = (all_reduce_sum(nll, info) / max(window_tokens, 1)).item()
                 now = time.time()
                 record = {
                     "type": "train",
@@ -228,20 +205,20 @@ def train_sft(config: dict, info: DistInfo) -> dict:
                     "skipped_steps": skipped_steps,
                     "tokens_per_second": tokens_since_log / max(now - log_time, 1e-9),
                     "elapsed_seconds": now - start_time,
+                    "max_memory_gb": max_memory_gb(device),
                 }
                 tokens_since_log, log_time = 0, now
-                if info.is_main:
-                    append_jsonl(metrics_path, record)
-                log(f"step {step}/{total_steps} loss={train_loss:.4f} lr={record['lr']:.2e} "
-                    f"gnorm={record['grad_norm']:.2f} tok/s={record['tokens_per_second']:.0f} "
-                    f"elapsed={record['elapsed_seconds'] / 60:.1f}m")
+                append_jsonl(metrics_path, record)
+                memory = f"mem={record['max_memory_gb']:.1f}G " if record["max_memory_gb"] else ""
+                print(f"step {step}/{total_steps} loss={train_loss:.4f} lr={record['lr']:.2e} "
+                      f"gnorm={record['grad_norm']:.2f} tok/s={record['tokens_per_second']:.0f} {memory}"
+                      f"elapsed={record['elapsed_seconds'] / 60:.1f}m", flush=True)
 
             if step % config["eval_steps"] == 0 and step != total_steps:
                 run_eval(step)
 
     final_val_loss = run_eval(step)
-    if info.is_main:
-        save_checkpoint(model, tokenizer, checkpoint_dir / "final", {"step": step, "val_loss": final_val_loss})
+    save_checkpoint(model, tokenizer, checkpoint_dir / "final", {"step": step, "val_loss": final_val_loss})
     summary = {
         **run_info,
         "steps_completed": step,
@@ -250,11 +227,10 @@ def train_sft(config: dict, info: DistInfo) -> dict:
         "final_val_loss": final_val_loss,
         "skipped_steps": skipped_steps,
         "train_seconds": time.time() - start_time,
+        "max_memory_gb": max_memory_gb(device),
         "best_checkpoint": str(checkpoint_dir / "best"),
         "final_checkpoint": str(checkpoint_dir / "final"),
     }
-    if info.is_main:
-        write_json(output_dir / "summary.json", summary)
-        log(f"Done: {summary}")
-    barrier(info)
+    write_json(output_dir / "summary.json", summary)
+    print(f"Done: {summary}", flush=True)
     return summary

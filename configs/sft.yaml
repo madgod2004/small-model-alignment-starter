@@ -1,7 +1,6 @@
 # Task 3 SFT configuration (guide values from manual §9.2).
-# gradient_accumulation_steps is derived as
-#   effective_batch_size / (per_device_train_batch_size * num_gpus)
-# so this file gives accumulation 16 on one T4 and 8 on two (DDP); the effective batch is 32 either way.
+# Trained on a single T4: per-device batch 2 x gradient accumulation 16 = effective batch 32.
+# gradient_accumulation_steps is derived as effective_batch_size / per_device_train_batch_size.
 run_name: sft
 model_name_or_path: Qwen/Qwen2.5-0.5B
 train_file: data/processed/sft/train.jsonl
@@ -10,7 +9,7 @@ output_dir: outputs/sft
 
 max_length: 512
 per_device_train_batch_size: 2
-per_device_eval_batch_size: 8
+per_device_eval_batch_size: 4   # eval logits are fp32 [B, T, 151936]; keep small on T4
 effective_batch_size: 32
 gradient_accumulation_steps: null   # null = derive from effective_batch_size
 
