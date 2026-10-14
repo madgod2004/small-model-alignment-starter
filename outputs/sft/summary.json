@@ -1,0 +1,20 @@
+{
+  "device": "cuda:0",
+  "per_device_train_batch_size": 2,
+  "gradient_accumulation_steps": 16,
+  "effective_batch_size": 32,
+  "train_examples": 30000,
+  "val_examples": 1000,
+  "total_optimizer_steps": 938,
+  "warmup_steps": 29,
+  "train_examples_truncated": 10984,
+  "steps_completed": 938,
+  "best_step": 938,
+  "best_val_loss": 1.3965878858424834,
+  "final_val_loss": 1.3965878858424834,
+  "skipped_steps": 0,
+  "train_seconds": 5339.045504331589,
+  "max_memory_gb": 12.98860788345337,
+  "best_checkpoint": "outputs/sft/checkpoints/best",
+  "final_checkpoint": "outputs/sft/checkpoints/final"
+}

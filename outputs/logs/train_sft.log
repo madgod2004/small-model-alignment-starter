@@ -1,0 +1,108 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+SFT run: {'device': 'cuda:0', 'per_device_train_batch_size': 2, 'gradient_accumulation_steps': 16, 'effective_batch_size': 32, 'train_examples': 30000, 'val_examples': 1000, 'total_optimizer_steps': 938, 'warmup_steps': 29, 'train_examples_truncated': 10984}
+[eval] step 0: val_loss=1.4462
+step 10/938 loss=1.3031 lr=7.59e-06 gnorm=3.60 tok/s=2275 mem=13.0G elapsed=0.9m
+step 20/938 loss=1.3264 lr=1.45e-05 gnorm=3.64 tok/s=2387 mem=13.0G elapsed=1.7m
+step 30/938 loss=1.4378 lr=2.00e-05 gnorm=3.77 tok/s=2370 mem=13.0G elapsed=2.6m
+step 40/938 loss=1.4043 lr=2.00e-05 gnorm=3.60 tok/s=2356 mem=13.0G elapsed=3.4m
+step 50/938 loss=1.4377 lr=2.00e-05 gnorm=4.47 tok/s=2333 mem=13.0G elapsed=4.3m
+step 60/938 loss=1.4247 lr=1.99e-05 gnorm=3.64 tok/s=2388 mem=13.0G elapsed=5.1m
+step 70/938 loss=1.4487 lr=1.99e-05 gnorm=3.91 tok/s=2331 mem=13.0G elapsed=6.0m
+step 80/938 loss=1.4102 lr=1.98e-05 gnorm=3.63 tok/s=2413 mem=13.0G elapsed=6.9m
+step 90/938 loss=1.3388 lr=1.98e-05 gnorm=3.51 tok/s=2394 mem=13.0G elapsed=7.7m
+step 100/938 loss=1.4944 lr=1.97e-05 gnorm=4.20 tok/s=2377 mem=13.0G elapsed=8.6m
+[eval] step 100: val_loss=1.4524 (best)
+step 110/938 loss=1.4989 lr=1.96e-05 gnorm=3.81 tok/s=1187 mem=13.0G elapsed=10.3m
+step 120/938 loss=1.5526 lr=1.95e-05 gnorm=3.85 tok/s=2367 mem=13.0G elapsed=11.1m
+step 130/938 loss=1.4530 lr=1.94e-05 gnorm=3.83 tok/s=2415 mem=13.0G elapsed=12.0m
+step 140/938 loss=1.3299 lr=1.93e-05 gnorm=3.87 tok/s=2353 mem=13.0G elapsed=12.9m
+step 150/938 loss=1.5473 lr=1.91e-05 gnorm=3.58 tok/s=2401 mem=13.0G elapsed=13.7m
+step 160/938 loss=1.4669 lr=1.90e-05 gnorm=3.68 tok/s=2406 mem=13.0G elapsed=14.6m
+step 170/938 loss=1.4063 lr=1.88e-05 gnorm=3.87 tok/s=2374 mem=13.0G elapsed=15.4m
+step 180/938 loss=1.2969 lr=1.87e-05 gnorm=3.53 tok/s=2336 mem=13.0G elapsed=16.3m
+step 190/938 loss=1.4004 lr=1.85e-05 gnorm=3.74 tok/s=2360 mem=13.0G elapsed=17.2m
+step 200/938 loss=1.4641 lr=1.83e-05 gnorm=3.73 tok/s=2342 mem=13.0G elapsed=18.0m
+[eval] step 200: val_loss=1.4489 (best)
+step 210/938 loss=1.4790 lr=1.81e-05 gnorm=3.71 tok/s=1176 mem=13.0G elapsed=19.7m
+step 220/938 loss=1.3621 lr=1.79e-05 gnorm=3.44 tok/s=2418 mem=13.0G elapsed=20.6m
+step 230/938 loss=1.4958 lr=1.77e-05 gnorm=3.88 tok/s=2352 mem=13.0G elapsed=21.4m
+step 240/938 loss=1.4374 lr=1.75e-05 gnorm=3.45 tok/s=2375 mem=13.0G elapsed=22.3m
+step 250/938 loss=1.4222 lr=1.72e-05 gnorm=3.76 tok/s=2394 mem=13.0G elapsed=23.1m
+step 260/938 loss=1.4241 lr=1.70e-05 gnorm=3.32 tok/s=2398 mem=13.0G elapsed=24.0m
+step 270/938 loss=1.3653 lr=1.67e-05 gnorm=3.45 tok/s=2366 mem=13.0G elapsed=24.8m
+step 280/938 loss=1.4632 lr=1.65e-05 gnorm=3.28 tok/s=2404 mem=13.0G elapsed=25.7m
+step 290/938 loss=1.3556 lr=1.62e-05 gnorm=3.60 tok/s=2357 mem=13.0G elapsed=26.6m
+step 300/938 loss=1.4397 lr=1.59e-05 gnorm=3.90 tok/s=2367 mem=13.0G elapsed=27.4m
+[eval] step 300: val_loss=1.4460 (best)
+step 310/938 loss=1.4296 lr=1.56e-05 gnorm=3.17 tok/s=1205 mem=13.0G elapsed=29.2m
+step 320/938 loss=1.4350 lr=1.54e-05 gnorm=3.31 tok/s=2391 mem=13.0G elapsed=30.0m
+step 330/938 loss=1.5043 lr=1.51e-05 gnorm=3.43 tok/s=2373 mem=13.0G elapsed=30.9m
+step 340/938 loss=1.3956 lr=1.48e-05 gnorm=3.47 tok/s=2419 mem=13.0G elapsed=31.8m
+step 350/938 loss=1.3075 lr=1.45e-05 gnorm=3.22 tok/s=2321 mem=13.0G elapsed=32.6m
+step 360/938 loss=1.3467 lr=1.41e-05 gnorm=3.84 tok/s=2360 mem=13.0G elapsed=33.4m
+step 370/938 loss=1.3461 lr=1.38e-05 gnorm=3.34 tok/s=2357 mem=13.0G elapsed=34.3m
+step 380/938 loss=1.5245 lr=1.35e-05 gnorm=3.73 tok/s=2385 mem=13.0G elapsed=35.1m
+step 390/938 loss=1.3440 lr=1.32e-05 gnorm=3.30 tok/s=2379 mem=13.0G elapsed=36.0m
+step 400/938 loss=1.4451 lr=1.28e-05 gnorm=3.55 tok/s=2384 mem=13.0G elapsed=36.8m
+[eval] step 400: val_loss=1.4345 (best)
+step 410/938 loss=1.3455 lr=1.25e-05 gnorm=3.38 tok/s=1219 mem=13.0G elapsed=38.6m
+step 420/938 loss=1.3671 lr=1.22e-05 gnorm=3.24 tok/s=2390 mem=13.0G elapsed=39.4m
+step 430/938 loss=1.4212 lr=1.18e-05 gnorm=3.37 tok/s=2402 mem=13.0G elapsed=40.3m
+step 440/938 loss=1.3896 lr=1.15e-05 gnorm=3.43 tok/s=2359 mem=13.0G elapsed=41.2m
+step 450/938 loss=1.3830 lr=1.12e-05 gnorm=3.58 tok/s=2404 mem=13.0G elapsed=42.0m
+step 460/938 loss=1.4698 lr=1.08e-05 gnorm=3.52 tok/s=2362 mem=13.0G elapsed=42.9m
+step 470/938 loss=1.4672 lr=1.05e-05 gnorm=3.31 tok/s=2391 mem=13.0G elapsed=43.7m
+step 480/938 loss=1.3093 lr=1.01e-05 gnorm=3.57 tok/s=2351 mem=13.0G elapsed=44.6m
+step 490/938 loss=1.5122 lr=9.78e-06 gnorm=3.66 tok/s=2382 mem=13.0G elapsed=45.4m
+step 500/938 loss=1.3056 lr=9.43e-06 gnorm=3.52 tok/s=2383 mem=13.0G elapsed=46.3m
+[eval] step 500: val_loss=1.4234 (best)
+step 510/938 loss=1.4544 lr=9.09e-06 gnorm=3.68 tok/s=1192 mem=13.0G elapsed=48.0m
+step 520/938 loss=1.3749 lr=8.74e-06 gnorm=3.28 tok/s=2411 mem=13.0G elapsed=48.9m
+step 530/938 loss=1.4840 lr=8.40e-06 gnorm=3.55 tok/s=2354 mem=13.0G elapsed=49.8m
+step 540/938 loss=1.5075 lr=8.06e-06 gnorm=3.58 tok/s=2360 mem=13.0G elapsed=50.6m
+step 550/938 loss=1.3326 lr=7.72e-06 gnorm=3.37 tok/s=2367 mem=13.0G elapsed=51.5m
+step 560/938 loss=1.4140 lr=7.39e-06 gnorm=3.57 tok/s=2377 mem=13.0G elapsed=52.3m
+step 570/938 loss=1.1971 lr=7.05e-06 gnorm=3.29 tok/s=2353 mem=13.0G elapsed=53.2m
+step 580/938 loss=1.3909 lr=6.73e-06 gnorm=3.32 tok/s=2377 mem=13.0G elapsed=54.0m
+step 590/938 loss=1.4004 lr=6.40e-06 gnorm=3.40 tok/s=2395 mem=13.0G elapsed=54.9m
+step 600/938 loss=1.3132 lr=6.08e-06 gnorm=3.51 tok/s=2392 mem=13.0G elapsed=55.8m
+[eval] step 600: val_loss=1.4111 (best)
+step 610/938 loss=1.5095 lr=5.77e-06 gnorm=3.68 tok/s=1191 mem=13.0G elapsed=57.5m
+step 620/938 loss=1.2630 lr=5.46e-06 gnorm=3.03 tok/s=2402 mem=13.0G elapsed=58.3m
+step 630/938 loss=1.4084 lr=5.15e-06 gnorm=3.59 tok/s=2377 mem=13.0G elapsed=59.2m
+step 640/938 loss=1.3193 lr=4.85e-06 gnorm=3.33 tok/s=2390 mem=13.0G elapsed=60.0m
+step 650/938 loss=1.3335 lr=4.56e-06 gnorm=3.41 tok/s=2395 mem=13.0G elapsed=60.9m
+step 660/938 loss=1.4442 lr=4.27e-06 gnorm=3.24 tok/s=2379 mem=13.0G elapsed=61.8m
+step 670/938 loss=1.3635 lr=3.99e-06 gnorm=3.33 tok/s=2381 mem=13.0G elapsed=62.6m
+step 680/938 loss=1.2257 lr=3.72e-06 gnorm=3.15 tok/s=2380 mem=13.0G elapsed=63.5m
+step 690/938 loss=1.3816 lr=3.45e-06 gnorm=3.26 tok/s=2362 mem=13.0G elapsed=64.3m
+step 700/938 loss=1.3781 lr=3.20e-06 gnorm=3.21 tok/s=2420 mem=13.0G elapsed=65.2m
+[eval] step 700: val_loss=1.4029 (best)
+step 710/938 loss=1.3116 lr=2.95e-06 gnorm=3.49 tok/s=1166 mem=13.0G elapsed=66.9m
+step 720/938 loss=1.4868 lr=2.71e-06 gnorm=3.39 tok/s=2378 mem=13.0G elapsed=67.8m
+step 730/938 loss=1.3764 lr=2.47e-06 gnorm=3.47 tok/s=2348 mem=13.0G elapsed=68.6m
+step 740/938 loss=1.2678 lr=2.25e-06 gnorm=3.31 tok/s=2391 mem=13.0G elapsed=69.5m
+step 750/938 loss=1.4464 lr=2.04e-06 gnorm=3.38 tok/s=2361 mem=13.0G elapsed=70.3m
+step 760/938 loss=1.4625 lr=1.83e-06 gnorm=3.31 tok/s=2364 mem=13.0G elapsed=71.2m
+step 770/938 loss=1.2241 lr=1.64e-06 gnorm=3.19 tok/s=2346 mem=13.0G elapsed=72.0m
+step 780/938 loss=1.2742 lr=1.45e-06 gnorm=3.54 tok/s=2373 mem=13.0G elapsed=72.9m
+step 790/938 loss=1.2554 lr=1.28e-06 gnorm=3.06 tok/s=2413 mem=13.0G elapsed=73.7m
+step 800/938 loss=1.3075 lr=1.12e-06 gnorm=3.44 tok/s=2422 mem=13.0G elapsed=74.6m
+[eval] step 800: val_loss=1.3982 (best)
+step 810/938 loss=1.3818 lr=9.63e-07 gnorm=3.36 tok/s=1161 mem=13.0G elapsed=76.3m
+step 820/938 loss=1.3949 lr=8.20e-07 gnorm=3.66 tok/s=2410 mem=13.0G elapsed=77.2m
+step 830/938 loss=1.2804 lr=6.89e-07 gnorm=3.09 tok/s=2443 mem=13.0G elapsed=78.0m
+step 840/938 loss=1.2946 lr=5.68e-07 gnorm=3.35 tok/s=2416 mem=13.0G elapsed=78.9m
+step 850/938 loss=1.3073 lr=4.59e-07 gnorm=3.21 tok/s=2402 mem=13.0G elapsed=79.7m
+step 860/938 loss=1.4093 lr=3.61e-07 gnorm=3.59 tok/s=2346 mem=13.0G elapsed=80.6m
+step 870/938 loss=1.2842 lr=2.75e-07 gnorm=3.19 tok/s=2399 mem=13.0G elapsed=81.4m
+step 880/938 loss=1.4081 lr=2.00e-07 gnorm=3.32 tok/s=2381 mem=13.0G elapsed=82.3m
+step 890/938 loss=1.4023 lr=1.37e-07 gnorm=3.45 tok/s=2349 mem=13.0G elapsed=83.1m
+step 900/938 loss=1.3354 lr=8.61e-08 gnorm=3.18 tok/s=2364 mem=13.0G elapsed=84.0m
+[eval] step 900: val_loss=1.3966 (best)
+step 910/938 loss=1.4973 lr=4.68e-08 gnorm=3.51 tok/s=1204 mem=13.0G elapsed=85.7m
+step 920/938 loss=1.4186 lr=1.93e-08 gnorm=3.34 tok/s=2410 mem=13.0G elapsed=86.6m
+step 930/938 loss=1.3275 lr=3.82e-09 gnorm=3.25 tok/s=2351 mem=13.0G elapsed=87.4m
+step 938/938 loss=1.4410 lr=0.00e+00 gnorm=4.98 tok/s=2343 mem=13.0G elapsed=88.1m
+[eval] step 938: val_loss=1.3966 (best)
+Done: {'device': 'cuda:0', 'per_device_train_batch_size': 2, 'gradient_accumulation_steps': 16, 'effective_batch_size': 32, 'train_examples': 30000, 'val_examples': 1000, 'total_optimizer_steps': 938, 'warmup_steps': 29, 'train_examples_truncated': 10984, 'steps_completed': 938, 'best_step': 938, 'best_val_loss': 1.3965878858424834, 'final_val_loss': 1.3965878858424834, 'skipped_steps': 0, 'train_seconds': 5339.045504331589, 'max_memory_gb': 12.98860788345337, 'best_checkpoint': 'outputs/sft/checkpoints/best', 'final_checkpoint': 'outputs/sft/checkpoints/final'}
