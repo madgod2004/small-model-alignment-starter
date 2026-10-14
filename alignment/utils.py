@@ -56,6 +56,17 @@ def parse_value(text: str) -> Any:
     return value
 
 
+def apply_overrides(config: dict[str, Any], pairs: Iterable[str]) -> dict[str, Any]:
+    """Apply ``key=value`` CLI overrides to a config dict (values parsed with ``parse_value``)."""
+
+    for pair in pairs:
+        key, separator, value = pair.partition("=")
+        if not separator:
+            raise SystemExit(f"Override must be key=value, got {pair!r}")
+        config[key] = parse_value(value)
+    return config
+
+
 def ensure_dir(path: str | os.PathLike) -> Path:
     path = Path(path)
     path.mkdir(parents=True, exist_ok=True)

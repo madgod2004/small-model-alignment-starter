@@ -19,17 +19,7 @@ os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from alignment.sft import train_sft  # noqa: E402
-from alignment.utils import load_config, parse_value  # noqa: E402
-
-
-def parse_overrides(pairs: list[str]) -> dict:
-    overrides = {}
-    for pair in pairs:
-        key, separator, value = pair.partition("=")
-        if not separator:
-            raise SystemExit(f"Override must be key=value, got {pair!r}")
-        overrides[key] = parse_value(value)
-    return overrides
+from alignment.utils import apply_overrides, load_config  # noqa: E402
 
 
 def main() -> None:
@@ -38,9 +28,7 @@ def main() -> None:
     parser.add_argument("overrides", nargs="*", help="key=value config overrides")
     args = parser.parse_args()
 
-    config = load_config(args.config)
-    config.update(parse_overrides(args.overrides))  # explicit overrides may also set null
-    train_sft(config)
+    train_sft(apply_overrides(load_config(args.config), args.overrides))
 
 
 if __name__ == "__main__":

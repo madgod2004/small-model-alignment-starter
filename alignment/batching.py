@@ -148,9 +148,17 @@ def build_dpo_batch(
             for ids, response in zip(prompt_ids, responses)
         ]
 
-    chosen, rejected = side(chosen_responses), side(rejected_responses)
-    width = max((len(input_ids) for input_ids, _ in chosen + rejected), default=0)
-    pad_token_id = get_pad_token_id(tokenizer)
+    return pad_pair_examples(side(chosen_responses), side(rejected_responses), get_pad_token_id(tokenizer))
+
+
+def pad_pair_examples(
+    chosen: Sequence[tuple[list[int], list[int]]],
+    rejected: Sequence[tuple[list[int], list[int]]],
+    pad_token_id: int,
+) -> dict[str, dict[str, torch.Tensor]]:
+    """Pad chosen and rejected examples to one shared width."""
+
+    width = max((len(input_ids) for input_ids, _ in list(chosen) + list(rejected)), default=0)
     return {
         "chosen": pad_examples(chosen, pad_token_id, width),
         "rejected": pad_examples(rejected, pad_token_id, width),
