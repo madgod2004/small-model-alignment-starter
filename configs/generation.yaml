@@ -1,0 +1,11 @@
+# Shared decoding settings for every evaluation generation (base, SFT, DPO).
+prompt_format: chatml
+batch_size: 16
+max_new_tokens: 512
+do_sample: false          # greedy
+temperature: 1.0          # unused when greedy
+top_p: 1.0                # unused when greedy
+repetition_penalty: 1.0
+no_repeat_ngram_size: 0
+dtype: fp16
+seed: 42

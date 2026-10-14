@@ -1,2 +1,15 @@
 __pycache__/
 *.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Large run artifacts (checkpoints stay on Kaggle as output datasets)
+outputs/**/checkpoints/
+outputs/**/*.safetensors
+outputs/**/*.bin
+outputs/**/*.pt
+*.zip
+
+# Regenerated training subsets (sources + indices are in data/manifests/)
+data/processed/
