@@ -1,0 +1,23 @@
+300 prompts, 0 already in checkpoint, 300 to generate
+The tokenizer you are loading from '/kaggle/input/notebooks/mahadbhatti21/notebookf8b015ac4e/small-model-alignment-starter/outputs/dpo_hh/checkpoints/best' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+`torch_dtype` is deprecated! Use `dtype` instead!
+  generated 16/300
+  generated 32/300
+  generated 48/300
+  generated 64/300
+  generated 80/300
+  generated 96/300
+  generated 112/300
+  generated 128/300
+  generated 144/300
+  generated 160/300
+  generated 176/300
+  generated 192/300
+  generated 208/300
+  generated 224/300
+  generated 240/300
+  generated 256/300
+  generated 272/300
+  generated 288/300
+  generated 300/300
+Wrote 300 generations to outputs/generations_rp1.1/dpo_hh_hh_eval.json (7 hit max_new_tokens)

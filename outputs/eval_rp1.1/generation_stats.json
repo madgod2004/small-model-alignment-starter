@@ -1,0 +1,92 @@
+{
+  "base_alpaca_eval": {
+    "n": 300,
+    "truncated_rate": 0.57,
+    "mean_tokens": 402.58666666666664,
+    "mean_repeated_line_rate": 0.4124921545909992,
+    "frac_with_repeated_lines": 0.6633333333333333,
+    "mean_distinct_3": 0.6367132379863832,
+    "empty_rate": 0.0
+  },
+  "base_hh_eval": {
+    "n": 300,
+    "truncated_rate": 0.4666666666666667,
+    "mean_tokens": 374.03333333333336,
+    "mean_repeated_line_rate": 0.38487330084727844,
+    "frac_with_repeated_lines": 0.56,
+    "mean_distinct_3": 0.6633912652377153,
+    "empty_rate": 0.0
+  },
+  "dpo_hh_hh_eval": {
+    "n": 300,
+    "truncated_rate": 0.023333333333333334,
+    "mean_tokens": 156.12,
+    "mean_repeated_line_rate": 0.007602656306317634,
+    "frac_with_repeated_lines": 0.03333333333333333,
+    "mean_distinct_3": 0.9482302129827034,
+    "empty_rate": 0.0
+  },
+  "dpo_uf_alpaca_eval": {
+    "n": 300,
+    "truncated_rate": 0.11,
+    "mean_tokens": 278.82666666666665,
+    "mean_repeated_line_rate": 0.034783159800606464,
+    "frac_with_repeated_lines": 0.14666666666666667,
+    "mean_distinct_3": 0.8833523169570645,
+    "empty_rate": 0.0
+  },
+  "lora_dpo_1ep_persona_eval": {
+    "n": 24,
+    "truncated_rate": 0.0,
+    "mean_tokens": 190.95833333333334,
+    "mean_repeated_line_rate": 0.017830959363217425,
+    "frac_with_repeated_lines": 0.125,
+    "mean_distinct_3": 0.9535138430182349,
+    "empty_rate": 0.0
+  },
+  "lora_dpo_beta05_persona_eval": {
+    "n": 24,
+    "truncated_rate": 0.0,
+    "mean_tokens": 189.54166666666666,
+    "mean_repeated_line_rate": 0.02435207336523126,
+    "frac_with_repeated_lines": 0.125,
+    "mean_distinct_3": 0.9512593670157282,
+    "empty_rate": 0.0
+  },
+  "lora_dpo_persona_eval": {
+    "n": 24,
+    "truncated_rate": 0.0,
+    "mean_tokens": 152.41666666666666,
+    "mean_repeated_line_rate": 0.0,
+    "frac_with_repeated_lines": 0.0,
+    "mean_distinct_3": 0.971206131400206,
+    "empty_rate": 0.0
+  },
+  "sft_alpaca_eval": {
+    "n": 300,
+    "truncated_rate": 0.043333333333333335,
+    "mean_tokens": 195.13,
+    "mean_repeated_line_rate": 0.030750150802566073,
+    "frac_with_repeated_lines": 0.11666666666666667,
+    "mean_distinct_3": 0.9120221836871523,
+    "empty_rate": 0.0
+  },
+  "sft_hh_eval": {
+    "n": 300,
+    "truncated_rate": 0.02666666666666667,
+    "mean_tokens": 171.67666666666668,
+    "mean_repeated_line_rate": 0.007327695415563391,
+    "frac_with_repeated_lines": 0.03,
+    "mean_distinct_3": 0.9523491865354746,
+    "empty_rate": 0.0
+  },
+  "smollm_base_persona_eval": {
+    "n": 24,
+    "truncated_rate": 0.0,
+    "mean_tokens": 181.20833333333334,
+    "mean_repeated_line_rate": 0.02411014911014911,
+    "frac_with_repeated_lines": 0.125,
+    "mean_distinct_3": 0.9538568366155058,
+    "empty_rate": 0.0
+  }
+}
