@@ -1,0 +1,20 @@
+{
+  "model_path": "outputs/lora_dpo/merged",
+  "config": "/kaggle/working/small-model-alignment-starter/configs/generation.yaml",
+  "generator": "smollm2-360m-lora-dpo",
+  "eval_set": "eval_sets/persona_style_eval.json",
+  "num_prompts": 24,
+  "prompt_format": "chat_template",
+  "dtype": "fp16",
+  "seed": 42,
+  "decoding": {
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0
+  },
+  "num_truncated": 8,
+  "generation_seconds": 52.8
+}
