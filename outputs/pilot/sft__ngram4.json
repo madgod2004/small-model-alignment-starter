@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse the internet or search for specific products. However, here are some popular electric saw brands and their ratings:\n\n1. Bosch\n2. Makita\n3. Craftsman\n4. Kwik cut\n5. Kwik saw\n6. Kwik power\n7. Kwik machinist\n8. Kwik machine\n9. Kwik electric\n10. Kwik sledge\n11. Kwik miter\n12. Kwik jigsaw\n13. Kwik drill\n14. Kikawatt\n15. Kikawa\n16. Kikwatt\n17. Kikwa\n18. Kikwan\n19. Kikwin\n20. Kikwi\n\nnote: the ratings may vary depending on the specific model and features of the product.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 180
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Sure, here's a recipe for Argentinian Milanesa:\n\nIngredients:\n- 1 lb. Pecorino Romano cheese, grated\n- 1/2 cup. Olive oil\n- 2 cloves. Garlic, minced\n- 4 oz. Chicken or beef, sliced\n- 3 cups. Chicken or vegetable broth\n- 6 oz. Pecorrino Romano sauce\n- 8 oz. Chicken, beef or vegetable, sliced\nSalt and pepper to taste\n- 9 oz. Chicken breast, sliced\nSauce:\n- 2 tbsp. Olive oil\n\nInstructions:\n1. In a large skillet, heat the olive oil over medium heat. Add the minced garlic and grated pecorino romano cheese. Sauté for 1-2 minutes until fragrant.\n2. Add the chicken or beef, chicken or vegetable, and broth to the skillet. Bring to a boil, then reduce heat to low and simmer for 10-15 minutes, or until the chicken or vegetable is tender.\n3. In a separate bowl, mix together the pecorrino romano sauce, chicken or beef or vegetable broth, and salt and pepper to your liking.\n4. Add the cooked chicken or beef to the skillet with the sauce. Toss to coat the chicken or vegetables with the sauce.\n5. Serve the Milanesa with a side of grilled chicken or beef.\n\nEnjoy your delicious Argentinian dish!",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 297
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure, here's a recipe for challah:\n\nIngredients:\n- 2 cups all-purpose flour\n- 1/2 cup unsalted butter, chilled and cubed\n- 2 large eggs\n- 3/4 cup granulated sugar\n- 4 teaspoons baking powder\n- 6-8 tablespoons warm water\n- 8-10 tablespoons olive oil\n\nInstructions:\n\n1. Preheat your oven to 350°F (175°C). Grease a 9-inch loaf pan with butter or cooking spray.\n\n2. In a large mixing bowl, whisk together the flour, baking powder, and salt.\n\n3. In a separate bowl, beat the eggs and sugar together until light and fluffy.\n\n4. Add the cubed butter to the egg mixture and stir until well combined.\n\n5. Add the warm water and olive oil to the bowl and stir until the dough comes together.\n\n6. Knead the dough for 5-7 minutes until it becomes smooth and elastic.\n\n7. Place the dough in the prepared loaf pan and flatten it out with a spatula.\n\n8. Bake the challah for 45-50 minutes, or until a toothpick inserted into the center comes out clean.\n\n9. Remove the challah from the oven and let it cool for 10 minutes before slicing and serving.\n\nEnjoy your delicious and easy to make challah!",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 285
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "1. Bengal tigers and Siberian tigers\n2. Bengal torses and Siberian horses\n3. Bengal tennes and Siberian cats\n4. Bengal tennessee and Siberian lions\n5. Bengal tennets and Siberian wolves\n6. Bengal tennevers and Siberian leopards\n7. Bengal tenevers and Siberians lions\n8. Bengal tenes and Siberian elephants\n9. Bengal tenses and Siberian rhinos\n10. Bengal tencers and Siberian camels.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 110
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The 92.5 sterling silver Miami Cuban link chain is a stunning piece of jewelry that is perfect for any occasion. Made from high-quality sterling silver, this link chain is designed to be both elegant and functional. The link chain is made of 92% sterling silver, which gives it a durable and long-lasting appearance. The link itself is made of sterling silver, and is designed to hold a variety of links, including links of different sizes and shapes.\n\nThe link chain is perfect for adding a touch of glamour to any outfit. The links are arranged in a way that creates a beautiful and intricate design, and the overall look is both elegant and stylish. The link chains are also perfect for adding some extra sparkle to a piece of jewelry, as the links are made of sterling, which is a rare and valuable metal.\n\nThe 900 sterling silver link chain is also available in a variety of colors, including gold, rose gold, and white gold. This means that you can choose the color of the link chain that best fits your personal style and preferences. The link links are also available in different lengths, so you can choose one that fits your wrist size.\n\nOverall, the 920 sterling silver Miami link chain is an excellent choice for anyone looking for a stylish and functional piece of jewelry. Whether you're looking for a statement piece or a more subtle accessory, this link will give you the perfect combination of style and functionality.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 292
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "Yes, a Liebherrer LTM 9.1 Hypothetically could lift Mount Everest. However, the weight limit of the LTM 7.1 is 1000 kg, which is much less than the 10,000-12,001 kg limit of Mount Everest. Therefore, it is unlikely that a Liebherry LTM 8.1 could lift Mount everetse.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 90
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI am writing to you today to introduce you to [Ghost Writer] as a professional editor/publisher for your upcoming book Unbreakably Confident. As a seasoned editor/publisher, I am confident that [Ghost Writer]'s expertise and experience will help you achieve your goals and deliver a book that is both engaging and impactful.\n\nFirst and foremost, [Ghost Writer's] experience in the publishing industry is unmatched. With over [number of years] years of experience, [Ghost writer] has worked on numerous successful books, including [book title]. This experience will give you a wealth of knowledge and insight into the publishing process, allowing you to make informed decisions about your book's content, structure, and marketing.\n\nIn addition to [Ghost writer's] extensive experience, [ghost writer] is a highly skilled writer and editor. With a passion for storytelling and a deep understanding of the publishing industry, [Ghostwriter] can help you craft a book that resonates with your target audience and delivers a compelling narrative that will captivate your readers.\n\nFurthermore, [GhostWriter] is a professional and reliable editor/publisher. With a commitment to excellence and a dedication to delivering high-quality work, [Ghost_writer] will work tirelessly to ensure that your book is polished, polished, and polished. With a team of experienced editors and writers, [Ghost writers] can help ensure that your work is free from any errors or inconsistencies, and that it is a true reflection of your vision and personality.\n\nI am confident that with [Ghost writer]'s help, you will be able to create a book that will exceed your expectations and leave a lasting impact on your readers. I am excited to work with you and to help you achieve the success you desire.\n\nThank you for considering [Ghost writer]. I look forward to hearing from you soon.\n\nSincerely,\n\n[Your Name]",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 377
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "Brand: Samsung\nColor: Black\nBrand: SAMSUNG\nColor: White\nBrand: MZ-V\nColor: Silver\nBrand: P2T\nColor: Blue\nBrand: T\nColor: Green\nBrand: B\nColor: Red\nBrand: 2TB\nColor: 256GB\nBrand: PCIe\nColor: PCIe 4.0\nBrand: Gen 4\nColor: Gen 3\nBrand: Internal\nColor: Internal\nBrand: Solid State\nColor: Solid State",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 109
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hey there, fellow tech enthusiasts! 🚀\n\nI'm Jane, a passionate and tech-savvy individual who's always been fascinated by the world of coding and design. I'm a self-taught programmer and have been working on various projects for the past few years. I'm always up for learning new things and exploring new technologies. I'm also a big fan of the arts and have a knack for creating visually stunning designs. If you're looking for someone who's always on the cutting edge of technology, I'm your guy! 🎉\n\nFeel free to reach out and let me know what you think! 🎨",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 130
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "1. Coffee beans\n2. Coffee grinder\n3. Coffee filter\n4. Coffee filter paper\n5. Coffee filter bag\n6. Coffee filter impeller\n7. Coffee filter screen\n8. Coffee filter cloth\n9. Coffee filter holder\n10. Coffee filter rack\n11. Coffee filter tray\n12. Coffee filter cutter\n13. Coffee grinder motor\n14. Coffee grinder blade\n15. Coffee grinder handle\n16. Coffee grinder foot pedal\n17. Coffee grinder dial\n18. Coffee grinder switch\n19. Coffee grinder power switch\n20. Coffee grinder timer\n21. Coffee grinder temperature sensor\n22. Coffee grindstone\n23. Coffee grind stone\n24. Coffee grind wheel\n25. Coffee grind roller\n26. Coffee grind disc\n27. Coffee grind blade\n28. Coffee grind cloth\n29. Coffee grind paper\n30. Coffee grind screen\n31. Coffee grind holder\n32. Coffee grinding wheel\n33. Coffee grinding motor\n34. Coffee grinding blade\n35. Coffee grinding handle\n36. Coffee grinding foot pedal\n37. Coffee grinding dial\n38. Coffee grinding switch\n39. Coffee grinding timer\n40. Coffee grinding temperature sensor\n41. Coffee grinding power switch\n42. Coffee grinders\n43. Coffee grinds\n44. Coffee grinders\n45. Coffee grinded\n46. Coffee grinder\n47. Coffee grinding\n48. Coffee grizzly\n49. Coffee grater\n50. Coffee grates\n51. Coffee grating\n52. Coffee grate\n53. Coffee grate rack\n54. Coffee grate tray\n55. Coffee grate holder\n56. Coffee grate cutter\n57. Coffee grate blade\n58. Coffee grate screen\n59. Coffee grate cloth\n60. Coffee grate paper\n61. Coffee grate handle\n62. Coffee grated\n63. Coffee grated rack\n64. Coffee grated tray\n65. Coffee grated holder\n66. Coffee grated cutter\n67. Coffee grated blade\n68. Coffee grated screen\n69. Coffee grated cloth\n70. Coffee grated paper\n71. Coffee grated handle\n72. Coffee mill\n73. Coffee miller\n74. Coffee milling\n7",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "The cost of supplies for the DIY Water Chiller project is estimated to be $100.00.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 23
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "1. Begin in a standing position with your feet hip-width apart.\n2. Lift your right foot up and over your left knee, keeping your knee straight and your foot in line with your ankle.\n3. Lower your right foot back down to the starting position, keeping your foot in the same line with your knee.\n4. Repeat with your left foot.\n5. Continue alternating between your right and left legs, lifting and lowering your feet as you go.\n6. Keep your arms straight and your shoulders relaxed.\n7. Hold the exercise for 30 seconds to a minute, then switch sides and repeat.\n8. If you feel any pain or discomfort, stop the exercise and consult a doctor or physical therapist.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 144
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 donut franchisees in the United states.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 18
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "JoJo Siwa is famous for her work in the field of animation and animation technology. She is known for her innovative use of computer-generated imagery (CGI) and her ability to create visually stunning and immersive animations. She has also worked on a variety of other projects, including commercials, commercials for various brands, and television shows.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 67
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is possible to do the same to your boyfriend during intercourse. However, it is important to be aware of the potential risks and consequences of doing so. Here are some suggestions:\n\n1. Use a condom: Always use a condom during intercourse to protect yourself from any potential risks of sexual assault or injury.\n\n2. Be aware of your partner's reaction: If your partner is not comfortable with the idea of having sex with you, it may be best to avoid it altogether.\n\n3. Consider alternative methods: There are alternative methods of sexual arousal that do not involve sexual intercourse, such as masturbation or oral sex. These methods can be just as effective and may be safer for both partners.\n\n4. Seek professional help: If you are concerned about the potential risks of engaging in sexual activity with your partner, it may help to seek professional help from a therapist or counselor. They can provide guidance and support on how to navigate these situations safely and responsibly.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 191
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "Mary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a big, round belly,\nWith a soft, furry belly,\nAnd a tiny, round heart,\nThat beat like a drum.\n\nMary had two big, round eyes,\nThat looked right at the sky,\nAnd a small, round nose,\nThat smelled like flowers.\n\nMary had four legs,\nThat moved like a bird,\nAnd a little, round tail,\nThat swayed like a swan.\n\nMary had three toes,\nThat were like a paw,\nAnd a big, furry paw,\nThat held a little ball.\n\nMary had no name,\nBut she was a pretty girl,\nAnd she had a little lamb,\nThat she loved to play.\n\nMary had her own little world,\nWhere she lived and played,\nAnd she loved to sing,\nAnd dance and play.\n\nMary's little lamb,\nWas a beautiful sight,\nAnd she was Mary's friend,\nAnd she would always be there.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 205
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "US territories are areas of the United States that are not part of the United Kingdom or Canada. They are territories that are not recognized as states and are not part-time possessions of the United Nations. The United States has 36 territories, including the District of Columbia, Puerto Rico, Guam, American Samoa, the Northern Mariana Islands, and the Virgin Islands.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 73
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "Yes, here are some details on Libya's bombing campaign:\n\n1. The bombing campaign began in 2011 when the United Nations Security Council imposed a resolution on Libya, calling for the removal of the country's military and political leadership.\n\n2. The bombing began with a series of air strikes on targets in Tripoli, including the headquarters of the Revolutionary National Army (RNA) and the headquarters of Libya's ruling National Transitional Council (NTC).\n\n3. The bombing continued with more air strikes on other targets, including the offices of the NTC and the headquarters for the National Liberation Army (LNA).\n\n4. The bombing was carried out by a coalition of countries, including the United States, United Kingdom, France, and Russia.\n\n5. The bombing had a significant impact on Libya's political and economic situation. The bombing led to the resignation of the NNC and the release of political prisoners, and it also led to the overthrow of the NDC.\n\n6. The bombing also had a significant humanitarian impact, as it killed thousands of civilians and displaced thousands more.\n\n7. The bombing of Libya was a major blow to the international community's efforts to stabilize the country and prevent the spread of terrorism.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 244
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "1. Make sure the litter box is clean and free of any feces or urine. This will help the cat associate the litter box with the scent and make it easier for her to use it.\n\n2. Provide a variety of litter options, such as paper, cardboard, and newspaper. This will make the cat more comfortable using the litter and help her choose the one that suits her.\n\n3. Make sure there is a comfortable surface for the cat to sit on while using the litter. This can be a soft surface, such as a rug or a cushion.\n\n4. Provide a source of water, such as bottled water or a water fountain, to encourage the cat to drink and use the litter.\n\n5. Make sure that the cat is not stressed or anxious when using the litter, as this can make it more difficult for her to remember to use the litterbox.\n\n6. If the cat is still not using the litter after a few days, try changing the litter or the litter box itself. If the problem persists, it may be necessary to seek the advice of a veterinarian.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 218
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to make a cell battery last longer:\n\n1. Keep it clean: Clean the battery regularly to prevent corrosion and damage. Avoid exposing the battery to water or other liquids.\n\n2. Use a good charger: Use a high-quality charger that matches the battery's specifications. A charger that is too weak can cause the battery to die quickly.\n\n3. Avoid overcharging: Overcharging the battery can cause the cell to die quickly. Use a charger that allows you to charge the battery to the recommended level.\n\n4. Use a battery with a higher capacity: A battery with a larger capacity can last longer. Consider using a battery with more capacity if you plan to use it frequently.\n\n5. Avoid over-discharging: Over-discharging the battery will cause the cell's internal resistance to increase, which can lead to the battery dying quickly. Use the battery's instructions to determine the recommended discharge level.\n\n6. Use a rechargeable battery: Rechargeable batteries are more efficient and last longer than disposable batteries. Consider using rechargeable batteries if you plan on using them frequently.",
+    "generator": "sft__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 217
+  }
+]

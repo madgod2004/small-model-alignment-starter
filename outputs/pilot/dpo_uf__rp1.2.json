@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse or search for products online, but I can provide you with some general information about popular and highly-rated electric saws.\n\n1. Bosch e2054: this is one of the most well-reviewed and widely used electric saw brands in germany. It has an impressive rating from various sources including amazon, which states that it's \"one of the best quality\" among similar models on its website.\n\n2. Makita m6370e: known as the \"king of all-electric machines,\" makita offers several high-quality options ranging from mid-range to premium models. The m6370e is considered one of their top picks due to its exceptional performance and durability.\n\n3. Craftsman c8900: another reliable brand offering excellent value for money, craftsman produces a range of versatile electric saws suitable for different applications such as woodwork, metalworking, and cutting plastic materials.\n\n4. Sylvania 20v-100w: sylvania provides affordable yet powerful electric saws designed specifically for home use. Their model 20v-100w features a durable motor capable of handling heavy-duty cuts while providing ample power output.\n\nnote: please be aware that product reviews may vary depending on your location and source. Always check out reputable websites like amazon.com before making any purchase decisions.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 280
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Yes! Here's a delicious recipe for Milanesa de Pecito:\n\nIngredients:\n- 1 lb ground beef (or any other type of meat)\n- 2 tbsp olive oil\n- 4 garlic cloves, minced\n- 3 cups chopped fresh cilantro leaves\n- Salt and pepper, to taste\n\nInstructions:\n1. Heat the olive oil in a large skillet over medium heat.\n2. Add the ground beef and cook until browned on all sides, about 5 minutes.\n3. Remove the beef from the skillet with a slotted spoon or spatula and set aside.\n4. In the same pan, add the minced garlic and sauté it for another minute until fragrant.\n5. Add the chopped cilantro leaves to the pan and stir well.\n6. Pour in enough chicken broth to cover the bottom of the pan, then bring it to a boil.\n7. Reduce the heat to low and let simmer for around 10 minutes, stirring occasionally.\n8. Once done, remove the beef from the pan using tongs and discard.\n\n9. Serve hot as a main course or side dish alongside your favorite Argentinean appetizers such as chorizo, empanadas, or chiles rellenos.\n\nEnjoy this flavorful meal filled with rich flavors and tender meat! Let us know if you have any suggestions for variations or substitutions that would work best for you. Happy cooking!",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 286
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure! Here's a simple and delicious recipe for Challah:\n\nIngredients:\n- 2 cups all-purpose flour (or almond flour)\n- 1/4 cup granulated sugar\n- 3 large eggs\n- 1 tsp salt\n- 1 tbsp olive oil\n\nInstructions:\n\n1. Preheat your oven to 350°F.\n\n2. In a medium-sized mixing bowl, whisk together the flour, sugar, egg, and salt until well combined.\n\n3. Add in the olive oil gradually while stirring with an electric mixer or hand-held paddle attachment until it forms a smooth batter.\n\n4. Pour the batter into a greased loaf pan.\n\n5. Bake for about 60 minutes, or until a toothpick inserted into the center of the dough comes out clean.\n\n6. Remove from the oven and let cool completely on wire racks before slicing and serving.\n\nEnjoy your homemade Challah as a side dish or main course!\n\nNote: You can also add other ingredients such as chopped nuts, dried fruits, or herbs depending on personal preference. Just make sure they don't interfere with the flavor profile of the Challah. Happy baking!",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 232
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "1. Bengal tigers and Siberian tigers: This hybrid is known as the \"Bengal-Siberian\" or \"Siberian-Bengal.\" They have been crossed to produce offspring with different coat colors, fur patterns, and personalities.\n\n2. Snow leopards and jaguars: The result of crossing snow leopards (Panthera pardus) with jaguar (Panthera onca), these cats resemble each other in appearance but differ significantly in behavior due to their genetic differences.\n\n3. Siamese cats and Burmese cats: These two breeds share many physical traits such as short legs, round faces, and long tails. However, they also exhibit distinct personality quirks that set them apart from one another.\n\n4. Persian cats and Maine Coon cats: A cross between Persians and Maine Coons has resulted in the creation of the Persian-Maine Coon breed. While both species look similar at first glance, there's significant variation among individuals within this unique hybrid.\n\n5. Bengal tigers and American lions: Known for producing cubs with distinctive markings resembling those found on an African lioness' paws, these crosses can be quite fascinating to observe.\n\n6. Bengal tigers and Abyssinian cats: Another interesting pairing involves Bengal tigers mating with Abyssinian cats. Although not entirely identical genetically, these felines do show similarities in coloration and temperament.\n\n7. Bengal tigers and Himalayan cats: In addition to being visually striking, these crosses often display unique behavioral characteristics like playful antics and affectionate grooming behaviors towards humans.\n\n8. Bengal tigers and domestic cats: Crosses involving Bengal tigers breeding with domestic cats may lead to variations in coat pattern, size, and overall character compared to purebred Bengal tigers themselves. \n\n9. Bengal tigers and housecats: Hybridization between Bengal tigers and housecats could potentially yield new subspecies or even whole new breeds if successful breeding opportunities arise over time.\n\nOverall, while most large cat hybrids remain rare and exotic, occasional sightings offer glimpses into what might happen when two distinctly separate yet related animal groups mate together.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 433
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The Miami Cuban Link Chain is an exquisite piece of jewelry that exudes the rich history and vibrant culture of Cuba, featuring intricate details in gold leaf and stunningly crafted links made from high-quality sterling silver.\n\nCrafted with precision and attention to detail, each link measures precisely at 1/4 inch thick, ensuring durability and longevity. The chains come in various sizes ranging from small to large, allowing you to customize your selection according to personal preference or occasion requirements.\n\nAssembled into one continuous loop, these links create a unique and elegant design that perfectly complements any outfit. Each link features a distinct pattern or motif, such as geometric shapes or abstract designs inspired by traditional Cuban art forms like calligraphy or graffiti.\n\nThis Miami Cuban Link Chain not only adds charm but also serves as a symbol of pride and cultural identity for those who wear it. It represents the enduring legacy of Cubans' love for their homeland and their commitment to preserving its traditions through fashion and style.\n\nWhether worn alone or paired with other pieces of jewelry, this Miami Cuban Link Chain will become a cherished keepsake forever etched in memory of the beautiful heritage of Cuba.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 228
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "No, the Liebherr LTM 11200-9.1 does not have any lifting capability or ability to climb Mount Everest (Mount Qomolangma). The product is designed for use in various applications such as construction and mining but it has no specific capabilities related to climbing mountains.\n\nThe Liebherr LTM series of products includes several models that can be used for different purposes like building materials, roofing systems, and more. However, none of them come equipped with the necessary equipment required to reach mount Everest's peak height of approximately 29,029 feet (8,848 meters).\n\nTherefore, while these products may look impressive from afar, they do not possess the physical strength needed to scale Mount Everest itself. It would require specialized training and experience to operate and navigate through its treacherous terrain safely.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 172
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI hope this letter finds you well, and I would like to introduce myself as your editor/publisher who is passionate about helping writers achieve success in publishing their books.\n\nAs an experienced editor/publisher with years of experience working on various projects across different genres, I have been able to witness firsthand how successful authors can be transformed into world-famous figures through effective editing and promotion strategies. My team has helped numerous clients gain recognition by producing high-quality content that resonates deeply within their target audience.\n\nWith our expertise in creating compelling narratives, engaging characters, and captivating visuals, we aim to deliver exceptional results for each project. Our editors will work closely with the author throughout every stage of the process, ensuring they stay up-to-date with industry trends while delivering quality output.\n\nWe understand that gaining credibility from potential readers requires more than just good storytelling skills; it also involves building trust between both parties. That's why we believe strongly in providing comprehensive editorial support that goes beyond mere recommendations or suggestions – we want to ensure that every reader receives everything they need to fully appreciate the story and its message.\n\nTo illustrate these points further, here’s what some recent examples might look like:\n\n- A bestselling thriller novel featuring a seasoned detective solved a complex case using cutting-edge investigative techniques.\n- An acclaimed romance series set against the backdrop of a bustling city filled with diverse personalities and cultural nuances.\n- A gripping historical fiction novella exploring the lives of two unlikely siblings caught up in a tragic event leading them down unexpected paths.\n\nThese stories demonstrate not only the power of strong narrative elements but also the ability to craft compelling characters whose unique qualities make them relatable to audiences worldwide.\n\nIn conclusion, if you're looking for a reliable partner in achieving literary excellence, consider partnering with us! We'll take care of all aspects of production, including copyediting, proofreading, formatting, layout design, casting, etc., so you don't have to worry about any aspect of the creative process. Let's get started!\n\nSincerely,\n\n[Your Name]\n\nP.S.: Don’t hesitate to reach out if you'd like additional information regarding our services or pricing structure. Thank you once again for considering our offer!\n\nBest regards,\n[Your Editor/Publisher]",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 446
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "1. Brand: Samsung\n2. Color: Black\n3. Capacity: 980 GB (2 TB)\n4. Type: PCI Express (PCIe) NVMe Gen 4\n5. Storage type: External solid-state drive memory card with maximum speed.\n6. Cooling system: Thermal control.\n7. Compatibility: Supports gaming applications on Windows or macOS operating systems.\n\nNote that these values may vary depending on specific models within each category listed above.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 94
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hey there, fellow tech enthusiasts! 🚗💻\n\nI'm Jane and I've always been fascinated by how technology shapes our world around us. From designing sleek gadgets to creating innovative solutions for complex problems - my passion lies in pushing boundaries through innovation. 💡💻 \n\nAs someone who's passionate about learning new things and staying up-to-date with industry trends, I believe that being an active participant in this ever-evolving field is essential for anyone looking to make meaningful contributions within it. So if you're interested in joining me on this journey of discovery, let's connect soon! 😃 #TechInnovation #DesigningRevolutionaryGadgets #StayUpToDateWithIndustryTrends #ArchitecturalThinking #InspiredByJane",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 151
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "1. Coffee filter (or paper towel)\n2. Black ink pen or marker\n3. Paper towels or napkins for writing on\n4. A small container with holes in it, such as an old shoebox or plastic bag\n5. A piece of cardboard or metal plate for measuring coffee stains and blotting them off\n\nOptional:\n6. A timer or stopwatch for timing how long it takes to measure coffee stains.\n7. Optional: additional tools like a magnifying glass or a ruler if needed for precise measurements. \n\nNote: The exact materials may vary depending on the specific design and functionality you want your coffee darkness meter to have. Always refer to the manufacturer's instructions before purchasing any new parts!",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 143
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "To estimate the cost of supplies for creating an ice-chilling water system with the mentioned requirements:\n\n1. Cost of ice-making equipment:\n- Ice maker: $50\n- Ice box/cooler: $30\n\nTotal cost = $80\n\n2. Cost of temperature regulation components (temperature regulators):\n- Two temperature regulators: $40 each ($80)\n- Total cost = $160\n\n3. Power supply requirement:\n- Aquarium pump: $70\n- Total cost = $90\n\nNow let's add up all these costs together to get the estimated total cost:\n\nEstimated total cost = Cost of ice-making equipment + Cost of temperature regulation components + Cost of aquarium pumps\n= $80 + $160 + $90\n= $330\n\nTherefore, the estimated total cost for constructing this DIY water chiller is approximately $330.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 185
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "To perform leg raises, follow these steps:\n\n1. Stand with your feet shoulder-width apart and toes pointing forward.\n2. Bend both knees by bending them at an angle of about 90 degrees to the side opposite where you want to raise your legs (usually one knee).\n3. Keep your back straight and engage your glutes as you lift your heels off the ground towards the ceiling or overhead position.\n4. Hold this position for several seconds before slowly lowering your heels down again until they return to their starting positions on the floor.\n5. Repeat this movement for however many reps you need based on how long it takes you to complete each set.\n\nRemember to breathe deeply during each repetition so that you can maintain proper form throughout the exercise. If you feel any pain in your lower back muscles, stop immediately and consult a healthcare professional if necessary. With practice, you'll be able to increase the number of repetitions over time while maintaining good posture and avoiding injury.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 193
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 donut franchisees operating across the United States today.\n\nSome of the most popular and well-known donut franchises include:\n\n1. Donut Hole - headquartered in New York City\n\n2. The Donut Factory - located in Chicago\n\n3. Donut Heaven - based in Los Angeles\n\n4. Donut House - situated in Atlanta\n\n5. Donut Expressions - operates under various names including Donut Expressions USA Inc., Donut Expressions LLC, and Donut Expressions International Limited Partnership (formerly known as Donut Expressions)\n\n6. Donut Kingdom - is owned by McDonald's Corporation but has its own separate operations within the US\n\n7. Donut King - also part of McDonald's, this company offers similar products to other major fast-food chains like Burger King and Wendy's.\n\nThese are just some examples; there may be more franchised donut shops out there that I am not aware of yet.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 196
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "JoJo Siwa, also known as Jojo the Dog or simply \"JoJo,\" was an American comic book character created by artist and writer John Lasseter in 1983. He first appeared on the pages of Marvel Comics' \"The Fantastic Four\" series.\n\nJoJo's most notable feature is his ability to transform into various animals such as dogs, cats, birds, and even humans depending on circumstances. This transformation allows him to adapt to different environments while maintaining his human form throughout the story.\n\nThroughout his career, JoJo has been featured in numerous comic books, television shows, movies, and video games worldwide. His popularity continues to grow with fans around the world who eagerly await new adventures from this beloved figure.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 148
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is possible for females of some spider species (such as cobras and pitvipers) to consume males while mating or engaging in other sexual behaviors. However, this behavior varies among different species.\n\nIf you want your partner to do something similar with you, here's what you can try:\n\n1. Be patient: Give them time to understand that they're not being forced into any particular action by their partner.\n2. Keep communication open: Make sure both parties know why you'd like them to engage in such an activity together.\n3. Avoid sudden movements: If there's a possibility of conflict arising from the interaction, avoid making loud noises or moving around too quickly.\n4. Use non-threatening gestures: Instead of physically touching each other, use gentle body language and facial expressions to convey affection without causing tension between yourself and your partner.\n5. Consider alternative methods: You could also consider using tools like condoms or lures instead of physical contact altogether if you prefer avoiding direct sex interactions.\n\nRemember always prioritize safety when discussing potential sexual activities with someone else. It may be best to discuss these matters privately first before proceeding further.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 227
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "Once upon a time, in a land far away,\nThere lived a little frog named Mary.\nShe had a beautiful green skin and bright eyes.\n\nOne day when she was hopping around,\nA small white bird flew by her side.\n\nThe bird said, \"Hello there! I'm your new friend!\nI have some news for you - my name is Bluebird.\"\n\nMary smiled as she listened intently,\nAnd then she told him all that she knew!\n\nBluebird explained how he loved to sing songs,\nAnd his voice could make even the smallest creature feel happy too.\n\nMary couldn't believe what she heard,\nFor she thought it would never happen again.\n\nBut soon after, Mary's friends began to see,\nThat their favorite bluebird wasn't just another bird.\n\nThey started playing with him more often,\nAnd they made fun of him like no one else did.\n\nAs time went on, Mary realized something strange,\nHer life changed forever because of this magical sight.\n\nNow she saw herself surrounded by birds,\nWith colorful feathers and wings so light.\n\nFrom now on, Mary learned not only to love nature,\nBut also to appreciate every moment we share together.\n\nSo let us cherish our lives and hearts true,\nFor sometimes, nothing can replace the joyous sound of laughter.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 254
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "US territories refer to areas of the United States that have been acquired through treaties or agreements between the U.S., Canada, Mexico and other countries in which they were ceded by another country (such as Puerto Rico). These territories include American Samoa, Guam, the Northern Mariana Islands, Palau, the Commonwealth of the Northern Marianas, the Republic of Micronesia, the Marshall Islands, the Virgin Islands, and others.\n\nThe term \"territories\" is used differently depending on context:\n\n- In legal terms, territorial waters refers to the area surrounding an island or territory where it may be claimed for defense purposes.\n- In diplomatic contexts, territories can also mean specific regions within the United States such as Alaska, Hawaii, or the Hawaiian islands.\n- In military terminology, territories might refer to certain parts of land or sea bases under the control of one nation while being occupied by another.\n\nOverall, territories represent significant geographical features within the boundaries of the United States but do not necessarily correspond with any particular political entity like states or provinces. They serve both functional and strategic roles in maintaining national security and promoting economic development across different geographic locations throughout the world.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 230
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "Yes, here is some information about the bombing of Libya:\n\n1. Date: 2011-08-30 - The attack began when Libyan military aircraft attacked an airfield in Sirte, North Africa.\n\n2. Number of planes involved: Over 50 Libyans were killed and over 400 wounded during the attack.\n\n3. Targeted targets: The target was the headquarters of the National Transitional Council (NTC), which had been established by former dictator Muammar Gaddafi to lead the country's transition from dictatorship to democracy.\n\n4. Casualties: More than 60 people died in the attack, including civilians and government officials.\n\n5. Impact: The bombing led to widespread protests across Libya and contributed to the overthrow of Gaddafi's regime. It also caused significant damage to infrastructure and property in Tripoli and other cities.\n\nThe bombing of Libya has become one of the most notorious acts of terrorism against Western countries since September 11, 2001. It serves as a reminder that terrorist attacks can have devastating consequences for innocent lives and cause immense harm to communities around the world.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 231
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "Here are some steps you can take:\n\n1. Check if there is any urine or feces in your home: Before leaving the house with the cats, check that they haven't been defecating anywhere else than their usual location.\n\n2. Clean out the litter box regularly: Make sure to clean it thoroughly after each use so as not to contaminate other areas where pets might go.\n\n3. Provide fresh food and water: Ensure that all pet's needs such as food and water remain available at every mealtime.\n\n4. Keep an eye on them: If the cat seems unwell or has diarrhea, make sure to contact your veterinarian immediately.\n\n5. Consider changing her environment: Try moving the litter box closer to the entranceway into another room until she becomes comfortable around new surroundings.\n\n6. Offer alternative sources of enrichment (if applicable): Depending upon what type of animal(s) you have, consider offering additional toys, treats, or even something more interesting like climbing structures.\n\n7. Monitor progress over time: Follow-up visits from your vet will help determine whether the problem persists or resolves itself naturally.\n\nRemember always consult with professionals when dealing with specific health concerns related to pets' hygiene habits.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 240
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to extend the life of your cell phone batteries:\n\n1. Replace them regularly: Make sure that you replace your cells every 3-6 months or as recommended by the manufacturer.\n\n2. Avoid overcharging: Overcharging can lead to short circuits and damage the battery, so avoid charging it too much.\n\n3. Use rechargeable alternatives: Consider using rechargeable batteries instead of disposable ones for long-term storage.\n\n4. Keep cables clean: Clean out any dirt or debris from cable connectors before inserting new batteries into the device.\n\n5. Store properly: Properly store your devices in cool, dry places away from direct sunlight and extreme temperatures.\n\n6. Charge at appropriate times: Ensure that you charge your devices when they need most attention (e.g., during sleep mode).\n\n7. Check for signs of wear and tear: Regularly check if there is any visible damage on the surface of the battery, such as cracks or leaks.\n\n8. Follow instructions carefully: Always follow the manufacturer's guidelines regarding care and maintenance procedures while storing and handling your devices. \n\nBy following these tips, you can help ensure that your cell phones continue to function optimally for extended periods without needing replacement.",
+    "generator": "dpo_uf__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 240
+  }
+]

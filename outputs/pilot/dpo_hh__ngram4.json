@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse the internet or search for specific products. However, you can search for electric saw reviews on websites like amazon or ebay to find a good-rated electric saw. You can also check with local electricians or hardware stores to see if they have any recommendations for a good electric saw.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 63
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Sure, here's a recipe for milanesa de pescado:\n\nIngredients:\n- 1 lb. Filet mignon, cut into bite-sized pieces\n- 1 can of diced tomatoes\n- 2 cloves of garlic, minced\n- 3 tbsp. Olive oil\n- 4 cups of chicken or beef broth\n- 6 oz. Pescado, cooked and shredded\n- 8 oz. Panko breadcrumbs\n- ½ cup of grated Parmesan cheese\n- ¼ cup of chopped fresh parsley\n- ⅓ cup of chopped red onion\n- ¾ cup of chopped cilantro\n- 5 tbsp. Of chopped fresh parsley\n\nInstructions:\n1. In a large skillet, heat the olive oil over medium heat. Add the minced garlic and cook until fragrant, about 30 seconds.\n2. Add the filet mignon to the skillet and cook until browned on all sides, about 5 minutes.\n3. Add the chicken or beef stock to the skillet, and stir to combine with the filet. Cook for 5 minutes, stirring occasionally.\n4. Add the shredded pescado to the skillet with the stock, and stir until well combined.\n5. Add the cooked filet mignon to the skillet along with the breadcrumbs, Parmesan cheese, chopped parsley, chopped red onion, and chopped cilantro. Mix everything together until well combined and evenly distributed.\n6. Serve the milanesa hot, garnished with fresh parsley and chopped red onion. Enjoy!",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 312
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure, here's a recipe for challah:\n\nIngredients:\n- 2 cups all-purpose flour\n- 1/2 cup unsalted butter, cold and cubed\n- 2 eggs\n- 3/4 cup sugar\n- 4 teaspoons baking powder\n- 6 teaspoons baking soda\n- 8 teaspoons salt\n- 5 cups warm water\n\nInstructions:\n1. Preheat your oven to 350°F (175°C).\n2. In a large mixing bowl, combine the flour, baking powder, baking soda, and salt.\n3. In a separate bowl, beat the eggs and sugar together.\n4. Add the flour mixture to the sugar mixture and stir until just combined.\n5. Add the warm water and stir until the dough comes together.\n6. Knead the dough for about 5 minutes until it becomes smooth and elastic.\n7. Place the dough on a floured surface and roll it out into a 12-inch circle.\n8. Place the challah on a baking sheet and bake for 10-12 minutes or until the edges are golden brown.\n9. Remove the challah from the oven and let it cool for a few minutes before slicing and serving. Enjoy!",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 253
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "Some big cat hybrids include the Bengal tiger, the Sumatran tiger, the Orinoco bear, the Sumatra bear, the Orangutan, the Sumaca, the Sumac, the Sumati, the Sumu, the Summa, the Summala, the Sumuma, the Sumura, the Sumur, the Sumua, the Suma, the Sumy, the Sumaya, the Sumai, the Suman, the Sumon, the Sumo, the Sump, the Sumpa, the Sumpe, the Sumpi, the Sumpo, the Sumra, the Sumri, the Sumro, the Sumru, the Sumry, the Sumya, the Sumye, the Sumze, the Sumz, the Sumza, the Sumzo, the Sumzy, the Sumzh, the Sumzi, the Sumji, the Sumki, the Sumka, the Sumk, the Suml, the Sumn, the Sumr, the Sums, the Sumt, the Sumv, the Sumw, the Sumx, the Sumxx, the Sumyy, the Sumzz, the Sumxz, the Sumzx, the Sumxxx, the Sumyyy, the Sumyyyy, the Sumyz, the Sumxyz, the Sumxyx, the Sumsy, the Sump, the Sumps, the Sumps, the Sumts, the Sumty, the Sumyt, the Sumys, the Sumxs, the Sumyx, the Sumxxxx, the Sumxxxxxxxx, the SumXXXX, the SumXXX, the SumYYY, the SumYY, the SumZZ, the SumZ, the SumZA, the SumBA, the SumB, the SumC, the SumD, the SumE, the SumF, the SumG, the SumH, the SumI, the SumJ, the SumK, the SumL, the SumM, the SumN, the SumO, the SumP, the SumQ, the SumR, the SumS, the SumT, the SumU, the SumV, the SumW, the SumX, the SumY, the SumZE, the SumZF, the SumXYZ, the SumXYX, the Sumb, the Sumb, the Sumc, the Sumd, the Sume, the Sumf, the Sumg, the Sumh, the Sumi, the Sumj, the Sumkk, the Sumll, the",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The 92.5 sterling silver Miami Cuban link chain is a stunning piece of jewelry that is perfect for any occasion. Made from high-quality sterling silver, this link chain is designed to be both durable and stylish. The link chain is made of 92% sterling silver, which gives it a smooth and polished finish. The link itself is made of sterling silver, and is designed to hold a variety of links, including gold, silver, and other metals. The link is also designed to be easy to clean and maintain, making it a great choice for everyday wear. Overall, the 920 sterling silver Miami link chain is an excellent choice for anyone looking for a stylish and durable piece of jewelry.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 144
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "Yes, a Liebherrer LTM 9.1 Hypothetically could lift Mount Everest. However, the weight of the LTM 2120-9 would be much greater than Mount Everest, and the lifting capability of the Ltm 1100-1 would be limited. Additionally, the Ltm would require a significant amount of energy to lift the mountain, which would be difficult to achieve.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 86
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI am excited to present to you my proposal for a ghost writer service for your book Unbreakably Confidence. As a seasoned ghost writer, I have extensive experience in writing and editing for a variety of genres, including fiction, non-fiction, and memoirs. I am confident that my skills and expertise will help you achieve your goals and create a book that resonates with your target audience.\n\nOne of the primary benefits of having a ghost writer is that you can have complete control over the final product. I can work closely with you to ensure that your book is polished, professional, and meets your specific needs. I can also provide feedback and suggestions to help you improve your writing, making sure that your work is of the highest quality.\n\nAnother benefit of having a writer is that I can help you market your book to a wider audience. I can help promote your book through various channels, including social media, email marketing, and word-of-mouth. I can even help you reach out to agents and publishers to help you get your book published.\n\nI understand that you may have concerns about the quality of your writing, but I am confident in my ability to help you achieve the best possible results. I can provide you with a detailed proposal outlining the services that I will offer, along with a timeline for when I will be able to start working on your book.\n\nI am excited about the prospect of working with you and helping you achieve your writing goals. Please let me know if you have any questions or concerns, and I will be happy to assist you in any way I can.\n\nThank you for considering my proposal.\n\nSincerely,\n\n[Your Name]",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 333
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "The attributes of the product are:\n\n- Brand: Samsung\n- Color: Black\n- Capacity: 981 GB\n- Speed: 2 TB/s\n- Thermal Control: Yes\n- MZ-V: 8P2t0B",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 52
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hi there! I'm Jane, a tech enthusiast who's always been fascinated by the world of architecture. I'm passionate about exploring new technologies and how they can be applied in the real world. I'm always looking for new ways to make my home and workspaces more functional and comfortable. If you're looking for a tech-savvy person who's also a fan of architecture, look no further!",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 81
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "- Copper wire\n- Brass wire\n- Iron wire\n- Aluminum wire\n- Screwdriver\n- Wire cutters\n- Wire strippers\n- Wire braid\n- Wire nuts\n- Wire connectors\n- Wire stripper\n- Wire cutter\n- Wire wrapping tool\n- Wire tie\n- Wire hanger\n- Wire nut\n- Wire lug\n- Wire twist\n- Wire bend\n- Wire wrap\n- Wire knot\n- Wire loop\n- Wire splice\n- Wire crimp\n- Wire insulation\n- Wire tape\n- Wire glue\n- Wire jointer\n- Wire tensioner\n- Screw driver\n- Screw bit\n- Screw drill\n- Screw head\n- Screw nut\n- Screw washer\n- Screw cap\n- Screw terminal\n- Screw lug\n- Screw twist\n- Screw bend\n- Screw splice\n- Screw wrap\n- Screw knot\n- Screw loop\n- Screw spool\n- Screw drive\n- Screw hub\n- Screw body\n- Screw terminals\n- Screw nuts\n- Screw washers\n- Screw caps\n- Screw heads\n- Screw bits\n- Screw drills\n- Screw drivers\n- Screwdrivers\n- Screw drives\n- Screw hubs\n- Screw bodies\n- Screw tops\n- Screw bottoms\n- Screw holes\n- Screw pins\n- Screw eyes\n- Screw threads\n- Screw grooves\n- Screw bushings\n- Screw sleeves\n- Screw jacks\n- Screw clamps\n- Screw hangers\n- Screw anchors\n- Screw ties\n- Screw clips\n- Screw hooks\n- Screw handles\n- Screw weights\n- Screw labels\n- Screw markings\n- Screw patterns\n- Screw shapes\n- Screw sizes\n- Screw types\n- Screw colors\n- Screw materials\n- Screw thicknesses\n- Screw widths\n- Screw lengths\n- Screw angles\n- Screw pitches\n- Screw depths\n- Screw diameters\n- Screw heights\n- Screw radii\n- Screw surfaces\n- Screw faces\n- Screw edges\n- Screw corners\n- Screw sides\n- Screw ends\n- Screw tips\n- Screw tails\n- Screw tongues\n- Screw tabs\n- Screw wedges\n- Screw shanks\n- Screw studs\n- Screw bolts\n- Screw screws\n- Screw dowels\n- Screw rods\n- Screw shafts\n- Screw bearings\n- Screw guides\n- Screw supports\n- Screw mounts\n- Screw brackets\n- Screw grips\n- Screw hinges\n- Screw locks\n- Screw switches\n- Screw",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "The cost of supplies for the DIY Water Chiller project is estimated to be $100.00.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 23
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "To perform leg raises, you will need a sturdy surface to stand on, such as a step or a bench. Begin by standing on the surface with your feet shoulder-width apart. Keep your feet together and your weight on your heels. Slowly raise your heels off the ground, keeping your weight on them. Keep your knees straight and your back straight. Hold for a few seconds, then lower your heels back down to the starting position. Repeat for the desired number of repetitions.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 96
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 donut franchisees in the United states.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 18
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "JoJo Siwa is famous for her paintings of animals, particularly of cats. She is also known for her portraits of people, particularly of women. She has been a prominent figure in the art world for over 50 years and has been awarded numerous awards for her work.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 56
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is common for female spiders to eat male spiders during mating season. However, it is not recommended to do this as it can be dangerous for both the female and the male. It is best to avoid this behavior and focus on sexual activity with your boyfriend.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 54
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "Mary had a little frog,\nWith a pretty little face,\nAnd a pretty little tail,\nThat swam in the river.\n\nMary had a big heart,\nAnd a big mouth,\nAnd a little voice,\nThat could be heard all around.\n\nMary had many friends,\nAnd many friends to play,\nAnd many little friends,\nThat she could make her own.\n\nMary had no friends,\nNo friends to play with,\nNo friends that she could make,\nThat she would never forget.\n\nMary had her own little world,\nAnd her own little home,\nAnd her little friends,\nWho she would never leave.\n\nMary had never been sad,\nNever been lonely,\nNever been afraid,\nNever been scared.\n\nMary had always been happy,\nAlways happy,\nAlways with her little friends and her little world,\nThat she never would leave.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 162
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "The United States has several territories, which are areas of land and water that are not part of the United States but are part of the country's sovereignty. These territories include the District of Columbia, Puerto Rico, Guam, American Samoa, the Northern Mariana Islands, and the Virgin Islands.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 58
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "The bombing of Libya was a series of attacks on the country by the United States, the United Kingdom, and other countries. The attacks were carried out in several locations, including Tripoli, Benghazi, and Sirte. The attacks targeted government buildings, military bases, and other targets, and were carried out by a variety of weapons, including bombs, rockets, and missiles. The attacks had a significant impact on the country, causing widespread destruction and loss of life. The attacks led to the overthrow of the Libyan government and the beginning of a civil war.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 111
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "Here are some steps you can take to ensure your cat starts using the toilet again:\n\n1. Make sure the litter box is clean and free of any feces or urine.\n\n2. Make sure your cat is comfortable and relaxed in the litter box. You can try changing the litter or adding a new one to the box.\n\n3. Make sure there is a clear view of the litter box from the other side of the room.\n\n4. Make sure you are using the same litter and size of litter box for all cats.\n\n5. Make sure that your cat is not using the litter or box too much. If she is using the litter too much, she may not be able to use the box again.\n\n6. If your cat is still not using the box, try changing the location of the litter or the litter box.\n\n7. If your cats are still not using their litter box, you may need to seek the help of a veterinarian.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 190
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to make a cell battery last longer:\n\n1. Keep the battery in a dry place: Avoid exposing the battery to moisture, as it can cause the battery to degrade faster.\n\n2. Keep the batteries away from direct sunlight: Direct sunlight can cause the batteries to degrade faster, so keep them away from direct sun.\n\n3. Avoid overcharging: Overcharging the battery can cause the cells to degrade faster. Keep the charging time to a minimum.\n\n4. Use a rechargeable battery: Rechargeable batteries are more durable and last longer than disposable batteries.\n\n5. Avoid over-discharging: Over-discharging the battery will cause the cells in the battery to deteriorate faster. Keep it within the recommended charging range.\n\n6. Use a battery with a higher capacity: A battery with a larger capacity will last longer than a smaller one.",
+    "generator": "dpo_hh__ngram4",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 171
+  }
+]

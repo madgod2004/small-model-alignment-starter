@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse the internet or search for specific products. However, here are some popular electric saw brands and their ratings:\n\n1. Bosch\n2. Makita\n3. Craftsman\n4. Kwik cut\n5. Kwik cut\n6. Kwik cut\n7. Kwik cut\n8. Kwik cut\n9. Kwik cut\n10. Kwik cut\n\nit is recommended to do some research and read reviews before making a purchase.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 101
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Sure, here's a recipe for Milanesa de peceto:\n\nIngredients:\n- 1 lb. Pecorino Romano cheese, grated\n- 1 lb. Chicken breast, sliced\n- 1 lb. Chicken thighs, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken wings, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n- 1 lb. Chicken breasts, sliced\n-",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure, here's a recipe for challah:\n\nIngredients:\n- 2 cups all-purpose flour\n- 1/2 cup unsalted butter, chilled and cubed\n- 1/2 cup granulated sugar\n- 1/2 cup unsalted butter, softened\n- 1/2 cup whole milk\n- 1/2 teaspoon salt\n- 1/2 teaspoon baking powder\n- 1/2 teaspoon baking soda\n- 1/2 teaspoon ground cinnamon\n- 1/2 teaspoon ground ginger\n- 1/2 teaspoon ground nutmeg\n- 1/2 teaspoon ground cloves\n- 1/2 teaspoon ground black pepper\n- 1/2 cup warm water\n\nInstructions:\n1. Preheat the oven to 350°F (175°C).\n2. In a large mixing bowl, combine the flour, sugar, butter, and salt. Mix until well combined.\n3. Add the cold cubed butter and mix until it forms a paste.\n4. Add the warm water and mix until the dough comes together.\n5. Knead the dough for 5-7 minutes until it becomes smooth and elastic.\n6. Place the dough on a floured surface and flatten it into a disk.\n7. Wrap the dough in plastic wrap and refrigerate for at least 30 minutes.\n8. Preheat the oven to 350°F (175°C).\n9. Roll out the dough to your desired thickness and shape.\n10. Place the challah on a baking sheet lined with parchment paper.\n11. Bake for 10-12 minutes or until the edges are golden brown.\n12. Remove from the oven and let cool for a few minutes before slicing and serving.\n\nEnjoy your delicious and easy to make challah!",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 374
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "1. Bengal tigers and Siberian tigers\n2. Bengal tigers and jaguar\n3. Bengal tigers and jaguar\n4. Bengal tigers and snow leopards\n5. Bengal tigers and snow leopards\n6. Bengal tigers and snow leopards\n7. Bengal tigers and snow leopards\n8. Bengal tigers and snow leopards\n9. Bengal tigers and snow leopards\n10. Bengal tigers and snow leopards",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 106
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The 925 sterling silver miami cuban link chain is a stunning piece of jewelry that is sure to make a statement. This link chain is made from high-quality sterling silver and is perfect for adding a touch of glamour to any outfit. The link chain is made of 925 sterling silver and is available in a variety of colors, including gold, rose gold, and white gold. The link chain is also available in different lengths, so you can choose the length that best fits your style.\n\nThe link chain is perfect for adding a touch of elegance to any outfit. It is a perfect addition to a dress, a suit, or even a casual outfit. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion.\n\nThe link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion.\n\nThe link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion.\n\nThe link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion.\n\nThe link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion.\n\nThe link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion.\n\nThe link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding or special occasion. The link chain is also perfect for adding a touch of glamour to a wedding",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "Yes, a Liebherr LTM 11200-9.1 hypothetically could lift Mount Everest. However, the weight limit of the machine is 1000 kg, which is much less than the weight of Mount Everest, which is estimated to be around 29,029 meters (95,000 feet) tall. Therefore, it is unlikely that a Liebherr LTM 11200-9.1 hypothetically could lift Mount Everest.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 106
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI am writing to you today to introduce you to [Ghost Writer] as a professional editor/publisher for your upcoming book Unbreakable Confidence. As a seasoned editor/publisher, I am confident that [Ghost Writer] will bring a fresh perspective and unique approach to your writing.\n\nFirst and foremost, [Ghost Writer] will bring a fresh perspective to your writing. As an editor/publisher, I have seen firsthand how the right editor/publisher can make a significant impact on the quality of your work. With [Ghost Writer], you can expect to receive a well-crafted manuscript that is polished and polished to perfection.\n\nSecondly, [Ghost Writer] will bring a unique approach to your writing. As an editor/publisher, I am passionate about helping writers achieve their full potential. With [Ghost Writer], you can expect to receive a well-crafted manuscript that is well-researched, well-written, and well-crafted.\n\nFinally, [Ghost Writer] will bring a fresh perspective to your writing. As an editor/publisher, I have seen firsthand how the right editor/publisher can make a significant impact on the quality of your work. With [Ghost Writer], you can expect to receive a well-crafted manuscript that is polished and polished to perfection.\n\nI am confident that [Ghost Writer] will bring a fresh perspective and unique approach to your writing. I am excited to work with you and help you achieve your full potential.\n\nThank you for considering [Ghost Writer] as your editor/publisher for Unbreakable Confidence. I look forward to working with you and bringing your writing to life.\n\nSincerely,\n\n[Your Name]",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 332
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "Brand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black\nBrand: Samsung\nColor: Black",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hey there, fellow tech enthusiasts! 🚀\n\nI'm Jane, a passionate and tech-savvy individual who's always been fascinated by the world of coding and design. I'm a self-taught programmer and have been working on various projects for the past few years. I'm always up for learning new things and exploring new technologies. I'm also a big fan of the arts and have a knack for creating visually stunning designs. If you're looking for someone who's always on the cutting edge of technology, I'm your guy! 🎉\n\nFeel free to reach out and let me know what you think! 🎉",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 130
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "1. Coffee beans\n2. Coffee grinder\n3. Coffee filter\n4. Coffee filter paper\n5. Coffee filter bag\n6. Coffee filter paper filter\n7. Coffee filter paper filter bag\n8. Coffee filter paper filter bag filter\n9. Coffee filter paper filter bag filter bag\n10. Coffee filter paper filter bag filter bag filter\n11. Coffee filter paper filter bag filter bag filter bag\n12. Coffee filter paper filter bag filter bag filter bag filter\n13. Coffee filter paper filter bag filter bag filter bag filter bag\n14. Coffee filter paper filter bag filter bag filter bag filter bag filter\n15. Coffee filter paper filter bag filter bag filter bag filter bag filter bag\n16. Coffee filter paper filter bag filter bag filter bag filter bag filter bag filter\n17. Coffee filter paper filter bag filter bag filter bag filter bag filter bag filter bag\n18. Coffee filter paper filter bag filter bag filter bag filter bag filter bag filter bag filter\n19. Coffee filter paper filter bag filter bag filter bag filter bag filter bag filter bag filter bag\n20. Coffee filter paper filter bag filter bag filter bag filter bag filter bag filter bag filter bag filter",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 247
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "The cost of supplies required to create the DIY Water Chiller project is estimated to be $100.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 22
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "1. Begin in a standing position with your feet hip-width apart.\n2. Lift your right foot up and over your left knee, keeping your knee straight and your foot in line with your ankle.\n3. Lower your right foot back down to the starting position, keeping your knee straight and your foot in line with your ankle.\n4. Repeat with your left foot.\n5. Continue alternating between your legs, lifting and lowering your feet as you go.\n6. Keep your core engaged and your back straight throughout the exercise.\n7. If you feel any pain or discomfort, stop the exercise and rest for a few minutes before continuing.\n8. Repeat the exercise on the other side.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 137
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 donut franchise companies in the United States.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 18
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "JoJo Siwa is famous for her work in the field of animation and animation technology. She is known for her innovative use of computer-generated imagery (CGI) and her ability to create visually stunning and immersive animations. She has also worked on a variety of other projects, including commercials, commercials for various brands, and television shows.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 67
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is possible to do the same to your boyfriend during intercourse. However, it is important to be aware of the potential risks and consequences of doing so. Here are some suggestions:\n\n1. Use a condom: Always use a condom during intercourse to protect yourself from any potential risks of sexual assault or injury.\n\n2. Be aware of your partner's reaction: If your partner is not comfortable with the idea of having sex with you, it may be best to avoid it altogether.\n\n3. Consider alternative methods: There are alternative methods of sexual arousal that do not involve sexual intercourse, such as masturbation or oral sex. These methods can be just as effective and may be safer for both partners.\n\n4. Seek professional help: If you are concerned about the potential risks of sexual assault or injury, it may be best to seek professional help from a sexual assault prevention organization or a healthcare provider.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 178
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "Mary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun.\n\nMary had a little frog,\nWith a long, slimy tail,\nAnd a bright green back,\nThat glowed in the sun",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "US territories are areas of the United States that are not part of the United States but are under the jurisdiction of the federal government. They are typically defined as areas that are not part of the contiguous United States, such as Alaska, Hawaii, Puerto Rico, and the Virgin Islands. These territories are not recognized as states and are not part of the United States legal system.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 74
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "Yes, here are some details on the bombing of Libya:\n\n1. The bombing of Libya began on April 20, 2011, when a coalition of countries, including the United States, United Kingdom, France, and Russia, launched a bombing campaign against Libya's government and its military. The bombing was carried out by a coalition of aircraft from the United States, the United Kingdom, France, and Russia.\n\n2. The bombing campaign targeted the government of Muammar Gaddafi, who was accused of supporting terrorism and al-Qaeda. The bombing campaign also targeted the military, including the air force, navy, and army.\n\n3. The bombing campaign was carried out in several phases, with each phase targeting a different target. The first phase targeted the government buildings and government offices, the second phase targeted the military, and the third phase targeted the air force and navy.\n\n4. The bombing campaign was carried out in several locations, including Tripoli, Benghazi, and Sirte. The bombing campaign also targeted civilians, including children and women, who were caught in the bombing.\n\n5. The bombing campaign had a significant impact on Libya's political and social landscape. The bombing campaign led to the ouster of Gaddafi and the overthrow of his government. The bombing campaign also led to the overthrow of the government of Muammar Gaddafi's son, Muammar Gaddafi's brother, and the overthrow of his son's government.\n\n6. The bombing campaign also led to the overthrow of the government of Muammar Gaddafi's son, Muammar Gaddafi's brother, and the overthrow of his son's government. The bombing campaign also led to the overthrow of the government of Muammar Gaddafi's son, Muammar Gaddafi's brother, and the overthrow of his son's government.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 367
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "1. Make sure the litter box is clean and free of any feces or urine. This will help the cat associate the litter box with the scent and make it easier for her to use it.\n\n2. Provide a variety of litter options, such as paper, cardboard, and newspaper. This will help the cat choose the one that is most comfortable for her.\n\n3. Make sure the litter box is placed in a visible and accessible area, such as near the door or in a designated area.\n\n4. Provide a comfortable and secure litter box, such as one that is made of soft, absorbent material.\n\n5. Keep the litter box clean and dry. This will help prevent the cat from getting stuck in the litter and causing injury.\n\n6. If the cat continues to use the litter box, try to encourage her to use it by offering treats or toys that are associated with the litter box.\n\n7. If the cat continues to use the litter box, try to find a new litter box that is more comfortable and secure for her.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 209
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to make a cell phone battery last longer:\n\n1. Keep it clean: Clean the battery regularly to prevent corrosion and damage. Avoid exposing the battery to water or other liquids.\n\n2. Use a good charger: Use a high-quality charger that matches the battery's specifications. A charger that is too weak can cause the battery to die quickly.\n\n3. Avoid overcharging: Overcharging the battery can cause the battery to die quickly. Use a charger that allows you to charge the battery to the recommended level.\n\n4. Use a good battery case: A good battery case can protect the battery from damage and prevent it from being damaged by the phone's vibrations.\n\n5. Use a good battery case cover: A good battery case cover can protect the battery from dust and other debris that can damage it.\n\n6. Use a good battery case cover: A good battery case cover can protect the battery from dust and other debris that can damage it.\n\n7. Use a good battery case cover: A good battery case cover can protect the battery from dust and other debris that can damage it.\n\n8. Use a good battery case cover: A good battery case cover can protect the battery from dust and other debris that can damage it.",
+    "generator": "sft__greedy",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 247
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse websites or search for specific products online, but I can suggest some popular brands and models of electric saws that you may want to consider:\n\n1. cove: this is one of the most well-known brand names in the world of electrical tools. They offer a wide range of high-quality electric saws with different features such as adjustable blade angle, power cord length, and more.\n\n2. mawson: they specialize in making quality electric saws designed specifically for outdoor use. Their machines come with advanced technology like automatic clamping systems and built-in safety guards.\n\n3. hewlett-packard: their machinists' cutters are known for being incredibly precise and durable. These cutting blades are made from high-grade materials and feature an easy-to-use interface that makes them perfect for beginners.\n\n4. dremel: if you're looking for something affordable yet powerful, dremel's electric saws are a great option. With its compact size and versatile capabilities, it's ideal for both residential and commercial applications.\n\n5. sasol: these electric saws are renowned for their durability and reliability. The machine comes equipped with a 60-volt motor and has been tested extensively by professional manufacturers worldwide.\n\nultimately, there are many other options available on the market depending on your needs and budget. It’s always best to research thoroughly before purchasing any equipment to ensure maximum performance and longevity.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 292
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Sure! Here's the recipe:\n\nIngredients:\n- 1 lb ground beef or pork (for meat)\n- 2 cups chopped fresh cilantro leaves\n- 4 garlic cloves, minced\n- 3 tbsp olive oil\n- Salt and pepper\n\nInstructions:\n1. In a large skillet over medium-high heat, add the olive oil.\n2. Add the ground beef or pork and cook until browned on all sides.\n3. Remove the cooked meat from the skillet with a slotted spoon and set aside.\n4. Return the same amount of cooking liquid into the pan along with the remaining ingredients: salt and pepper.\n5. Stir everything together until well combined.\n6. Serve hot as a side dish.\n\nEnjoy your delicious homemade Milanesa de peceto!",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 155
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure! Here's a simple and easy recipe for Challah:\n\nIngredients:\n- 2 cups all-purpose flour\n- 1/4 cup granulated sugar\n- 3 large eggs\n- 1 teaspoon baking powder\n- 1/2 teaspoon salt\n\nInstructions:\n1. Preheat your oven to 350°F (175°C).\n2. In a medium-sized mixing bowl, whisk together the flour, sugar, egg, baking powder, and salt.\n3. Add in the beaten eggs one at a time, beating well after each addition until just combined.\n4. Fold in the remaining dry ingredients by gently tapping the mixture on top of the wet dough with a fork or spoon.\n5. Divide the dough into two equal parts and flatten them out slightly using a rolling pin.\n6. Place the flattened halves onto a greased loaf pan.\n7. Bake for about 8 minutes, then remove from the oven and let cool completely before slicing.\n\nEnjoy your delicious homemade Challah!",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 204
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "1. Bengal tigers and Siberian tigers: This hybrid is known as the \"Bengal-Siberian\" or \"Siberian-Bengal.\" It has been selectively bred to have both tiger-like features, such as long fur and large ears, with those of other cats.\n\n2. Siamese cats and Persians: The result of crossbreeding between these two breeds can produce offspring that resemble their Persian counterparts in appearance but also share many characteristics with the Siamese breed.\n\n3. Maine Coon cats and Abyssinian cats: These are not actually hybrids; they're separate species entirely. However, there's an occasional mating pair where one cat from each group mates for several generations until it produces fertile offspring.\n\n4. Bengal cats and Burmese cats: A unique combination of these two breeds could be called the \"Burmese-Bengal,\" which would feature a mix of Bengal coat patterns (such as black and white) and Burman hair types (like short-haired).\n\n5. Himalayan cats and American shorthair cats: Another example of a non-hybrid pairing might involve a Himalayan cat crossed with an American shorthaired variety like the Persian or Maine coon. \n\n6. Japanese crested tabby cats and British Shorthairs: In this case, we'd see a cross between a crested tabby cat and a British Shorthair. While most people think of them as being unrelated, scientists believe that these cats may have shared ancestors who interbred during times when humans were hunting wild animals on a larger scale than today.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 322
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The Miami Cuban Link Chain is an exquisite piece of jewelry that features the iconic image of a smiling, happy man in his suit and tie with a smile on his face. The intricate design consists of two links made from high-quality sterling silver, each one measuring approximately 1/4 inch wide.\n\nThis link chain has been carefully crafted to ensure durability and longevity while still maintaining its unique charm. Each link measures at just over 3 inches long, making it easy to wear around your neck or attach to other pieces of clothing.\n\nOne end of the link chain is adorned with a small gold leaf embellishment, which adds a touch of sophistication without overpowering the overall look. On the other side of this attachment point, there's another small gold leaf embellishment, giving you even more detail and texture.\n\nOverall, the Miami Cuban Link Chain is a stunning addition to any collection, whether worn alone as a statement necklace or paired with matching earrings and bracelets. Its combination of style and functionality makes it a must-have accessory for anyone looking to add some flair to their wardrobe!",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 213
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "Yes, the Liebherr LTM 11200-9.1 can potentially lift Mount Everest if it is equipped with appropriate equipment and trained personnel to operate it safely.\n\nThe LTM 11200-9.1 is designed for use in extreme environments such as mountaintops where other types of helicopters may not be able to reach or land due to terrain restrictions or weather conditions. It has an adjustable pitch system that allows operators to adjust its speed based on wind direction and altitude, making it suitable for navigating through treacherous mountain ranges without risking damage to itself or others.\n\nAdditionally, the helicopter's advanced navigation systems allow pilots to maintain precise flight paths while avoiding obstacles like rocks, ice cliffs, and snowdrifts. This ensures safe landing sites at high altitudes and reduces the risk of accidents caused by unexpected maneuvers during takeoff or descent.\n\nOverall, the Liebherr LTM 11200-9.1 could make significant contributions towards mitigating potential risks associated with climbing Mount Everest, providing safer access routes for climbers who wish to explore this iconic peak.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 225
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI hope this letter finds you well, and I would like to introduce myself as your editor/publisher who can assist in helping you achieve success with your upcoming project.\n\nAs an experienced writer and editor, I have worked on numerous successful projects across various industries such as publishing, advertising, marketing, and more. My expertise lies in ensuring that each piece is polished, professional, and meets all industry standards while also providing valuable feedback to improve it further.\n\nWith years of experience working with clients from different backgrounds, including small businesses, large corporations, and startups alike, I understand how important it is to ensure that every aspect of your work aligns perfectly with what we need or want out of our collaboration.\n\nMy team at Skinny Brown Dog Media has been instrumental in producing several books that have gone on to become best sellers worldwide. We specialize in creating compelling narratives that resonate deeply with readers' emotions and experiences, making them feel invested in the story's outcome.\n\nWe believe that by collaborating with us, you will be able to create something truly unique and impactful that resonates with your target audience. Our goal is not only to produce high-quality content but also to provide exceptional customer service throughout the entire process.\n\nTo get started, please fill out the form below so we can begin discussing how we might collaborate together. Thank you for considering our proposal!\n\nSincerely,\n\n[Your Name] \n\nP.S.: If you're interested in learning more about our services, don't hesitate to reach out! Contact us today to schedule a consultation session.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 308
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "Brand: Samsung \nColor: Black",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 7
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hey there, fellow tech enthusiasts! 🚀\n\nI'm Jane and I've always been fascinated by technology since childhood. My passion for coding has only grown stronger over time as I have learned more about programming languages like Python and JavaScript. In my spare time, I enjoy tinkering with electronics and building cool gadgets that make me feel accomplished every day!\n\nIf you're looking for someone who's passionate about tech but also knows how to code well, look no further than me! 😃 #TechLover #CodeLove #CodingForFun #GadgetDesigners #Hackathons #PythonLearning #JavaScriptProgramming #ElectronicsBrewing #ArduinoProjects #WebDevelopment #MobileAppDev #GameDev #ArtificialIntelligence #AIAndMachineLearning #DataScience #Blockchain #CryptoCurrencies #CryptocurrencyInvesting #BitcoinMining #NFTs #DeFi #Ethereum #Monetization #SupplyChainManagement #SupplychainSecurity #Cybersecurity #PrivacyProtecting #DigitalIdentity #VirtualReality #AugmentedReality #AR/VR #3DPrinting #SustainableTechnology #GreenTech #CleanTechnologies #RenewableEnergy #SolarPower #WindPower #Hydroelectricity #GeothermalElectricity #Bioenergy #CarbonCapture #CarbonSequestration #ClimateAction #EnvironmentalImpact #GlobalWarming #PollutionControl #AirQualityMonitoring #WaterConservation #ResourceEfficiency #SustainabilityGoals #EcoFriendlyLiving #GreenHomeImprovement #SmartBuildingConstruction #SmartCityPlanning #SmartTransportation #SmartHealthcare #SmartEducation #SmartRetail #SmartShopping #SmartGroceryStore #SmartFoodDelivery #SmartPetCare #SmartDogTraining #SmartCatTraining #SmartBirdTraining #SmartFishTraining #SmartPlantMaintenance #SmartAnimalBehavior #SmartInsectControl #SmartMammalBehavior #SmartPigmentationTreatment #SmartSkinColorAdjustment #SmartHairStyleModification #SmartEyeTracking #SmartFaceRecognition #SmartVoiceAssistant #SmartFitnessMonitor #SmartSleepAssistants #SmartAmbientLighting #SmartDoorLocks #SmartKeylessEntry #SmartParkingSystem #SmartGarageDoor #SmartCarNavigation #SmartVehicleSafety #SmartTrafficLights #SmartStreetlights #SmartRoadways #SmartBridgeCommunication #SmartRiverFlowMeasurement #SmartFloodWarning #SmartRainfallPrediction #SmartWeatherForecast #SmartHeatIndexCalculation #SmartCoolnessRatingCalculator #SmartTemperatureReading #SmartHumidityLevelCalculation #SmartVentilationRateCalc",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "1. Coffee beans (for brewing)\n2. Water壶(keg) or pot for boiling water \n3. Measuring cup and spoons \n4. Thermometer \n5. Alcohol thermometer \n6. Glass jar with lid \n7. Paper towel \n8. Cotton balls \n9. Ruler \n10. Pliers \n11. Screwdriver \n12. Wire cutters \n13. Drill \n14. Safety goggles \n15. Dust mask \n\nNote: You may also need additional tools such as measuring tape, pliers, wire cutters, drill bits, etc., depending on your specific needs. Always follow safety guidelines when using these tools.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 139
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "The estimated cost for creating this DIY water chiller is $500. \n\nTo arrive at this figure, we need to consider several factors such as the materials used (such as ice-making equipment), labor costs, shipping fees, and any additional accessories or components needed. However, without specific information on these details, it's difficult to provide an accurate estimate. It would be best to consult with a professional electrician or plumber who can give you more detailed estimates based on your needs.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 98
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "1. Begin in a standing position with your feet hip-width apart.\n2. Lift one leg up and over your head, keeping it straight out to the side of your body.\n3. Lower that leg back down towards the starting position while maintaining control throughout the movement.\n4. Repeat on the other side until you have lifted both legs off the ground at least three times.\n5. Gradually increase the number of repetitions as desired by increasing the distance between each lift or adding weight if necessary.\n6. End the exercise slowly lowering yourself back down from the starting position using controlled movements. \n\nNote: It is important not to strain any muscles during this exercise; focus solely on proper form and technique. If there are any injuries or health concerns, consult with a healthcare professional before beginning this exercise.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 159
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 donut franchise companies operating across the country and worldwide.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 20
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "I do not have access to current news or events, but according to the information available on jojo siwa's official website and social media accounts, she has been known as one of the most popular female artists in japan since her debut album \"the girl\" released in 2013. She was also featured prominently in various anime series such as \"kawaii no kimi ni,\" which aired from 2014-2015, and \"manga no houhou.\"",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 102
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is possible for females to eat males while mating with their partners. However, this behavior can be dangerous and may lead to injury or death of both parties involved.\n\nIf you want your partner to enjoy sex without harming them, consider using lubricant before engaging in sexual activity. This way, they won't feel threatened by any potential injuries that could occur from biting or scratching. Additionally, make sure to use caution when handling sensitive areas such as the penis and anus, especially if there has been an incident where someone was bitten or scratched. It's always best to err on the side of caution and avoid touching these parts until after the event.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 130
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "The little frog, \nWith its tiny feet and bright eyes,\nWas always on Mary's mind.\nFor she loved him so much.\n\nShe would often see him hop along,\nAnd hear his soft croaks in her ear.\nBut he was not like any other bird,\nHis voice did not sing with ease.\n\nHe had no wings or feathers that could fly,\nNo tail nor legs as strong as a man.\nSo when Mary asked for help from God,\nHe begged her to let him live free.\n\nGod granted Mary all she needed,\nTo give him life and love again.\nNow he is happy and healthy,\nA beautiful creature born anew.\n\nFrom then on, Mary knew how true it was,\nThat even though we may have our faults,\nWe can still find joy within ourselves,\nWhen we listen to Mother Nature's call.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 165
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "US territories refer to areas of the United States that have been acquired through treaties or agreements with foreign nations, and which do not belong to any state in the Union but rather become part of it as an independent nation-state after being recognized by Congress.\n\nSome examples include Puerto Rico (acquired from Spain), Guam (acquired from Japan), American Samoa (acquired from Denmark), and the Virgin Islands (acquired from England). These territories were established for various reasons such as defense, trade opportunities, economic interests, cultural differences, or historical significance. They can be considered separate entities within the U.S., although they may share some common characteristics due to their location on the mainland or other factors like geography or history.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 142
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "Yes, here is some information about the bombing of Libya:\n\nOn April 20th, 1986, Libyan forces launched an air attack against Tripoli airport in what was known as Operation Torch II. The attack killed over 50 people and injured hundreds more.\n\nThe bombing came after months of tension between Libya and its neighbor Egypt had escalated into a full-blown conflict that lasted for several years. In addition to the bombing, other attacks were carried out by both sides during this time period, including the assassination of Egyptian President Hosni Mubarak's son in 1987.\n\nOverall, the bombing of Libya served as a symbol of the escalating tensions between the two countries and highlighted the potential dangers associated with military action. It also underscored the importance of diplomacy and negotiation when resolving conflicts like these.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 167
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "Here is what you could try:\n\n1. Make sure your cat has access to fresh water at all times.\n\n2. Clean out any old or expired litter in her litterbox regularly.\n\n3. Provide plenty of toys that encourage physical activity such as climbing trees, digging holes, etc., which will help keep her engaged while also providing an opportunity to relieve herself.\n\n4. Keep track of when she uses the litterbox by marking it with food treats or other rewards so she knows exactly where to go next time.\n\n5. If possible, consider taking your cat back home after one week to give them some extra bonding time together.\n\n6. Consider consulting with a veterinarian about any potential health issues related to not having enough exercise or stimulation from outside activities like playing fetch or running around on the lawn.\n\nRemember always prioritize animal well-being over convenience!",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 167
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to extend the life of your cell phone batteries:\n\n1. Replace them regularly: Make sure that you replace your cells every 3-6 months or as recommended by the manufacturer.\n\n2. Use rechargeable batteries: Rechargeable batteries like lithium-ion, nickel-cadmium and zinc oxide can be used for up to three times their original lifespan before needing replacement.\n\n3. Avoid overcharging: Over-charging your batteries can lead to short circuits in the circuitry causing damage to the device itself.\n\n4. Keep it away from water: Water can cause corrosion on the surface of the battery which will reduce its capacity leading to shorter battery life.\n\n5. Clean the screen: Regular cleaning with mild soap solution is essential to prevent dust buildup inside the screen which may affect battery performance.\n\n6. Check the voltage levels: Ensure that all components within the battery pack have been tested properly so they work at optimal power output level.\n\n7. Consider using an external charger: If possible, consider purchasing an external charging cable instead of relying solely on internal chargers since these cables provide more consistent charge rates than traditional ones. \n\n8. Optimize usage patterns: Try not to use devices continuously without taking breaks between calls; this could result in reduced battery life due to prolonged exposure to low-voltage conditions.",
+    "generator": "sft__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 262
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse websites or search for specific products online. However, you can try searching for reviews and ratings on popular e-commerce platforms like amazon or ebay. You may also want to check with local hardware stores or professional sawing shops for recommendations.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 54
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Sure! Here's a recipe for Milanesa de Pecito:\n\nIngredients:\n- 1 lb. Pecitos rojos (roasted red peppers)\n- 2 tbsp. Olive oil\n- 1 onion, chopped\n- 3 cloves garlic, minced\n- 1 can (14 oz.) diced tomatoes\n- 1 can (15 oz.) tomato sauce\n- 1 cup chicken or beef broth\n- 1 tsp. Cumin\n- 1 tsp. Chili powder\n- Salt and pepper to taste\n\nInstructions:\n1. Preheat the oven to 375°F.\n2. In a large skillet over medium-high heat, add olive oil and onions. Cook until onions are translucent, about 5 minutes.\n3. Add garlic and cook for another minute.\n4. Add roasted pecitos to the skillet and cook for 5 minutes, stirring occasionally.\n5. Pour in diced tomatoes, tomato sauce, chicken or beef broth, cumin, chili powder, salt, and pepper. Stir well.\n6. Cover the skillet with foil and bake for 2 hours, or until the pecitos are tender and slightly browned.\n7. Serve hot as a main dish or side dish.\n\nEnjoy your delicious Milanesa de Pecito!",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 262
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure! Here's a simple recipe for Challah:\n\nIngredients:\n- 2 cups all-purpose flour\n- 1/4 cup unsalted butter, cold and cubed\n- 1/4 cup granulated sugar\n- 1 egg\n- 1 teaspoon salt\n\nInstructions:\n1. Preheat your oven to 350°F (175°C).\n2. In a large mixing bowl, combine the flour and salt.\n3. Add the cubed butter and use a pastry cutter or your fingers to work it into the flour mixture until it resembles coarse crumbs.\n4. Add the egg and stir until well combined.\n5. Fold in the remaining flour and salt.\n6. Transfer the dough to a greased loaf pan.\n7. Bake for about 45 minutes or until the top is golden brown.\n8. Remove from the oven and let cool on a wire rack before slicing.\n\nEnjoy your delicious homemade Challah!",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 192
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "Some big cat hybrids include the Bengal tiger, the Sumatran tiger, the Orinoco bear, and the Sumatran orangutan.\n\nBengal tiger: The Bengal tiger is one of the largest cats in the world and can weigh up to 150 pounds. It has a long, slender body with a broad head and a short tail. It is also known for its powerful jaws and sharp claws.\n\nSumatran tiger: The Sumatran tiger is smaller than the Bengal tiger but still larger than any other cat. It weighs between 60-80 pounds and has a longer, more slender build compared to the Bengal tiger. Its coat is usually brown or black, with white spots on its face and back.\n\nOrinoco bear: The Orinoco bear is a small, medium-sized cat that weighs around 20 pounds. It has a short, stocky build and a large head. It is also known for its distinctive spotted coat, which is similar to the coat of the jaguar.\n\nSumatran orangutan: The Sumatran orangutan is the only species of great ape that lives in Southeast Asia. It is about the size of a small dog and weighs around 30 pounds. It has a long, slender body and a wide, flat nose. It is also known for its bright orange fur and its ability to use tools.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 281
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The Miami Cuban Link Chain is a stunning piece of jewelry that features the iconic image of a Cuban flag in gold and silver, with intricate details of the country's history and culture. The link chain measures approximately 10 inches long and has a total weight of around 3 ounces.\n\nThis link chain is made from high-quality sterling silver, which is known for its durability and beauty. It is perfect for adding a touch of glamour to any outfit or as a thoughtful gift for someone special.\n\nThe link chain comes in two different colors: gold and silver. Gold is a popular choice because it adds a warm and inviting color to the necklace, while silver adds a subtle elegance to the design.\n\nOverall, the Miami Cuban Link Chain is an excellent addition to any jewelry collection, whether you're looking for a unique and stylish accessory or simply want to add some extra flair to your wardrobe.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 176
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "Yes, the Liebherr LTM 11200-9.1 hypothetically can lift Mount Everest. The LTM 11200 is a multi-purpose helicopter that can be used for various purposes such as transporting people and cargo, providing emergency medical services, and conducting scientific research. It has a maximum takeoff weight of 35 tons and can fly at an altitude of up to 48,000 feet. Therefore, it would be able to transport people and equipment to the summit of Mount Everest.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 111
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI hope this letter finds you well. I am reaching out to you today because I believe that your business is in dire need of a professional editor/publisher who can bring out the best in your writing.\n\nAs a seasoned writer, I have seen firsthand how important it is to have an editor/publisher who can provide guidance and feedback on your work. A good editor/publisher will not only help you improve your writing but also ensure that your work is polished and ready for publication.\n\nThat's why I propose that we collaborate with Skinny Brown Dog Media to become a ghost writer for your book Unbreakable Confidence. As a ghost writer, we will take on the role of editing and proofreading your manuscript, ensuring that it meets all of our high standards.\n\nWe understand that writing a book can be a daunting task, especially when you're just starting out. That's why we'll work closely with you throughout the process, providing you with resources and support to make sure that you're getting the most out of your writing experience.\n\nWe believe that having a ghost writer like ourselves can greatly benefit your book. We know that your writing skills are unique, and we want to help you leverage those strengths to create something truly exceptional.\n\nThank you for considering us as your ghost writer. We look forward to working together to bring your book to life.\n\nSincerely,\n\n[Your Name]",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 278
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "The attribute is \"brand\" with the value \"SAMSUNG\".",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 14
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hi there! I'm Jane, an experienced tech enthusiast who's always been fascinated by the world of design and technology. My passion for coding has led me to pursue my career as an architect, where I can combine my love for design with my technical skills to create innovative solutions that solve real-world problems. In my spare time, I enjoy exploring new technologies and learning about how they can be used to improve our lives. Thank you for taking the time to read my profile!",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 95
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "- Copper wire\n- Brass screwdriver\n- Screwdriver tip\n- Wire cutters\n- Needle-nose pliers\n- Wire strippers\n- Electrical tape\n- Black paint or marker for marking wires and screws\n- Pliers (optional)\n- Wire stripper\n- Wire cutter\n- Wire braid\n- Wire nuts\n- Wire connectors\n- Wire ties\n- Wire wrapping material (such as duct tape)",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 87
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "The cost of supplies for creating the DIY water chiller is estimated as follows:\n\n- Ice-maker: $50\n- Icebox/cooler: $30\n- Temperature regulator: $20\n- Aquarium pump x2: $40\n- Power supply: $60\n\nTotal cost = $50 + $30 + $20 + $40 + $60 = $200\n\nTherefore, the total cost for creating the DIY water chiller is $200.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 106
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "To perform leg raises, you will need to follow these steps:\n\n1. Stand with your feet shoulder-width apart and your arms at your sides.\n2. Lift one foot up towards the ceiling while keeping it straight out in front of you.\n3. Lower that foot back down towards the ground while keeping it straight out in front of you.\n4. Repeat on the other side.\n\nThis exercise is great for building strength in your legs and improving balance. You can do this exercise anywhere or anytime as long as you have access to some sturdy surfaces like a chair or table. It's also a good way to improve posture and reduce stress on your lower back.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 131
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 donut franchise companies in the United States.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 18
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "JoJo Siwa is famous for her paintings of animals, particularly cats and dogs. She was born in 1927 and lived in the United States until she passed away in 1985. Her works often feature bold colors and vivid imagery, capturing the essence of life and nature.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 61
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is common for female spiders to eat males during mating season. However, this behavior can vary from species to species and may not always be observed. It's best to avoid teasing or touching your boyfriend while he is mating with another spider.\n\nIf you do decide to try eating him, make sure to keep your hands clean and away from his abdomen to prevent any injuries. Also, consider wearing gloves if you plan on handling him after sex.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 90
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "The little frog, Mary had a little lamb,\nAnd it was so sweet and so blue.\nIt lived in a pond by the river,\nAnd its name was Mary's little lamb.\n\nMary loved her little lamb,\nAnd she would always keep it close,\nFor it was like a friend that she could count on,\nAnd it never left her side.\n\nSo when Mary went out into the world,\nShe brought with her the little lamb too,\nAnd they were both happy and content,\nTogether, they made their home in the woods.\n\nFrom then on, Mary and her little lamb,\nWere friends forevermore,\nAnd they knew how much they meant to each other,\nAnd they would always remember Mary's little lamb.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 142
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "The United States has several territories, which are areas of land and water that are not part of the country's mainland but are still considered to be part of the United States. These territories include Alaska, Hawaii, Puerto Rico, American Samoa, Guam, the Northern Mariana Islands, and the Virgin Islands. The U.S. Has also established diplomatic relations with these territories, as well as with other countries around the world.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 84
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "The bombing of Libya was a series of attacks carried out by the United States, Britain and France against targets in Tripoli, Benghazi, and other cities across the country. The attacks were launched during the Arab Spring protests that began in 2011 and continued until the overthrow of Muammar Gaddafi in 2014.\n\nThe first attack took place on March 15th, 2011, when a suicide bomber detonated a bomb at a crowded market in Tripoli. The attack killed over 30 people and injured hundreds more. This was followed by several more attacks in the following weeks, including a bombing of a government building in Benghazi on April 27th, which killed at least 60 people.\n\nIn total, the bombing campaign resulted in the deaths of over 800 people and the destruction of over 1,000 buildings in Tripoli alone. The attacks also caused significant damage to infrastructure and transportation systems, as well as disrupting the lives of millions of Libyans who had been living under Gaddafi's oppressive regime for decades.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 224
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "Here are some steps you can take:\n\n1. Make sure your cat is comfortable with the new location: make sure that your cat is used to the new location by gradually introducing her to it over several weeks.\n\n2. Provide plenty of fresh water: cats need access to clean water at all times, so make sure they have access to fresh water throughout the day.\n\n3. Keep an eye on litter box usage: keep an eye on how often your cat uses the litter box and adjust as needed. If she stops using the litter box completely, try changing the litter or adding more litter.\n\n4. Consider training: if your cat still doesn't use the litter box after trying these steps, consider training her to use it. You can teach her to use the litter box by rewarding her when she does so.\n\n5. Be patient: remember that it may take time for your cat to get used to the new location and the new litter box. Be patient and give her time to adjust.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 198
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to make your cell phone battery last longer:\n\n1. Keep it clean: Make sure that the battery is kept clean and dry, as this can cause corrosion and shorten its lifespan.\n\n2. Avoid overcharging: Overcharging your battery can lead to short circuits and damage the battery itself.\n\n3. Use a good charger: A good charger will help keep your battery charged for longer periods of time.\n\n4. Store it properly: Store your battery in a cool, dry place away from direct sunlight or heat sources.\n\n5. Replace batteries regularly: If you have an old battery, replace it with a new one every few months or so.\n\n6. Consider using a rechargeable battery: Rechargeable batteries are more efficient than disposable batteries and can last much longer.",
+    "generator": "dpo_hh__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 156
+  }
+]

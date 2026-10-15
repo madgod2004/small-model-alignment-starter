@@ -1,0 +1,6 @@
+20 prompts, 0 already in checkpoint, 20 to generate
+The tokenizer you are loading from '/kaggle/input/notebooks/mahadbhatti21/notebook9f00e4205c/small-model-alignment-starter/outputs/sft/checkpoints/best' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+`torch_dtype` is deprecated! Use `dtype` instead!
+  generated 16/20
+  generated 20/20
+Wrote 20 generations to outputs/pilot/sft__greedy.json (4 hit max_new_tokens)

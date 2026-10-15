@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse websites or search for specific products online. However, here are some popular and reliable electric saws that you can consider:\n\n1. cove 3000 series - this is a high-quality electric saw with a wide range of features including adjustable blade height, automatic cut-off function, and multiple attachments.\n\n2. mitsubishi axio 5000 series - this is another popular electric saw with a powerful motor and a variety of cutting options including diamond blades, carbide blades, and stainless steel blades.\n\n3. hewlett packard cordless electric saw - this is an affordable option with a compact size and easy-to-use controls.\n\n4. dremel electric saw - this is a versatile electric saw with a large selection of attachments and a user-friendly interface.\n\n5. sas 6000 series - this is a premium electric saw with advanced features such as a digital display, automatic blade feed, and a built-in power supply.\n\nultimately, it's best to research and compare different models before making a purchase decision.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 221
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Sure! Here's a recipe for Milanesa de Pecito:\n\nIngredients:\n- 1 lb. Pecitos de Pollo (roast chicken)\n- 2 tbsp. Olive oil\n- 1 onion, chopped\n- 3 cloves garlic, minced\n- 1 can (14 oz) diced tomatoes\n- 1 can (15 oz) tomato sauce\n- 1 tsp. Cumin\n- 1 tsp. Coriander\n- Salt and pepper to taste\n- Fresh cilantro, chopped\n\nInstructions:\n1. Preheat the oven to 375°F.\n2. In a large skillet over medium-high heat, add olive oil and cook onions until they're soft and translucent.\n3. Add garlic and cook for another minute or two.\n4. Add the roasted chicken to the skillet and cook for about 8-10 minutes, stirring occasionally, until it's browned on all sides.\n5. Remove the chicken from the skillet and set aside.\n6. In the same skillet, add the diced tomatoes and tomato sauce and stir well.\n7. Add cumin, coriander, salt, and pepper to taste.\n8. Pour the mixture into the skillet with the chicken and stir everything together.\n9. Cover the skillet with foil and bake for 2 hours, or until the chicken is cooked through and the sauce has thickened.\n10. Serve hot with fresh cilantro.\n\nEnjoy your delicious and authentic Milanesa de Pecito!",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 308
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure! Here's a recipe for Challah:\n\nIngredients:\n- 2 cups all-purpose flour\n- 1/4 cup granulated sugar\n- 1/4 tsp salt\n- 3 large eggs\n- 1 tbsp olive oil\n- 1 tsp active dry yeast\n- 1 tsp honey (optional)\n- 1/2 tsp dried herbs (such as thyme or rosemary)\n\nInstructions:\n\n1. In a large mixing bowl, combine the flour, sugar, and salt.\n\n2. Add the eggs one at a time, beating well after each addition.\n\n3. Gradually add the olive oil and mix until the dough comes together.\n\n4. Knead the dough on a floured surface for about 5 minutes until it becomes smooth and elastic.\n\n5. Cover the dough with plastic wrap and let it rest in a warm place for 30 minutes.\n\n6. Preheat your oven to 375°F (190°C).\n\n7. On a lightly floured surface, roll out the dough into a circle about 8 inches in diameter.\n\n8. Place the dough onto a greased baking sheet and sprinkle with the remaining flour.\n\n9. Bake for 10-12 minutes, or until the edges start to turn golden brown.\n\n10. Remove from the oven and let cool completely on the baking sheet before slicing and serving.\n\nEnjoy your delicious homemade Challah!",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 289
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "1. Bengal tigers and Siberian tigers: This hybrid is known as the Bengal Siberian tiger, which was created by crossing a Bengal tiger with a Siberian tiger.\n\n2. Snow leopards and jaguars: The result of this hybridization is called the snow leopard-jaguar, which has been observed in the wild in Nepal and India.\n\n3. Asian elephants and African elephants: The result of this hybridization is called the Asian-African elephant, which has been found in Kenya and Tanzania.\n\n4. Giant pandas and domestic cats: The result of this hybridization is called the giant panda-cat, which has been observed in China.\n\n5. Domestic cats and lions: The result of this hybridization is called the lion-cat, which has been observed in Africa and Asia.\n\n6. Domestic cats and cheetahs: The result of this hybridization is called the cheetah-cat, which has been observed in South Africa.\n\n7. Domestic cats and minks: The result of this hybridization is called the mink-cat, which has been observed in Canada and the United States.\n\n8. Domestic cats and raccoons: The result of this hybridization is called the raccoon-cat, which has been observed in North America.\n\n9. Domestic cats and wolves: The result of this hybridization is called the wolf-cat, which has been observed in Europe and Asia.\n\n10. Domestic cats and gilts: The result of this hybridization is called the gilts-cat, which has been observed in Australia.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 313
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The Miami Cuban Link Chain is a stunning piece of jewelry that features the iconic image of a Cuban flag in gold and silver, with intricate details and patterns woven throughout. The link chain measures approximately 10 inches long and has a total weight of around 3 ounces.\n\nThis link chain is made from high-quality sterling silver, which is known for its durability and resistance to wear and tear. The links themselves are crafted using delicate filigree work, creating a beautiful and intricate design that will last for years to come.\n\nThe link chain comes in two different colors: gold and silver. Gold is a popular choice for this type of jewelry due to its warm color tones and timeless appeal. Silver, on the other hand, adds a touch of elegance and sophistication to any outfit.\n\nWhether you're wearing it as a statement necklace or simply adding some extra flair to your everyday wardrobe, the Miami Cuban Link Chain is sure to impress. Its unique design and attention to detail make it an excellent addition to any collection.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 201
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "Yes, the Liebherr LTM 11200-9.1 hypothetically can lift Mount Everest. However, it is not an actual aircraft and would require significant modifications to be able to fly over the mountain. The aircraft has been designed for use in military operations and does not have the necessary equipment or technology to fly over such a high-altitude terrain.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 76
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI hope this letter finds you well. I am reaching out to you today with an exciting opportunity to work with your team on a project that will not only enhance your business but also provide you with valuable insights into the publishing industry.\n\nAs a seasoned editor/publisher, I have extensive experience in working with writers and publishers. My expertise lies in ensuring that our clients' works meet the highest standards of quality and professionalism. With years of experience, I can help you achieve your goals and create a successful publication that resonates with your target audience.\n\nOur team is highly skilled and experienced in various aspects of the publishing industry, including copywriting, editing, proofreading, and distribution. We understand the importance of creating a cohesive and engaging narrative that captivates readers from start to finish. Our goal is to ensure that every piece we produce is polished, professional, and meets all the necessary requirements.\n\nWe believe that Unbreakable Confidence is a compelling story that has the potential to become a bestseller. As a writer, it's essential to know how to craft a compelling narrative that engages readers and keeps them coming back for more. We specialize in helping authors develop their writing skills and hone their craft, which will ultimately lead to success in the publishing industry.\n\nIf you're interested in learning more about our services and how we can help you achieve your goals, please feel free to contact us at [insert email address]. We look forward to hearing from you soon.\n\nSincerely,\n\n[Your Name]",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 302
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "Brand: Samsung\nColor: Black",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 7
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hey there, fellow tech enthusiasts! 🚀\n\nI'm Jane, an experienced and passionate developer with over 5 years of experience in web development. I have a knack for creating user-friendly and responsive websites that deliver exceptional performance and functionality. My expertise lies in front-end development using HTML, CSS, and JavaScript. I am also skilled in designing and developing mobile applications, leveraging modern technologies like React Native and Flutter. In my spare time, I enjoy exploring new programming languages and learning from other developers. If you're looking for someone who can help you build something amazing, don't hesitate to reach out! 😊 #TechExpert #WebDev #MobileAppBuilder #FrontEndDeveloper #MobileDevelopment #JavaScript #ReactNative #Flutter #DesigningMobileApplications #LearningNewTechnologies #Experience #CareerGoals #FutureGoals #SuccessStory #SelfMotivation #Inspiration #Advice #Tips #AdviceForBeginners #AdviceForAdvancedDevelopers #AdviceForSeniorDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers #AdviceForFullStackDevelopers",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "1. Coffee beans (for brewing)\n2. Water (for brewing)\n3. Measuring cup or scale\n4. Thermometer\n5. Alcohol thermometer\n6. Glass jar with lid\n7. Paper towel\n8. Cotton swab\n9. Pen or marker for writing notes\n10. Label maker or label stick\n11. Ruler or measuring tape\n12. Pliers or wire cutters\n13. Safety goggles\n14. Dust mask\n15. Protective gloves\n16. Work clothes and shoes\n17. Safety glasses\n18. Safety helmet\n19. Safety harness or safety net\n20. Fire extinguisher or carbon monoxide detector.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 147
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "The cost of supplies for creating the DIY water chiller is estimated as follows:\n\n- Ice-maker: $50\n- Icebox/cooler: $30\n- Temperature regulator: $20\n- Aquarium pump x2: $40\n- Power supply: $60\n\nTotal cost = $50 + $30 + $20 + $40 + $60 = $200\n\nTherefore, the total cost for creating the DIY water chiller is $200.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 106
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "1. Begin in a standing position with your feet hip-width apart.\n2. Lift one leg up and over your head, keeping it straight out in front of you.\n3. Lower the other leg back down to the starting position.\n4. Repeat on the opposite side.\n5. Continue alternating legs until you have lifted all four legs up and over your head.\n6. Hold this position for 10-15 seconds before switching sides and repeating the process.\n7. End by resting for a few minutes or as long as desired.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 109
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 donut franchise companies in the United States.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 18
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "JoJo Siwa is known for her unique and innovative approach to fashion design, which combines traditional African textiles with modern technology and materials. She has created pieces that blend the beauty of Africa with contemporary styles, creating a fusion of cultures and styles. Her designs often incorporate intricate patterns, vibrant colors, and bold prints, making them both visually stunning and culturally significant.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 72
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is possible for females to eat males during sexual arousal. However, this behavior can be dangerous and may lead to injury or even death. It's best to avoid such situations as much as possible.\n\nIf you do decide to engage in sexual activity with your boyfriend, make sure to communicate openly and honestly about your intentions and expectations. This could include discussing any concerns or fears that you have about eating males during sex. Additionally, consider seeking advice from a healthcare professional or a licensed sex therapist who specializes in sexual health issues.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 106
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "Mary had a little frog,\nWith a long, slimy tail.\nIt was so cute and cuddly,\nThat Mary loved it more.\n\nOne day, Mary saw a pond,\nAnd she thought it would be fun,\nTo catch some fish with her hand,\nAnd let them swim in the water.\n\nShe took a handful of dirt,\nAnd put it on the bottom of the pond,\nThen she threw the frog into the water,\nAnd watched as it swam away.\n\nMary laughed and cried,\nAs the frog floated away,\nBut soon enough, the pond was empty,\nAnd Mary knew that the frog was gone.\n\nSo Mary went back home,\nAnd told her friends what happened,\nThe frog was caught by a cat,\nAnd it was thrown into the river.\n\nMary felt sad and sorry,\nFor the frog was lost forever,\nBut she knew that she could never forget,\nThe joyous days when she held its skin.\n\nSo Mary decided to keep the frog's memory alive,\nBy keeping it safe in her heart,\nAnd always thinking of all the times,\nWhen Mary held its sweet touch.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 218
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "US territories are areas of the United States that are not part of the country's mainland but are controlled by the federal government. These territories include Alaska, Hawaii, Puerto Rico, American Samoa, Guam, and the Northern Mariana Islands. They are often referred to as \"federally recognized territories\" or \"federally administered territories.\" The U.S. Constitution grants these territories limited powers and responsibilities, such as managing their own affairs and maintaining diplomatic relations with other countries.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 95
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "Yes, here is some information about the bombing of Libya:\n\nOn April 20, 1986, Libyan forces launched an air attack against Tripoli airport, killing at least 35 people and injuring over 400 others. The attack was carried out by a group of Libyan military personnel known as the \"Libyan National Army.\" The attack was part of a larger campaign to overthrow Muammar Gaddafi's regime in Libya.\n\nThe bombing of Tripoli airport was one of several attacks that took place during the early days of Gaddafi's rule in Libya. In addition to the bombing of Tripoli airport, other targets included the offices of the United Nations and the headquarters of the Organization of Petroleum Exporting Countries (OPEC).\n\nThe bombing of Tripoli airport was seen as a major blow to Gaddafi's regime and helped to bring pressure to bear on him to step down from power. However, it also led to further instability in Libya and contributed to the fall of Gaddafi's regime in 2011.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 211
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "Here are some steps you can take:\n\n1. Make sure your cat is comfortable with the new location: Before leaving the litter box, make sure your cat is comfortable with it by changing its position or moving it around.\n\n2. Provide fresh food and water: Ensure that your cat has access to fresh food and water at all times.\n\n3. Clean the litter box regularly: Clean the litter box daily to prevent odors from building up.\n\n4. Check the litter box frequently: Check the litter box every day to see if there's any waste in it.\n\n5. Consider adding a litter tray: If your cat still uses the litter box, consider adding a litter tray to help her avoid accidents.\n\n6. Speak to your veterinarian: If your cat continues to use the litter box despite these changes, speak to your veterinarian about further treatment options.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 169
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to make your cell phone battery last longer:\n\n1. Keep it clean: Clean the battery regularly, especially after each use or before storing it in a dry place.\n\n2. Avoid overcharging: Overcharging can damage the battery and shorten its lifespan. Only charge the battery when necessary and avoid using it for extended periods of time.\n\n3. Use a good charger: A high-quality charger will help prolong the life of your battery. Make sure to follow the manufacturer's instructions carefully.\n\n4. Store it properly: Store your battery in a cool, dry place away from direct sunlight. Do not expose it to extreme temperatures or moisture.\n\n5. Replace batteries regularly: If you have multiple cell phones, replace them every 6 months or so. This ensures that they get charged and used efficiently.\n\n6. Consider upgrading to a better battery: If your current battery is already old, consider upgrading to a newer one with better performance and longevity.",
+    "generator": "sft__rp1.1",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 191
+  }
+]

@@ -1,0 +1,13 @@
+# Main decoding setting for the final comparison: greedy + modest repetition penalty 1.1.
+# Chosen by the decoding pilot on 20 held-out prompts (outputs/pilot/): it removes most greedy
+# loops with the least distortion. Identical for every model; greedy (generation.yaml) is kept as a check.
+prompt_format: chatml
+batch_size: 16
+max_new_tokens: 512
+do_sample: false          # greedy
+temperature: 1.0          # unused when greedy
+top_p: 1.0                # unused when greedy
+repetition_penalty: 1.1      # chosen by the decoding pilot (notebooks/05a, outputs/pilot/)
+no_repeat_ngram_size: 0
+dtype: fp16
+seed: 42

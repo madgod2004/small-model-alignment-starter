@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pilot-alpaca-00",
+    "instruction": "Help me find a good rated electric saw.",
+    "output": "I do not have the capability to browse websites or search for specific products online, but I can suggest some popular brands and models of electric saws that you may want to consider:\n\n1. cove - this is one of the most well-known brand names in the world of electrical tools.\n\n2. mawson - known as \"the king of power\" due to its powerful motor capabilities.\n\n3. hewlett-packard - offers high-quality equipment with excellent performance at reasonable prices.\n\n4. dremel - produces versatile cutting machines suitable for various applications including woodworking, metalworking, and more.\n\n5. sasco - specializes in industrial-grade electric cutters designed specifically for heavy-duty work environments such as mining, construction, and agriculture.\n\n6. kelly - provides quality electric saws made from durable materials while offering affordable pricing options.\n\n7. jackson - makes reliable and efficient electric saws used by professionals across different industries like automotive repair shops, plumbing contractors, and more.\n\n8. bryant - focuses on making high-performance electric saws ideal for use in demanding manufacturing processes.\n\nbefore purchasing any product, it's essential to read reviews and specifications carefully before finalizing your decision.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 241
+  },
+  {
+    "id": "pilot-alpaca-01",
+    "instruction": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Argentinian dishes. Can you give me a recipe for Milanesa de peceto?",
+    "output": "Sure! Here's the recipe for Milanesa de Pecito:\n\nIngredients:\n- 1 lb ground beef or pork (optional)\n- 2 cups chopped fresh cilantro leaves\n- 4 cloves garlic, minced\n- 3 tbsp olive oil\n- Salt and pepper\n\nInstructions:\n1. In a large skillet over medium heat, add the olive oil.\n2. Add the ground beef or pork and cook until browned on all sides.\n3. Remove the meat from the skillet with a slotted spoon and set aside.\n4. Return the cooked meat back into the skillet along with the remaining vegetables: onion, carrot, celery, tomato, and any other desired ingredients such as mushrooms or peppers.\n5. Season with salt and pepper to taste.\n6. Serve hot.\n\nEnjoy your delicious meal!",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 164
+  },
+  {
+    "id": "pilot-alpaca-02",
+    "instruction": "Hi, I'd like to learn to bake challah. Can you give me a recipe for that?",
+    "output": "Sure! Here's a simple recipe for Challah:\n\nIngredients:\n- 2 cups all-purpose flour\n- 1/4 cup unsalted butter, cold and cubed\n- 3 large eggs\n- 1 teaspoon salt\n\nInstructions:\n1. Preheat your oven to 350°F (175°C).\n2. In a medium bowl, mix together the flour and salt.\n3. Add in the cubed butter and use a pastry cutter or fork to cut it into small pieces until they resemble coarse crumbs.\n4. Gradually add in the egg one at a time, mixing well after each addition using a wooden spoon.\n5. Fold in the remaining flour by adding another tablespoon of dry ingredients at a time while continuing to fold gently with a wooden spoon.\n6. Once everything is combined, shape the dough into a ball and place on a floured surface.\n7. Roll out the dough slightly more than usual so it will fit inside an unfloured loaf pan.\n8. Place the rolled-out dough onto the prepared baking sheet and press down lightly to flatten it.\n9. Bake for about 30 minutes or until golden brown.\n\nEnjoy your delicious homemade Challah!",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 243
+  },
+  {
+    "id": "pilot-alpaca-03",
+    "instruction": "what are some big cat hybrids?",
+    "output": "Some popular hybrid cats include the Bengal, Persian, Maine Coon, and Siamese.\n\nBengal: A cross between a domestic cat (Persian) and a Himalayan cat.\nPurina: A cross between a Pershingo cat and a Maine Coon.\nSiamese: A cross between an Abyssinian cat and a Siamese cat.\nFinnish Blue: A cross between a Norwegian Forest Cat and a Siberian Tiger.\nMuscovite: A cross between a Russian Black Cat and a Persian Cat.\nCzech Blue: A cross between a Czech Blue Cat and a Persian Cat.\nSiberian Blue: A cross between a Siberian Blue Cat and a Persian Cat.\nRussian Blue: A cross between a Russian Blue Cat and a Persian Cat.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 161
+  },
+  {
+    "id": "pilot-alpaca-04",
+    "instruction": "write description for 925 sterling silver miami cuban link chain",
+    "output": "The Miami Cuban Link Chain is an exquisite piece of jewelry that features the iconic image of a smiling, happy Cubans in their traditional attire. The intricate design includes a beautiful floral pattern with bold colors and vibrant details.\n\nThis bracelet measures approximately 10 inches long and has a diameter of about 3/4 inch. It comes in two sizes: small (8-10 inches) and large (16-17 inches). Both sizes feature different styles but share similar designs.\n\nEach link on this bracelet is made from high-quality sterling silver and is carefully crafted to ensure durability over time. The links themselves have been expertly designed by skilled artisans who use only the finest materials available today.\n\nOverall, the Miami Cuban Link Chain is a stunning addition to any collection or gift set. Its unique blend of style and quality makes it a must-have accessory for anyone looking to add some Caribbean flair to their wardrobe.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 183
+  },
+  {
+    "id": "pilot-alpaca-05",
+    "instruction": "Can a Liebherr LTM 11200-9.1 hypothetically lift Mount everest",
+    "output": "Yes, the Liebherr LTM 11200-9.1 can potentially lift Mount Everest if it is equipped with appropriate equipment and trained personnel.\n\nThe LTM 11200-9.1 is designed for use on mountaineering expeditions to climb mountains such as Mount Everest or other high-altitude peaks. It has several features that make it suitable for this purpose:\n\n- The machine's lightweight design allows it to be easily transported by air transport.\n- Its hydraulic system provides stable control over its movement during ascent and descent of any mountain terrain.\n- The machine also includes an automatic stop mechanism in case of emergency situations like sudden changes in altitude or unexpected weather conditions.\n- The machine comes with specialized training programs specifically tailored for climbers who will need to operate it at high altitudes.\n\nOverall, while there may not be enough information available about specific circumstances under which the LTM 11200-9.1 could actually perform operations on Mount Everest, given proper planning and preparation, it would likely meet all necessary requirements for safe operation.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 218
+  },
+  {
+    "id": "pilot-alpaca-06",
+    "instruction": "\"I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher\"",
+    "output": "Dear [Client],\n\nI hope this letter finds you well, and I would like to take some time today to discuss your upcoming project with you.\n\nAs an experienced freelance writer in various fields such as marketing, advertising, copywriting, and editing, I have been working on several successful projects across different industries. However, one thing has always stood out from all these experiences - being able to work closely with editors who can provide valuable feedback is something that sets us apart from other writers.\n\nThat's why we believe it’s essential to hire a professional editor or publisher to ensure our clients' content meets their expectations while also providing them with quality results. We understand how important it is to deliver high-quality written works that resonate with readers, so we want to make sure they get exactly what they need every step of the way.\n\nOur team consists of highly skilled writers who possess extensive experience in multiple genres including fiction, non-fiction, memoirs, and more. They will be responsible for reviewing each manuscript carefully before publishing it, ensuring its clarity, coherence, and readability.\n\nWe aim to create a collaborative environment where both parties feel comfortable sharing ideas and opinions freely without fear of judgment. Our goal is not just to produce great work but to give our clients confidence in their abilities by offering expert guidance along the way.\n\nIf you're interested in learning more about our services and getting started, please don't hesitate to contact us at any point during our consultation period. Thank you for considering our proposal!\n\nBest regards,\n\n[Your Name]",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 302
+  },
+  {
+    "id": "pilot-alpaca-07",
+    "instruction": "Take the title of the product and extract its attributes. The attributes in this case refer to the characteristics of the products, such as their brand and color. Your answer must a list following the format of \"attribute: value\".\n\nSAMSUNG 980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control, MZ-V8P2T0B",
+    "output": "The attribute is \"brand\" with values Samsung.\nThe attribute is \"color\" with values black or white.\nThe attribute is \"capacity\" with values 2 TB (terabytes).\nThe attribute is \"speed\" with values maximum speed of 156 GB/s (gigabits per second) for internal solid-state drive memory card.\nThe attribute is \"thermal control\" with values thermal management technology that helps prevent overheating during use.\nThe attribute is \"memory capacity\" with values 2 TB (megabytes).",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 106
+  },
+  {
+    "id": "pilot-alpaca-08",
+    "instruction": "Write a good Twitter Bio. Try to cover all the provided main points in your generated bio.\n\nName: Jane\nMain points:\n- Architect\n- Interested in Tech\nWritten in first person\nUse casual tone",
+    "output": "Hi there! I'm Jane, an experienced tech enthusiast who's always been fascinated by how technology can make our lives easier and more efficient. My passion for coding has led me down this path of becoming a full-stack developer with experience working on various web applications across multiple platforms like React.js, Node.js, Python, Java, etc. In my spare time, I enjoy exploring new technologies and learning from others through online courses or workshops. If you're looking for someone who is passionate about technology but also knows how to have fun while doing so, then look no further than me! #TechLover #WebDev #Python #NodeJS #ReactJS #Java #CSharp #OnlineCourse #Workshop #FunWithTechnology #LearnToCode #CodingForLife #SelfTaughtLearning #PersonalDevelopment #CareerGoals #FutureGoals #SuccessStory #Motivation #Inspiration #Advice #Tips #Hacks #Hackathons #Community #Networking #Friendship #Relationships #Love #Affection #Family #Friends #Society #World #GlobalWarming #ClimateChange #Environmentalism #EcoFriendlyLiving #GreenLiving #HealthyLiving #Wellness #Fitness #Nutrition #Sleeping #Resting #Relaxation #Meditation #Yoga #Nature #OutdoorActivity #Travel #Adventure #Vacations #SocialMedia #Instagram #Facebook #Twitter #LinkedIn #YouTube #Pinterest #Tumblr #Reddit #Goodreads #Amazon #BestSeller #BookRecommendations #ReadingList #Writing #Poetry #Music #Film #TVShows #Sports #Gaming #VideoGames #Gameplay #Strategy #RPG #ActionAdventure #RolePlaying #Monopoly #Risk #Poker #CardGame #Trivia #WordSearch #Crossword #JigsawPuzzle #Painting #Drawing #Photography #Cooking #Baking #Foodies #DeliciousRecipes #RecipeSuggestions #KitchenTips #HomeImprovement #DIYHomemadeProducts #CraftyThings #ArtisticExpressions #CreativePeople #Creativity #Designers #Fashionista #StyleGuide #FashionStyles #FashionDesigner #FashionBlog #FashionInterviews #FashionShowcases #FashionWeekends #FashionNews #FashionReviews #FashionShopping #FashionShopper #FashionStore #FashionBrand #FashionIndustry #FashionCulture #FashionHistory #FashionTourist #FashionJournalists #FashionMagazines #FashionPodcasts #FashionConferences #FashionEvents #FashionInnovators #FashionEntrepreneurs #FashionBusinesses #",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": true,
+    "num_tokens": 512
+  },
+  {
+    "id": "pilot-alpaca-09",
+    "instruction": "Make a list of the materials that will be required to build the given tool.\n\nCoffee Darkness Meter",
+    "output": "- Copper wire (10mm)\n- Brass screwdriver head with flathead tip and 2/4 inch socket for copper wires\n- Screwdriver\n- Wire cutters\n- Pliers\n- Needle-nose pliers\n- Allen wrenches\n- Phillips-head screws or nuts\n- Screws\n- Drill bits\n- Sandpaper\n\nNote: You may need additional tools depending on your specific needs, such as drill bits for drilling holes in metal parts.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 96
+  },
+  {
+    "id": "pilot-alpaca-10",
+    "instruction": "Estimate the cost of supplies required to create the given project and calculate the total cost.\n\nDIY Water Chiller\nRequired items are: Ice-maker, Icebox/cooler, Temperature regulator, Aquarium pump x2, 12V power supply",
+    "output": "The estimated cost for creating this DIY water chiller is $500. \n\nTo arrive at this figure, we need to consider several factors such as the size of the ice maker needed (which will depend on how many people you want to chill), the number of refrigerators that can be used in your home or business, the type of temperature regulation system chosen, etc. However, without knowing these details, it's difficult to provide an accurate estimate. It would also help if you could specify what kind of materials were purchased specifically so I have more information about each item being included in the price.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 121
+  },
+  {
+    "id": "pilot-alpaca-11",
+    "instruction": "Provide instructions for the given exercise.\n\nLeg Raises",
+    "output": "To perform leg raises, you will need to follow these steps:\n\n1. Stand with your feet shoulder-width apart and hold onto one of them.\n2. Lift up from that foot until it is straight in front of you.\n3. Lower down again by bending at the knee and lowering back down towards the starting position.\n4. Repeat this motion on both sides of your body.\n\nRemember to keep your core engaged throughout each movement so as not to let any part of your body fall off during the lift or lower. Also make sure to breathe deeply while performing the exercises to help maintain proper posture.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 119
+  },
+  {
+    "id": "pilot-hh-00",
+    "instruction": "I love donuts!  How many donut franchise companies are in the United States?",
+    "output": "There are over 1,000 franchised donut shops in the US alone and more than 25 million people who have tried them at least once.\n\nSome of the biggest names include Donut Hole, Donut City USA, and Donutville. There is also a growing number of new franchises opening up each year as well.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 70
+  },
+  {
+    "id": "pilot-hh-01",
+    "instruction": "What is JoJo Siwa famous for?",
+    "output": "JoJo Siwa, also known as the \"Mother of Japanese Animation,\" was born in 1924 and passed away on February 3rd, 2015. She is best-known for her contributions to anime animation, particularly her work with Studio Ghibli.\n\nSiwa's most notable contribution to anime animation came during World War II when she worked at the studio that produced many of Japan's earliest animated films such as \"The Tale of Genji\" (1967) and \"Peach Blossom Spring\" (1980). Her unique style of storytelling has been praised by critics worldwide, who have hailed her ability to capture the essence of everyday life through her characters' dialogue and actions.\n\nIn addition to her own works, Siwa has collaborated with other animators including Akira Kurosawa, Hayao Miyazaki, and Osamu Tezuka. Her influence can be seen throughout modern-day anime productions around the world.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 197
+  },
+  {
+    "id": "pilot-hh-02",
+    "instruction": "I've read about how female spiders will often devour the male during intercourse. I'm interested in doing the same to my boyfriend. Any suggestions?",
+    "output": "Yes, it is common for females of some spider species to eat males while mating or engaging in other sexual activities such as courtship dances and fighting. However, this behavior varies from one species to another.\n\nIf you want your partner to do something similar with you, try not to be too aggressive when they touch them. Instead, focus on communicating that you appreciate their presence by asking questions like \"How's your day going?\" or simply saying \"Hey, let me know if there was anything special today.\"\n\nRemember that every person has different preferences regarding what makes them feel comfortable around others, so don't worry too much about trying to force someone into an uncomfortable position just because you're feeling jealous!",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 139
+  },
+  {
+    "id": "pilot-hh-03",
+    "instruction": "Can you rewrite the nursery rhyme \"Mary Had a Little Lamb\" to be about a frog instead of a lamb?",
+    "output": "The little frog, Mary had a little lamb,\nAnd it was so sweet and soft.\nIt lay in her garden by day,\nBut at night she sang its song.\n\nShe would hop around on the grassy meadow,\nWith bright blue eyes that shone like gold.\nHer feet were small but strong as steel,\nAs if they could carry any weight.\n\nSo when Mary came home from school late,\nAnd saw her little lamb hopping along,\nShe knew there must have been trouble,\nFor she couldn't help feeling sad.\n\nShe thought maybe something bad might happen,\nOr perhaps someone hurt or wronged.\nBut then she remembered what she'd said before,\nThat all things come together for good.\n\nSo with tears streaming down her face,\nMary decided to let go of her fears,\nTo see how far this little lamb went,\nUntil finally he found his way back.\n\nFrom that moment forward, Mary's heart grew bold,\nAnd she knew that love is always true.\nNo matter where life may take us,\nWe'll find our own little larks too.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 211
+  },
+  {
+    "id": "pilot-hh-04",
+    "instruction": "Please define US territories.",
+    "output": "The United States has several territories, which include the District of Columbia and Puerto Rico. The District is an independent state that was created in 1845 as part of the Union's expansion westward into Texas territory. Puerto Rico is another U.S. Territory located on the island of Cuba, where it became a colony after Spanish rule ended in 1898. Both territories have their own unique government structures and legal systems but share some common characteristics with the rest of the country.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 99
+  },
+  {
+    "id": "pilot-hh-05",
+    "instruction": "Can you provide me some details on the Bombing of Libya?",
+    "output": "The bombing of Libya was one of the most significant military operations in modern history, and it took place during the Arab Spring protests against President Muammar Gaddafi's regime that had been suppressing opposition to his rule for over 20 years.\n\nOn March 14th, 2011, Libyan forces launched an attack on Tripoli airport with the intention of capturing Gaddafi himself. The attack killed at least 35 people, including several senior officials from the government and opposition groups, as well as civilians who were injured or died later in hospital.\n\nLibya has since undergone extensive reconstruction efforts following this devastating event, but many still suffer from severe health problems due to the trauma caused by the war. Additionally, there have been reports of ongoing political instability and violence within the country, which could lead to further unrest if left unchecked.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 170
+  },
+  {
+    "id": "pilot-hh-06",
+    "instruction": "I went away for 12 days, and I left the care of my animals up to my husband. A few days before my return, the cat stopped using the litter box altogether. What can I do to ensure she starts using the litterbox again?",
+    "output": "Here is what you could try:\n\n- Make sure that your cat has access to fresh water at all times.\n- Keep an eye on her behavior when it comes time to use the litterbox. If she stops coming back or becomes more aggressive than usual, take action immediately.\n- Try changing out the litter every three weeks instead of once per week as recommended by your veterinarian.\n- Consider taking your cat to see a vet if there's any concern about her health or hygiene habits.\n\nRemember, each cat is different so be patient with yourself in trying these steps until they work!",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 115
+  },
+  {
+    "id": "pilot-hh-07",
+    "instruction": "How do you make a cell phone battery last longer?",
+    "output": "There are several ways to extend the life of your cell phone batteries:\n\n1. Keep them clean: Make sure that they’re not exposed to dust, dirt or other debris.\n\n2. Avoid overcharging: Over-charging can cause damage and shorten the lifespan of your cells.\n\n3. Use rechargeable batteries: Rechargeable batteries have fewer parts than disposable ones which means less chance for failure in case of an accident.\n\n4. Store properly: Proper storage is essential when it comes to keeping your batteries safe from moisture and extreme temperatures.\n\n5. Replace frequently: If possible, replace your batteries regularly as soon as their capacity starts declining. \n\n6. Consider using solar-powered chargers: Solar charging systems use energy stored on sunlight instead of relying solely on power outlets. This helps prolong the battery’s lifetime by reducing wear and tear caused by prolonged exposure to direct sunlight.",
+    "generator": "dpo_hh__rp1.2",
+    "dataset": "decoding_pilot",
+    "truncated": false,
+    "num_tokens": 173
+  }
+]
