@@ -66,20 +66,8 @@ def main() -> None:
 
     output_path = Path(args.output_path)
     partial_path = output_path.with_name(output_path.name + ".partial.jsonl")
-    if output_path.exists() and not args.overwrite:
-        print(f"{output_path} already exists; skipping (use --overwrite to regenerate).")
-        return
-    if args.overwrite and partial_path.exists():
-        partial_path.unlink()
-
-    from transformers import AutoModelForCausalLM, AutoTokenizer
-
-    set_seed(args.seed)
+    meta_path = output_path.with_name(output_path.stem + ".meta.json")
     eval_rows = read_json(args.eval_set)[: args.limit]
-    done = {row["id"]: row for row in read_jsonl(partial_path)}
-    todo = [row for row in eval_rows if row["id"] not in done]
-    print(f"{len(eval_rows)} prompts, {len(done)} already in checkpoint, {len(todo)} to generate")
-
     decoding = DecodingConfig(
         max_new_tokens=args.max_new_tokens,
         do_sample=args.do_sample,
@@ -88,6 +76,29 @@ def main() -> None:
         repetition_penalty=args.repetition_penalty,
         no_repeat_ngram_size=args.no_repeat_ngram_size,
     )
+    run_settings = {"generator": args.generator, "prompt_format": args.prompt_format, "dtype": args.dtype,
+                    "num_prompts": len(eval_rows), "decoding": decoding.to_dict()}
+    # Partial checkpoints are only resumed for the same settings.
+    partial_settings_path = partial_path.with_name(partial_path.name + ".settings.json")
+    if partial_path.exists() and (args.overwrite or not partial_settings_path.exists()
+                                  or read_json(partial_settings_path) != run_settings):
+        partial_path.unlink()
+
+    if output_path.exists() and not args.overwrite:
+        previous = read_json(meta_path) if meta_path.exists() else {}
+        if all(previous.get(key) == value for key, value in run_settings.items()):
+            print(f"{output_path} already exists with identical settings; skipping (use --overwrite to regenerate).")
+            return
+        print(f"{output_path} exists but was generated with different settings; regenerating.")
+
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    set_seed(args.seed)
+    write_json(partial_settings_path, run_settings)
+    done = {row["id"]: row for row in read_jsonl(partial_path)}
+    todo = [row for row in eval_rows if row["id"] not in done]
+    print(f"{len(eval_rows)} prompts, {len(done)} already in checkpoint, {len(todo)} to generate")
+
     start_time = time.time()
     if todo:
         tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_path or args.model_path)
@@ -118,7 +129,7 @@ def main() -> None:
 
     entries = [done[row["id"]] for row in eval_rows]  # original eval-set order
     write_json(output_path, entries)
-    write_json(output_path.with_name(output_path.stem + ".meta.json"), {
+    write_json(meta_path, {
         "model_path": args.model_path,
         "config": args.config,
         "generator": args.generator,
@@ -131,8 +142,9 @@ def main() -> None:
         "num_truncated": sum(entry["truncated"] for entry in entries),
         "generation_seconds": round(time.time() - start_time, 1),
     })
-    if partial_path.exists():
-        partial_path.unlink()
+    for path in (partial_path, partial_settings_path):
+        if path.exists():
+            path.unlink()
     print(f"Wrote {len(entries)} generations to {output_path} "
           f"({sum(e['truncated'] for e in entries)} hit max_new_tokens)")
 
