@@ -1,0 +1,110 @@
+The tokenizer you are loading from 'outputs/sft/checkpoints/best' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+`torch_dtype` is deprecated! Use `dtype` instead!
+DPO run: {'policy_device': 'cuda:0', 'reference_device': 'cuda:1', 'per_device_train_batch_size': 1, 'gradient_accumulation_steps': 32, 'effective_batch_size': 32, 'train_pairs': 15000, 'val_pairs': 1000, 'total_optimizer_steps': 469, 'train_pairs_truncated': 66}
+[eval] step 0: loss=0.6931 acc=0.000 margin=0.0000
+  scheduler.step()
+step 5/469 loss=0.6866 acc=0.625 margin=0.0150 gnorm=36.718 mem=12.2G elapsed=0.6m
+step 10/469 loss=0.7063 acc=0.500 margin=-0.0119 gnorm=47.726 mem=12.2G elapsed=1.1m
+step 15/469 loss=0.6820 acc=0.438 margin=0.0395 gnorm=42.849 mem=12.2G elapsed=1.7m
+step 20/469 loss=0.6397 acc=0.688 margin=0.1204 gnorm=36.881 mem=12.2G elapsed=2.2m
+step 25/469 loss=0.6701 acc=0.625 margin=0.0651 gnorm=40.972 mem=12.2G elapsed=2.7m
+step 30/469 loss=0.7298 acc=0.438 margin=-0.0504 gnorm=50.194 mem=12.2G elapsed=3.3m
+step 35/469 loss=0.6678 acc=0.625 margin=0.1045 gnorm=47.042 mem=12.2G elapsed=3.8m
+step 40/469 loss=0.7090 acc=0.625 margin=-0.0030 gnorm=46.096 mem=12.2G elapsed=4.4m
+step 45/469 loss=0.6368 acc=0.562 margin=0.1598 gnorm=37.612 mem=12.2G elapsed=4.9m
+step 50/469 loss=0.7004 acc=0.500 margin=0.0246 gnorm=45.113 mem=13.0G elapsed=5.4m
+[eval] step 50: loss=0.6730 acc=0.584 margin=0.0821 (best)
+step 55/469 loss=0.7175 acc=0.531 margin=-0.0181 gnorm=48.621 mem=13.0G elapsed=7.0m
+step 60/469 loss=0.5954 acc=0.750 margin=0.2436 gnorm=41.831 mem=13.0G elapsed=7.6m
+step 65/469 loss=0.6672 acc=0.688 margin=0.0757 gnorm=38.711 mem=13.0G elapsed=8.1m
+step 70/469 loss=0.6376 acc=0.594 margin=0.1784 gnorm=41.847 mem=13.0G elapsed=8.7m
+step 75/469 loss=0.6401 acc=0.625 margin=0.1733 gnorm=44.055 mem=13.0G elapsed=9.2m
+step 80/469 loss=0.6799 acc=0.594 margin=0.0713 gnorm=41.435 mem=13.0G elapsed=9.8m
+step 85/469 loss=0.6662 acc=0.656 margin=0.1167 gnorm=46.765 mem=13.0G elapsed=10.3m
+step 90/469 loss=0.6815 acc=0.719 margin=0.0648 gnorm=41.000 mem=13.0G elapsed=10.9m
+step 95/469 loss=0.6666 acc=0.562 margin=0.0890 gnorm=40.717 mem=13.0G elapsed=11.4m
+step 100/469 loss=0.6845 acc=0.500 margin=0.0650 gnorm=48.113 mem=13.0G elapsed=12.0m
+[eval] step 100: loss=0.6642 acc=0.589 margin=0.1265 (best)
+step 105/469 loss=0.5837 acc=0.781 margin=0.2954 gnorm=39.964 mem=13.0G elapsed=13.6m
+step 110/469 loss=0.7308 acc=0.531 margin=-0.0040 gnorm=45.054 mem=13.0G elapsed=14.1m
+step 115/469 loss=0.6641 acc=0.594 margin=0.1029 gnorm=43.874 mem=13.0G elapsed=14.7m
+step 120/469 loss=0.7214 acc=0.406 margin=0.0414 gnorm=42.060 mem=13.0G elapsed=15.2m
+step 125/469 loss=0.6957 acc=0.562 margin=0.0817 gnorm=45.678 mem=13.0G elapsed=15.8m
+step 130/469 loss=0.6530 acc=0.562 margin=0.1505 gnorm=41.778 mem=13.0G elapsed=16.3m
+step 135/469 loss=0.6816 acc=0.625 margin=0.1172 gnorm=45.045 mem=13.0G elapsed=16.9m
+step 140/469 loss=0.7197 acc=0.531 margin=0.0031 gnorm=46.447 mem=13.0G elapsed=17.4m
+step 145/469 loss=0.6878 acc=0.656 margin=0.1269 gnorm=47.801 mem=13.0G elapsed=18.0m
+step 150/469 loss=0.7270 acc=0.625 margin=0.0152 gnorm=48.205 mem=13.0G elapsed=18.5m
+[eval] step 150: loss=0.6575 acc=0.599 margin=0.1498 (best)
+step 155/469 loss=0.7148 acc=0.594 margin=-0.0015 gnorm=42.617 mem=13.0G elapsed=20.1m
+step 160/469 loss=0.6755 acc=0.594 margin=0.1008 gnorm=41.088 mem=13.0G elapsed=20.6m
+step 165/469 loss=0.5706 acc=0.750 margin=0.3584 gnorm=36.850 mem=13.0G elapsed=21.2m
+step 170/469 loss=0.6323 acc=0.625 margin=0.2062 gnorm=42.489 mem=13.0G elapsed=21.7m
+step 175/469 loss=0.6184 acc=0.656 margin=0.2755 gnorm=37.808 mem=13.0G elapsed=22.3m
+step 180/469 loss=0.6910 acc=0.469 margin=0.1443 gnorm=44.514 mem=13.0G elapsed=22.8m
+step 185/469 loss=0.6491 acc=0.688 margin=0.1402 gnorm=41.548 mem=13.0G elapsed=23.3m
+step 190/469 loss=0.6955 acc=0.594 margin=0.0501 gnorm=39.960 mem=13.0G elapsed=23.9m
+step 195/469 loss=0.6182 acc=0.594 margin=0.2435 gnorm=39.603 mem=13.0G elapsed=24.4m
+step 200/469 loss=0.6751 acc=0.469 margin=0.0954 gnorm=48.745 mem=13.0G elapsed=25.0m
+[eval] step 200: loss=0.6555 acc=0.591 margin=0.1678
+step 205/469 loss=0.6397 acc=0.562 margin=0.2549 gnorm=42.886 mem=13.0G elapsed=26.5m
+step 210/469 loss=0.6588 acc=0.594 margin=0.1658 gnorm=39.706 mem=13.0G elapsed=27.1m
+step 215/469 loss=0.7173 acc=0.562 margin=0.0511 gnorm=40.436 mem=13.0G elapsed=27.6m
+step 220/469 loss=0.6795 acc=0.500 margin=0.0705 gnorm=44.496 mem=13.0G elapsed=28.2m
+step 225/469 loss=0.6403 acc=0.625 margin=0.2035 gnorm=39.488 mem=13.0G elapsed=28.7m
+step 230/469 loss=0.6353 acc=0.625 margin=0.1645 gnorm=45.591 mem=13.0G elapsed=29.3m
+step 235/469 loss=0.5939 acc=0.625 margin=0.3231 gnorm=37.925 mem=13.0G elapsed=29.8m
+step 240/469 loss=0.6840 acc=0.500 margin=0.1129 gnorm=42.188 mem=13.0G elapsed=30.3m
+step 245/469 loss=0.7351 acc=0.406 margin=-0.0493 gnorm=41.017 mem=13.0G elapsed=30.9m
+step 250/469 loss=0.5947 acc=0.688 margin=0.2677 gnorm=41.124 mem=13.0G elapsed=31.4m
+[eval] step 250: loss=0.6533 acc=0.602 margin=0.1553 (best)
+step 255/469 loss=0.6467 acc=0.625 margin=0.1417 gnorm=43.466 mem=13.0G elapsed=33.0m
+step 260/469 loss=0.6612 acc=0.594 margin=0.1093 gnorm=48.216 mem=13.0G elapsed=33.6m
+step 265/469 loss=0.6236 acc=0.656 margin=0.2238 gnorm=39.022 mem=13.0G elapsed=34.1m
+step 270/469 loss=0.6914 acc=0.625 margin=0.0756 gnorm=44.375 mem=13.0G elapsed=34.6m
+step 275/469 loss=0.6124 acc=0.719 margin=0.2166 gnorm=39.498 mem=13.0G elapsed=35.2m
+step 280/469 loss=0.7105 acc=0.500 margin=0.0423 gnorm=47.890 mem=13.0G elapsed=35.7m
+step 285/469 loss=0.6266 acc=0.562 margin=0.2442 gnorm=40.192 mem=13.0G elapsed=36.3m
+step 290/469 loss=0.5812 acc=0.812 margin=0.3289 gnorm=36.150 mem=13.0G elapsed=36.8m
+step 295/469 loss=0.6494 acc=0.594 margin=0.1780 gnorm=44.204 mem=13.0G elapsed=37.4m
+step 300/469 loss=0.6643 acc=0.594 margin=0.1600 gnorm=42.628 mem=13.0G elapsed=37.9m
+[eval] step 300: loss=0.6487 acc=0.620 margin=0.2028 (best)
+step 305/469 loss=0.6079 acc=0.625 margin=0.3230 gnorm=42.718 mem=13.0G elapsed=39.5m
+step 310/469 loss=0.7217 acc=0.469 margin=0.1210 gnorm=62.367 mem=13.0G elapsed=40.1m
+step 315/469 loss=0.5550 acc=0.719 margin=0.4056 gnorm=34.225 mem=13.0G elapsed=40.7m
+step 320/469 loss=0.5882 acc=0.719 margin=0.3595 gnorm=38.526 mem=13.0G elapsed=41.2m
+step 325/469 loss=0.6936 acc=0.469 margin=0.1083 gnorm=48.777 mem=13.0G elapsed=41.7m
+step 330/469 loss=0.6210 acc=0.594 margin=0.2860 gnorm=43.347 mem=13.0G elapsed=42.3m
+step 335/469 loss=0.6756 acc=0.562 margin=0.1518 gnorm=47.220 mem=13.0G elapsed=42.9m
+step 340/469 loss=0.6519 acc=0.781 margin=0.2492 gnorm=47.860 mem=13.0G elapsed=43.4m
+step 345/469 loss=0.6253 acc=0.688 margin=0.2469 gnorm=41.978 mem=13.0G elapsed=44.0m
+step 350/469 loss=0.7155 acc=0.531 margin=0.0629 gnorm=46.877 mem=13.0G elapsed=44.5m
+[eval] step 350: loss=0.6450 acc=0.611 margin=0.2191
+step 355/469 loss=0.5831 acc=0.656 margin=0.4061 gnorm=42.132 mem=13.0G elapsed=46.1m
+step 360/469 loss=0.6808 acc=0.656 margin=0.1675 gnorm=52.678 mem=13.0G elapsed=46.6m
+step 365/469 loss=0.6503 acc=0.656 margin=0.1791 gnorm=42.434 mem=13.0G elapsed=47.2m
+step 370/469 loss=0.6323 acc=0.625 margin=0.2780 gnorm=50.033 mem=13.0G elapsed=47.8m
+step 375/469 loss=0.5726 acc=0.750 margin=0.3928 gnorm=40.288 mem=13.0G elapsed=48.3m
+step 380/469 loss=0.6395 acc=0.688 margin=0.2007 gnorm=48.604 mem=13.0G elapsed=48.9m
+step 385/469 loss=0.6043 acc=0.750 margin=0.2764 gnorm=43.696 mem=13.0G elapsed=49.4m
+step 390/469 loss=0.6544 acc=0.562 margin=0.1825 gnorm=43.819 mem=13.0G elapsed=50.0m
+step 395/469 loss=0.5779 acc=0.719 margin=0.3721 gnorm=33.700 mem=13.0G elapsed=50.5m
+step 400/469 loss=0.6825 acc=0.594 margin=0.1070 gnorm=46.823 mem=13.0G elapsed=51.1m
+[eval] step 400: loss=0.6418 acc=0.617 margin=0.2247
+step 405/469 loss=0.6530 acc=0.688 margin=0.2088 gnorm=43.506 mem=13.0G elapsed=52.6m
+step 410/469 loss=0.6545 acc=0.594 margin=0.1961 gnorm=46.043 mem=13.0G elapsed=53.2m
+step 415/469 loss=0.7038 acc=0.469 margin=0.0527 gnorm=46.201 mem=13.0G elapsed=53.7m
+step 420/469 loss=0.6294 acc=0.594 margin=0.1803 gnorm=49.156 mem=13.0G elapsed=54.3m
+step 425/469 loss=0.6107 acc=0.562 margin=0.2898 gnorm=44.209 mem=13.0G elapsed=54.8m
+step 430/469 loss=0.5786 acc=0.688 margin=0.4110 gnorm=38.480 mem=13.0G elapsed=55.4m
+step 435/469 loss=0.5375 acc=0.812 margin=0.5327 gnorm=40.063 mem=13.0G elapsed=55.9m
+step 440/469 loss=0.7178 acc=0.500 margin=0.0484 gnorm=44.223 mem=13.0G elapsed=56.5m
+step 445/469 loss=0.7341 acc=0.531 margin=0.0375 gnorm=47.620 mem=13.0G elapsed=57.0m
+step 450/469 loss=0.5635 acc=0.781 margin=0.3933 gnorm=41.185 mem=13.0G elapsed=57.6m
+[eval] step 450: loss=0.6422 acc=0.620 margin=0.2163
+step 455/469 loss=0.6270 acc=0.594 margin=0.1996 gnorm=40.620 mem=13.0G elapsed=59.1m
+step 460/469 loss=0.6032 acc=0.781 margin=0.2828 gnorm=39.033 mem=13.0G elapsed=59.7m
+step 465/469 loss=0.5986 acc=0.688 margin=0.3348 gnorm=39.215 mem=13.0G elapsed=60.2m
+step 469/469 loss=0.7914 acc=0.500 margin=-0.0589 gnorm=64.215 mem=13.0G elapsed=60.6m
+[eval] step 469: loss=0.6473 acc=0.615 margin=0.2225
+Done: {'policy_device': 'cuda:0', 'reference_device': 'cuda:1', 'per_device_train_batch_size': 1, 'gradient_accumulation_steps': 32, 'effective_batch_size': 32, 'train_pairs': 15000, 'val_pairs': 1000, 'total_optimizer_steps': 469, 'train_pairs_truncated': 66, 'beta': 0.1, 'reference_checkpoint': 'outputs/sft/checkpoints/best', 'steps_completed': 469, 'best_step': 300, 'best_val_reward_accuracy': 0.62, 'final_val_metrics': {'loss': 0.6472856435775757, 'reward_accuracy': 0.615, 'reward_margin': 0.22253285970166325, 'chosen_rewards': -0.46082770863175393, 'rejected_rewards': -0.6833605663552881, 'policy_chosen_logps': -190.25562465667724, 'policy_rejected_logps': -183.667314453125}, 'skipped_steps': 3, 'train_seconds': 3699.4672026634216, 'max_memory_gb_policy': 12.988609790802002, 'max_memory_gb_reference': 4.163244247436523, 'best_checkpoint': 'outputs/dpo_hh/checkpoints/best', 'final_checkpoint': 'outputs/dpo_hh/checkpoints/final'}

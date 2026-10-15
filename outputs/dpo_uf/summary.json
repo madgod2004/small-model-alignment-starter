@@ -1,0 +1,31 @@
+{
+  "policy_device": "cuda:0",
+  "reference_device": "cuda:1",
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 32,
+  "effective_batch_size": 32,
+  "train_pairs": 15000,
+  "val_pairs": 1000,
+  "total_optimizer_steps": 469,
+  "train_pairs_truncated": 5059,
+  "beta": 0.1,
+  "reference_checkpoint": "outputs/sft/checkpoints/best",
+  "steps_completed": 469,
+  "best_step": 450,
+  "best_val_reward_accuracy": 0.729,
+  "final_val_metrics": {
+    "loss": 0.5485859409570694,
+    "reward_accuracy": 0.722,
+    "reward_margin": 0.7325326488763094,
+    "chosen_rewards": -0.24311735548451543,
+    "rejected_rewards": -0.9756500009745359,
+    "policy_chosen_logps": -338.9119542274475,
+    "policy_rejected_logps": -302.68433289337156
+  },
+  "skipped_steps": 3,
+  "train_seconds": 6132.223439693451,
+  "max_memory_gb_policy": 12.988609790802002,
+  "max_memory_gb_reference": 4.163244247436523,
+  "best_checkpoint": "outputs/dpo_uf/checkpoints/best",
+  "final_checkpoint": "outputs/dpo_uf/checkpoints/final"
+}
