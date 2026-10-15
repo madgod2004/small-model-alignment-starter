@@ -1,0 +1,33 @@
+# Task 5: TRL DPOTrainer + PEFT/LoRA persona tuning (manual §11).
+# Single T4 (the script pins CUDA_VISIBLE_DEVICES=0 so HF Trainer does not use DataParallel).
+# With a PEFT model and no ref_model, TRL uses the same network with the adapter disabled as the
+# frozen reference, so no second model copy is loaded.
+run_name: lora_dpo
+model_name_or_path: HuggingFaceTB/SmolLM2-360M-Instruct
+data_file: data/persona_lora/ramsay_style_preferences.json
+output_dir: outputs/lora_dpo
+eval_size: 20                       # held-out pairs for eval reward accuracy (seeded split)
+seed: 42
+
+# LoRA: all attention + MLP projections. Style lives in word choice and tone, which the MLP
+# blocks shape as much as attention does; r=16 keeps the adapter ~2.4% of the 360M weights.
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+
+# DPO / optimisation
+beta: 0.1
+learning_rate: 5.0e-5               # LoRA updates few parameters, so a higher LR than full-model DPO (1e-6)
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+num_train_epochs: 3
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 2      # effective batch 8 -> 25 steps/epoch on 200 pairs, 75 steps total
+per_device_eval_batch_size: 4
+max_length: 512                     # pairs are < 120 tokens, nothing is truncated
+max_grad_norm: 1.0
+weight_decay: 0.0
+fp16: true                          # T4 has no bf16; TRL 1.x defaults to bf16, so it is disabled explicitly
+logging_steps: 5
+eval_steps: 10
