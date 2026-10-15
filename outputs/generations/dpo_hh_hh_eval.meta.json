@@ -1,0 +1,20 @@
+{
+  "model_path": "/kaggle/input/notebooks/mahadbhatti21/notebookf8b015ac4e/small-model-alignment-starter/outputs/dpo_hh/checkpoints/best",
+  "config": "/kaggle/working/small-model-alignment-starter/configs/generation.yaml",
+  "generator": "qwen2.5-0.5b-dpo-hh",
+  "eval_set": "eval_sets/hh_rlhf_eval_300_seed42.json",
+  "num_prompts": 300,
+  "prompt_format": "chatml",
+  "dtype": "fp16",
+  "seed": 42,
+  "decoding": {
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0
+  },
+  "num_truncated": 36,
+  "generation_seconds": 281.7
+}
