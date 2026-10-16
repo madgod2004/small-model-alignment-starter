@@ -40,7 +40,7 @@ INK, INK_2, GRID, SURFACE = "#0b0b0b", "#52514e", "#e4e3df", "#fcfcfb"
 
 plt.rcParams.update({
     "figure.facecolor": SURFACE, "axes.facecolor": SURFACE, "savefig.facecolor": SURFACE,
-    "font.size": 10, "axes.titlesize": 11, "axes.labelsize": 10, "axes.labelcolor": INK_2,
+    "font.size": 12, "axes.titlesize": 13, "axes.labelsize": 12, "axes.labelcolor": INK_2,
     "axes.edgecolor": GRID, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6,
     "axes.spines.top": False, "axes.spines.right": False, "xtick.color": INK_2, "ytick.color": INK_2,
     "legend.frameon": False, "lines.linewidth": 2.0, "axes.axisbelow": True,
@@ -57,8 +57,10 @@ def ema(values, alpha=0.1):
     return smoothed
 
 
-def new_figure(height=3.0):
-    return plt.subplots(figsize=(6.0, height))
+def new_figure(height=2.5):
+    """Wide, short figures: they render at full page width, so height is what costs report space."""
+
+    return plt.subplots(figsize=(9.0, height))
 
 
 def save(fig, name):
@@ -69,7 +71,7 @@ def save(fig, name):
 
 
 def end_label(ax, x, y, text, color, dy=0):
-    ax.annotate(text, (x, y), xytext=(6, dy), textcoords="offset points", va="center", fontsize=9, color=color)
+    ax.annotate(text, (x, y), xytext=(6, dy), textcoords="offset points", va="center", fontsize=11, color=color)
 
 
 # ------------------------------------------------------------------------------------------------
@@ -177,7 +179,7 @@ def stacked_rows(ax, rows):
             share = 100 * count / total
             ax.barh(y, share, left=left, height=0.6, color=color, edgecolor=SURFACE, linewidth=2)
             if share >= 7:
-                ax.text(left + share / 2, y, str(count), ha="center", va="center", fontsize=9,
+                ax.text(left + share / 2, y, str(count), ha="center", va="center", fontsize=11,
                         color="white" if color != TIE else INK)
             left += share
     ax.set_yticks(range(len(rows)), [r[0] for r in rows])
@@ -189,7 +191,7 @@ def stacked_rows(ax, rows):
 
 def legend_below(ax, labels):
     handles = [plt.Rectangle((0, 0), 1, 1, color=c) for c in (WIN, TIE, LOSS)]
-    ax.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, -0.22), ncol=3)
+    ax.legend(handles, labels, loc="center left", bbox_to_anchor=(1.01, 0.5), ncol=1)
 
 
 def judge_dpo_figure():
@@ -198,7 +200,7 @@ def judge_dpo_figure():
         for tag, tag_label in [("rp1.1", "penalty 1.1"), ("greedy", "greedy")]:
             c = read_json(ROOT / f"outputs/judged/{tag}/{track}_judged_summary.json")["criteria"]["overall"]
             rows.append((f"{label} ({tag_label})", c["wins"], c["ties"], c["losses"]))
-    fig, ax = new_figure(2.8)
+    fig, ax = new_figure(2.6)
     stacked_rows(ax, rows)
     ax.set_xlabel("% of 300 prompts")
     ax.set_title("Neither DPO model beats SFT")
@@ -211,10 +213,10 @@ def judge_categories_figure():
     for r in read_jsonl(ROOT / "outputs/judged/rp1.1/dpo_hh_vs_sft_hh_judged.jsonl"):
         counts[r["category"]][r["outcomes"]["overall"]] += 1
     rates = sorted(((100 * v["win"] / max(1, v["win"] + v["loss"]), c) for c, v in counts.items()), reverse=True)
-    fig, ax = new_figure(3.6)
+    fig, ax = new_figure(3.4)
     for y, (rate, category) in enumerate(rates):
         ax.barh(y, rate, height=0.6, color=WIN if rate > 50 else LOSS)
-        ax.annotate(f"{rate:.0f}%", (rate, y), xytext=(4, 0), textcoords="offset points", va="center", fontsize=9, color=INK_2)
+        ax.annotate(f"{rate:.0f}%", (rate, y), xytext=(4, 0), textcoords="offset points", va="center", fontsize=11, color=INK_2)
     ax.set_yticks(range(len(rates)), [c.replace("_", " ") for _, c in rates])
     ax.invert_yaxis()
     ax.set_xlim(0, 100)
@@ -235,7 +237,7 @@ def persona_figures():
         for run, label in runs:
             c = read_json(ROOT / f"outputs/judged/rp1.1/{run}_vs_smollm_base_persona_judged_summary.json")["criteria"][criterion]
             rows.append((label, c["wins"], c["ties"], c["losses"]))
-        fig, ax = new_figure(2.4)
+        fig, ax = new_figure(2.0)
         stacked_rows(ax, rows)
         ax.set_xlabel("% of 24 prompts")
         ax.set_title(title)
