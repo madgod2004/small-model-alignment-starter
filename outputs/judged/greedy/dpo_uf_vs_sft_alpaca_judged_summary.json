@@ -1,0 +1,32 @@
+{
+  "num_pairs": 300,
+  "judged": 300,
+  "unresolved_failures": 0,
+  "candidate": "dpo_uf",
+  "baseline": "sft",
+  "judge_model": "google/gemini-3.6-flash",
+  "retried_pairs": 5,
+  "criteria": {
+    "overall": {
+      "n": 300,
+      "wins": 118,
+      "losses": 146,
+      "ties": 36,
+      "unknowns": 0,
+      "failures": 0,
+      "win_rate_excluding_ties": 0.44696969696969696,
+      "win_rate_ties_as_half": 0.4533333333333333,
+      "tie_rate": 0.12,
+      "unknown_rate": 0.0,
+      "failure_rate": 0.0
+    }
+  },
+  "judge_picked_A_rate": {
+    "overall": 0.571969696969697
+  },
+  "pairs_path": "outputs/eval/dpo_uf_vs_sft_alpaca_pairs.jsonl",
+  "rubric": "general",
+  "batch_size": 5,
+  "sleep_seconds": 5.0,
+  "max_retries": 3
+}

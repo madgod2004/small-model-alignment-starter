@@ -1,0 +1,184 @@
+{
+  "num_pairs": 300,
+  "judged": 300,
+  "unresolved_failures": 0,
+  "candidate": "dpo_hh",
+  "baseline": "sft",
+  "judge_model": "google/gemini-3.6-flash",
+  "retried_pairs": 0,
+  "criteria": {
+    "overall": {
+      "n": 300,
+      "wins": 111,
+      "losses": 127,
+      "ties": 62,
+      "unknowns": 0,
+      "failures": 0,
+      "win_rate_excluding_ties": 0.46638655462184875,
+      "win_rate_ties_as_half": 0.47333333333333333,
+      "tie_rate": 0.20666666666666667,
+      "unknown_rate": 0.0,
+      "failure_rate": 0.0
+    }
+  },
+  "judge_picked_A_rate": {
+    "overall": 0.5588235294117647
+  },
+  "by_category": {
+    "benign_helpfulness": {
+      "overall": {
+        "n": 30,
+        "wins": 11,
+        "losses": 18,
+        "ties": 1,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.3793103448275862,
+        "win_rate_ties_as_half": 0.38333333333333336,
+        "tie_rate": 0.03333333333333333,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "calibration_and_uncertainty": {
+      "overall": {
+        "n": 30,
+        "wins": 6,
+        "losses": 19,
+        "ties": 5,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.24,
+        "win_rate_ties_as_half": 0.2833333333333333,
+        "tie_rate": 0.16666666666666666,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "cyber_abuse": {
+      "overall": {
+        "n": 30,
+        "wins": 17,
+        "losses": 8,
+        "ties": 5,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.68,
+        "win_rate_ties_as_half": 0.65,
+        "tie_rate": 0.16666666666666666,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "harmful_instructions": {
+      "overall": {
+        "n": 30,
+        "wins": 12,
+        "losses": 6,
+        "ties": 12,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.6666666666666666,
+        "win_rate_ties_as_half": 0.6,
+        "tie_rate": 0.4,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "hate_or_harassment": {
+      "overall": {
+        "n": 30,
+        "wins": 16,
+        "losses": 6,
+        "ties": 8,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.7272727272727273,
+        "win_rate_ties_as_half": 0.6666666666666666,
+        "tie_rate": 0.26666666666666666,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "legal_financial_safety": {
+      "overall": {
+        "n": 30,
+        "wins": 9,
+        "losses": 14,
+        "ties": 7,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.391304347826087,
+        "win_rate_ties_as_half": 0.4166666666666667,
+        "tie_rate": 0.23333333333333334,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "medical_safety": {
+      "overall": {
+        "n": 30,
+        "wins": 11,
+        "losses": 10,
+        "ties": 9,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.5238095238095238,
+        "win_rate_ties_as_half": 0.5166666666666667,
+        "tie_rate": 0.3,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "privacy_and_doxxing": {
+      "overall": {
+        "n": 30,
+        "wins": 13,
+        "losses": 16,
+        "ties": 1,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.4482758620689655,
+        "win_rate_ties_as_half": 0.45,
+        "tie_rate": 0.03333333333333333,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "safe_transformation": {
+      "overall": {
+        "n": 30,
+        "wins": 9,
+        "losses": 16,
+        "ties": 5,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.36,
+        "win_rate_ties_as_half": 0.38333333333333336,
+        "tie_rate": 0.16666666666666666,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    },
+    "self_harm_support": {
+      "overall": {
+        "n": 30,
+        "wins": 7,
+        "losses": 14,
+        "ties": 9,
+        "unknowns": 0,
+        "failures": 0,
+        "win_rate_excluding_ties": 0.3333333333333333,
+        "win_rate_ties_as_half": 0.38333333333333336,
+        "tie_rate": 0.3,
+        "unknown_rate": 0.0,
+        "failure_rate": 0.0
+      }
+    }
+  },
+  "pairs_path": "outputs/eval_rp1.1/dpo_hh_vs_sft_hh_pairs.jsonl",
+  "rubric": "safety",
+  "batch_size": 5,
+  "sleep_seconds": 5.0,
+  "max_retries": 3
+}
