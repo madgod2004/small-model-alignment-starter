@@ -36,7 +36,7 @@ OUT = ROOT / "outputs" / "figures"
 # Validated categorical slots (fixed order) and a blue/grey/red set for win/tie/loss.
 BLUE, ORANGE, AQUA = "#2a78d6", "#eb6834", "#1baf7a"
 WIN, TIE, LOSS = "#2a78d6", "#c9c8c2", "#e34948"
-INK, INK_2, GRID, SURFACE = "#0b0b0b", "#52514e", "#e4e3df", "#fcfcfb"
+INK, INK_2, GRID, SURFACE = "#0b0b0b", "#52514e", "#e4e3df", "#ffffff"
 
 plt.rcParams.update({
     "figure.facecolor": SURFACE, "axes.facecolor": SURFACE, "savefig.facecolor": SURFACE,

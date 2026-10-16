@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Instruction Tuning and DPO on Qwen2.5-0.5B</title>
+<style>
+  @page { size: A4; margin: 2cm 2cm 2.2cm 2cm; @bottom-center { content: counter(page); } }
+  html { font-family: "Times New Roman", "Liberation Serif", Times, serif; font-size: 10.5pt; color: #000; }
+  body { margin: 0; line-height: 1.32; text-align: justify; hyphens: auto; }
+  h1 { font-size: 16pt; text-align: center; margin: 0 0 4pt; line-height: 1.2; }
+  .byline { text-align: center; font-size: 10.5pt; margin-bottom: 2pt; }
+  .repo { text-align: center; font-size: 9.5pt; margin-bottom: 12pt; }
+  h2 { font-size: 12pt; margin: 12pt 0 4pt; }
+  h3 { font-size: 10.5pt; font-style: italic; font-weight: bold; margin: 8pt 0 2pt; }
+  p { margin: 0 0 5pt; }
+  ul, ol { margin: 0 0 5pt 1.2em; padding: 0; }
+  li { margin-bottom: 2pt; }
+  code { font-family: "Courier New", monospace; font-size: 9pt; }
+  a { color: #000; text-decoration: none; }
+  table { border-collapse: collapse; margin: 4pt auto 3pt; font-size: 9pt; line-height: 1.22; text-align: left; }
+  tr { break-inside: avoid; }
+  h2, h3 { break-after: avoid; }
+  thead tr { border-top: 1.2pt solid #000; border-bottom: 0.6pt solid #000; }
+  tbody tr:last-child { border-bottom: 1.2pt solid #000; }
+  th, td { padding: 1.6pt 6pt; vertical-align: top; }
+  th { font-weight: bold; }
+  .caption { font-size: 9pt; text-align: center; margin: 2pt 0 8pt; }
+  .caption b { font-weight: bold; }
+  figure { margin: 6pt 0 4pt; text-align: center; break-inside: avoid; }
+  figure img { width: 100%; }
+  figure.narrow img { width: 88%; }
+  figure figcaption { font-size: 9pt; margin-top: 1pt; }
+  .formula { text-align: center; margin: 3pt 0 6pt; font-style: italic; }
+</style>
+</head>
+<body>
+
+<h1>Instruction Tuning and Direct Preference Optimization<br>on a Small Language Model (Qwen2.5-0.5B)</h1>
+<div class="byline">Mahad Bhatti</div>
+<div class="repo">Code and results: github.com/madgod2004/small-model-alignment-starter</div>
+
+<h2>1. Repository, models and data</h2>
+<p>The code, configs, data manifests, generations and judgments are in the repository above. SFT and both DPO runs start from Qwen/Qwen2.5-0.5B, and the persona run uses HuggingFaceTB/SmolLM2-360M-Instruct. Every training subset was drawn with seed 42: we shuffled the source row indices and kept the first N rows that passed our filters. The selected indices and the dataset revisions are saved in <code>data/manifests/</code>, so the exact subsets can be rebuilt.</p>
+
+<table>
+<thead><tr><th>Track</th><th>Source (train / validation split)</th><th>Train / val</th><th>Filtering</th></tr></thead>
+<tbody>
+<tr><td>SFT</td><td>HuggingFaceH4/ultrachat_200k (train_sft / test_sft), first user-assistant turn</td><td>30,000 / 1,000</td><td>templated prompt over 256 tokens dropped (7,554 rows)</td></tr>
+<tr><td>HH-RLHF DPO</td><td>Anthropic/hh-rlhf (train / test)</td><td>15,000 / 1,000</td><td>single-turn only (33,936 multi-turn rows dropped); no identical or empty pairs</td></tr>
+<tr><td>UltraFeedback DPO</td><td>HuggingFaceH4/ultrafeedback_binarized (train_prefs / test_prefs)</td><td>15,000 / 1,000</td><td>chosen score strictly higher (2,606 ties dropped); prompt at most 256 tokens</td></tr>
+<tr><td>LoRA persona DPO</td><td>data/persona_lora/ramsay_style_preferences.json</td><td>200 / 20</td><td>seeded split of the 220 provided pairs</td></tr>
+</tbody></table>
+<div class="caption"><b>Table 1.</b> Training data for each track.</div>
+
+<p>Evaluation uses fixed prompt sets. The UltraFeedback track is tested on 300 AlpacaEval prompts sampled from the 805 with <code>random.Random(42)</code>. The HH track uses the provided synthetic helpful/harmless set of 300 prompts in 10 categories of 30. For the persona we wrote 24 prompts, six each on cooking, coding, general help and safety, and checked that none overlap the training prompts. A further 20 prompts that appear in no evaluation set were used only to choose decoding settings.</p>
+<p>Every Qwen model sees the same ChatML template, with the system message "You are a helpful assistant." and the prompt ending at <code>&lt;|im_start|&gt;assistant</code>. The tokenizer's EOS token (<code>&lt;|endoftext|&gt;</code>) is appended to each response before truncation to 512 tokens, and only response tokens count towards the loss. Qwen2.5 uses the same id for padding and EOS, so labels are masked by position rather than by token id; masking by id would also have hidden the EOS target. SmolLM2 uses its own chat template, both inside TRL and at generation time.</p>
+
+<h2>2. Experimental configuration</h2>
+<table>
+<thead><tr><th>Setting</th><th>SFT</th><th>HH-RLHF DPO</th><th>UltraFeedback DPO</th><th>LoRA-DPO (submitted)</th></tr></thead>
+<tbody>
+<tr><td>Starting model</td><td>Qwen2.5-0.5B</td><td>SFT best (step 938)</td><td>SFT best (step 938)</td><td>SmolLM2-360M-Instruct</td></tr>
+<tr><td>Trainable parameters</td><td>all weights</td><td>all weights</td><td>all weights</td><td>LoRA r 16, alpha 32, dropout 0.05; q, k, v, o, gate, up, down (8.68M, 2.34%)</td></tr>
+<tr><td>Optimizer</td><td>AdamW</td><td>AdamW</td><td>AdamW</td><td>AdamW (TRL default)</td></tr>
+<tr><td>Peak LR, schedule, warmup</td><td>2e-5, cosine, 3% (29 steps)</td><td>1e-6, constant, none</td><td>1e-6, constant, none</td><td>5e-5, cosine, 10%</td></tr>
+<tr><td>Weight decay / clipping</td><td>0.1 (matrices only) / 1.0</td><td>0 / 1.0</td><td>0 / 1.0</td><td>0 / 1.0</td></tr>
+<tr><td>Batch (device x accumulation)</td><td>2 x 16 = 32</td><td>1 x 32 = 32 pairs</td><td>1 x 32 = 32 pairs</td><td>4 x 2 = 8 pairs</td></tr>
+<tr><td>Precision</td><td colspan="4">fp16 autocast with fp32 trainable weights and a gradient scaler (T4 has no bf16)</td></tr>
+<tr><td>Max length</td><td>512</td><td>512, prompt up to 256</td><td>512, prompt up to 256</td><td>512</td></tr>
+<tr><td>Epochs / optimizer steps</td><td>1 / 938</td><td>1 / 469</td><td>1 / 469</td><td>3 / 75</td></tr>
+<tr><td>Seed</td><td>42</td><td>42</td><td>42</td><td>42</td></tr>
+<tr><td>Beta / reference</td><td>-</td><td>0.1 / frozen SFT best, fp32, cuda:1</td><td>0.1 / frozen SFT best, fp32, cuda:1</td><td>0.1 / base model, adapter disabled</td></tr>
+<tr><td>Hardware, time</td><td>1 T4, 89 min, 13.0 GB peak</td><td>2 T4s, 62 min</td><td>2 T4s, 102 min</td><td>1 T4, 105 s</td></tr>
+</tbody></table>
+<div class="caption"><b>Table 2.</b> Configuration of the submitted checkpoints. "SFT best" is <code>outputs/sft/checkpoints/best</code>, saved at step 938.</div>
+
+<p>The SFT loss is the mean negative log-likelihood over every unmasked response token in the batch. During gradient accumulation each micro-batch is weighted by its number of response tokens, so one update matches a single batch of 32 examples. The DPO loss is the standard objective</p>
+<p class="formula">L = &minus;log &sigma;( &beta; [ (log &pi;<sub>&theta;</sub>(y<sub>w</sub>|x) &minus; log &pi;<sub>&theta;</sub>(y<sub>l</sub>|x)) &minus; (log &pi;<sub>ref</sub>(y<sub>w</sub>|x) &minus; log &pi;<sub>ref</sub>(y<sub>l</sub>|x)) ] ),</p>
+<p>with log-probabilities summed over response tokens only. For each DPO run we keep the checkpoint with the highest validation reward accuracy, plus the final one.</p>
+<p>All models in a comparison were decoded identically: greedy decoding (temperature and top-p unused), at most 512 new tokens, fp16, no length penalty, and stopping at EOS or a ChatML turn marker. The main setting adds a repetition penalty of 1.1; plain greedy decoding (penalty 1.0) is reported as a sensitivity check. Qwen models use the ChatML template above and SmolLM2 its own chat template.</p>
+
+<h2>3. Parameter choices and deviations</h2>
+<p>Every SFT and DPO training hyperparameter follows the guide. The changes concern data filtering, the precision of the DPO reference, evaluation decoding, and extra LoRA runs.</p>
+<table>
+<thead><tr><th>Change</th><th>Guide</th><th>Ours</th><th>Reason and effect</th></tr></thead>
+<tbody>
+<tr><td>Prompt-length filter</td><td>DPO prompts truncated to 256</td><td>drop examples whose templated prompt exceeds 256 tokens (all tracks)</td><td>keeps at least 256 of 512 tokens for the response; 7,554 SFT and 3,610 UF rows skipped, full sizes still reached</td></tr>
+<tr><td>UltraFeedback ties</td><td>not specified</td><td>drop pairs with equal scores</td><td>a tie carries no preference; 2,606 rows skipped</td></tr>
+<tr><td>DPO reference precision</td><td>fp16 allowed</td><td>fp32</td><td>policy and reference start identical: step 0 gave loss 0.6931, accuracy 0, margin 0</td></tr>
+<tr><td>Evaluation decoding</td><td>greedy unless justified</td><td>greedy + repetition penalty 1.1 (main), plain greedy also reported</td><td>greedy looped in 20 to 30% of pilot responses (Table 4)</td></tr>
+<tr><td>LoRA persona</td><td>one run</td><td>3-epoch run plus 1-epoch and beta 0.5 variants</td><td>held-out accuracy saturated by step 10 and outputs drifted into insults</td></tr>
+</tbody></table>
+<div class="caption"><b>Table 3.</b> Deviations from the guide configuration.</div>
+
+<p>One change was resource-driven. A first SFT attempt with data parallelism over both GPUs ran out of memory at 13.5 of 14.6 GB, because DDP keeps a second full copy of the fp32 gradients. We trained on a single T4 with the guide's 2 x 16 batch instead, which peaked at 13.0 GB, and reduced the validation batch to 4 because fp32 logits over the 151,936-token vocabulary dominate evaluation memory. Neither change alters the optimisation.</p>
+<p>To choose decoding settings we ran a pilot on 20 prompts outside every evaluation set (12 unused AlpacaEval prompts and 8 HH-RLHF test prompts outside our validation subset), so the choice was not tuned on judged prompts.</p>
+<table>
+<thead><tr><th>Setting</th><th>Hit 512 tokens, % (SFT / UF / HH)</th><th>distinct-3 (SFT / UF / HH)</th><th>Observed in the text</th></tr></thead>
+<tbody>
+<tr><td>greedy</td><td>20 / 25 / 30</td><td>0.65 / 0.65 / 0.66</td><td>loops, e.g. "Wire Cutters" repeated 20 times</td></tr>
+<tr><td>repetition penalty 1.1</td><td>5 / 10 / 0</td><td>0.93 / 0.90 / 0.97</td><td>no visible damage to recipes, lists or code</td></tr>
+<tr><td>repetition penalty 1.2</td><td>5 / 0 / 5</td><td>0.99 / 0.99 / 0.96</td><td>proper nouns in lower case ("jojo siwa"), dropped details</td></tr>
+<tr><td>no-repeat 4-gram</td><td>5 / 20 / 10</td><td>0.94 / 0.92 / 0.94</td><td>near-duplicate loops ("Wire Cut Pliers, Wire Cut Saws...")</td></tr>
+</tbody></table>
+<div class="caption"><b>Table 4.</b> Decoding pilot on 20 held-out prompts. distinct-3 is the share of unique word trigrams (higher means less repetition).</div>
+<p>A penalty of 1.1 was the mildest setting that removed most loops, so we used it as the main setting and kept plain greedy alongside it.</p>
+
+<h2>4. Training behavior</h2>
+<p>No run became unstable. Both DPO runs raised validation reward accuracy within their first 50 steps and improved slowly after that, and SFT validation loss rose briefly before falling at every evaluation.</p>
+<figure><img src="../outputs/figures/sft_loss.png" alt="SFT loss"><figcaption><b>Figure 1.</b> SFT validation loss and training loss (bias-corrected EMA, alpha 0.1, of per-batch losses).</figcaption></figure>
+<p>SFT validation NLL went from 1.446 for the base model to 1.452 at step 100, then fell to 1.397 at step 938, so the best checkpoint is also the last. Gradient norms before clipping stayed at 3 to 4, so clipping at 1.0 scaled every update, and no fp16 step was skipped. The roughly 3% drop in loss is unsurprising for a base model that already predicts UltraChat-style text well. The bigger change is in behaviour: the base model ran to the 512-token limit on 66% of AlpacaEval prompts and the SFT model on 16%.</p>
+<figure><img src="../outputs/figures/dpo_val_loss.png" alt="DPO loss"><figcaption><b>Figure 2.</b> DPO validation loss on 1,000 held-out pairs per track.</figcaption></figure>
+<figure><img src="../outputs/figures/dpo_val_accuracy.png" alt="DPO accuracy"><figcaption><b>Figure 3.</b> DPO validation reward accuracy (step 0 omitted, where all rewards are tied and accuracy is 0 by definition).</figcaption></figure>
+<figure><img src="../outputs/figures/dpo_val_margin.png" alt="DPO margin"><figcaption><b>Figure 4.</b> DPO validation reward margin (mean of beta times the chosen-minus-rejected log-ratio difference).</figcaption></figure>
+<p>Both DPO runs start at a loss of exactly ln 2 and an accuracy of 0, as they should when policy and reference are identical. HH-RLHF reached 0.584 validation accuracy by step 50 and then hovered between 0.60 and 0.62. Its best checkpoint (step 300, accuracy 0.620, margin 0.20) ties with step 450, and the strict "&gt;" rule keeps the earlier one. UltraFeedback learned a cleaner preference: 0.707 at step 50, a best of 0.729 at step 450, and a final margin of 0.73. In both runs the implicit reward of the chosen response turned negative (&minus;0.16 for HH and &minus;0.19 for UF at the best step), while the rejected reward fell faster (&minus;0.36 and &minus;0.91). The margin therefore grew because rejected answers became less likely, not because chosen ones became more likely. Pre-clip gradient norms were 34 to 64, since the loss uses log-probabilities summed over whole sequences; with AdamW at 1e-6 training stayed stable, and the gradient scaler skipped 3 of 469 steps per run after fp16 overflows.</p>
+<figure><img src="../outputs/figures/lora_margin.png" alt="LoRA margin"><figcaption><b>Figure 5.</b> Persona LoRA runs: held-out reward margin divided by beta, i.e. in log-probability units, so runs with different beta are comparable.</figcaption></figure>
+<p>In the persona runs, held-out reward accuracy reached 1.0 by step 10 in all three settings, so it cannot select a checkpoint. The log-probability margin separates them: 21.3 for 3 epochs at beta 0.1, 12.5 at beta 0.5, and 4.8 for one epoch. The 3-epoch run kept increasing its margin for 65 steps after accuracy saturated, which Section 6 links to its drift into generic rudeness.</p>
+
+<h2>5. DPO-versus-SFT results</h2>
+<p>Under the main decoding setting, the UltraFeedback DPO model lost clearly to SFT (39.6% of decided pairs) and the HH-RLHF DPO model was statistically indistinguishable from it (46.6%).</p>
+<figure class="narrow"><img src="../outputs/figures/judge_dpo_vs_sft.png" alt="Judge results"><figcaption><b>Figure 6.</b> Pairwise judgments of each DPO model against SFT on the same 300 prompts.</figcaption></figure>
+<table>
+<thead><tr><th>Comparison</th><th>Decoding</th><th>DPO wins / ties / SFT wins</th><th>DPO win % excl. ties (95% CI)</th><th>Ties as half</th><th>Sign test p</th></tr></thead>
+<tbody>
+<tr><td>DPO-UF vs SFT, AlpacaEval</td><td>penalty 1.1</td><td>105 / 35 / 160</td><td>39.6 (33.9 to 45.6)</td><td>40.8</td><td>0.001</td></tr>
+<tr><td>DPO-UF vs SFT, AlpacaEval</td><td>greedy</td><td>118 / 36 / 146</td><td>44.7 (38.8 to 50.7)</td><td>45.3</td><td>0.096</td></tr>
+<tr><td>DPO-HH vs SFT, HH set</td><td>penalty 1.1</td><td>111 / 62 / 127</td><td>46.6 (40.4 to 53.0)</td><td>47.3</td><td>0.331</td></tr>
+<tr><td>DPO-HH vs SFT, HH set</td><td>greedy</td><td>125 / 39 / 136</td><td>47.9 (41.9 to 53.9)</td><td>48.2</td><td>0.536</td></tr>
+</tbody></table>
+<div class="caption"><b>Table 5.</b> DPO versus SFT, 300 prompts per row. Confidence intervals are Wilson intervals; p is a two-sided exact sign test.</div>
+<p>Each DPO model and SFT answered the same prompts with the same decoding settings. Pairs were written to file before judging, with A/B order exactly balanced (the DPO answer in position A for 150 of 300 pairs) and model identities stored only as hidden metadata. The judge, google/gemini-3.6-flash called through kaggle_benchmarks at temperature 0, saw only the instruction and two answers labelled "Response A" and "Response B", five pairs per request, each request in a fresh chat, at least 5 s apart, with up to three attempts per batch. The rubric asked it to weigh helpfulness, correctness, instruction-following, concision, formatting, and hallucinated or unsafe content; for the HH set it also rewarded appropriate refusal, privacy protection, calibrated uncertainty and safe redirection, and penalised refusals of harmless requests. All 600 pairs in each decoding setting received a valid verdict: there were no unknown verdicts or failed batches, and 5 pairs needed a retry. A verdict without a usable A, B or tie label would have been recorded as unknown and excluded from the win rates.</p>
+<p>The persona results are reported separately. Each LoRA model was compared with base SmolLM2-360M-Instruct on the 24 style prompts, with separate verdicts for persona style, helpfulness and safety (Figures 7 to 9, penalty 1.1).</p>
+<figure><img src="../outputs/figures/persona_style.png" alt="Persona style"><figcaption><b>Figure 7.</b> Persona style, LoRA runs versus the base model.</figcaption></figure>
+<figure><img src="../outputs/figures/persona_helpfulness.png" alt="Persona helpfulness"><figcaption><b>Figure 8.</b> Helpfulness, LoRA runs versus the base model.</figcaption></figure>
+<figure><img src="../outputs/figures/persona_safety.png" alt="Persona safety"><figcaption><b>Figure 9.</b> Safety, LoRA runs versus the base model.</figcaption></figure>
+<p>Only the 3-epoch run changed the judged style, with 7 wins, 17 ties and no losses; both gentler runs tied with the base model on style for all 24 prompts. With the 1.1 penalty the 3-epoch model was roughly level on helpfulness (10 wins, 2 ties, 12 losses) and slightly ahead on safety (4 / 17 / 3), but under greedy decoding its looping answers lost on helpfulness (7 / 3 / 14). We submit the 3-epoch model as the persona checkpoint because it is the only run that acquired the style.</p>
+
+<h2>6. Interpretation and error analysis</h2>
+<p>SFT beats the UltraFeedback DPO model on AlpacaEval by about 10 points of win rate in the main setting, and SFT and the HH DPO model are statistically level on the HH set. Both DPO runs learned their training preference, but at 0.5B parameters that preference did not carry over into answers the judge preferred.</p>
+<h3>UltraFeedback DPO versus SFT on AlpacaEval</h3>
+<p><i>Measured.</i> The UltraFeedback model writes longer answers than SFT: 279 against 195 tokens on average with the penalty, and 312 against 217 under greedy decoding. Across its 160 losses, the judge's reasons mention hallucination 47 times, incorrect or inaccurate facts 34 times and cut-off answers 17 times, and the longer answer won only 102 of the 265 decided pairs. Removing repetition did not help: the win rate fell from 44.7% under greedy decoding to 39.6% with the penalty.</p>
+<p><i>Interpretation.</i> UltraFeedback's preferred answers tend to be long and detailed, and DPO pulled the model towards that style. A 0.5B model does not know enough to fill the extra length with true statements, so much of the added detail is invented. Asked for artists similar to Billy Joel, SFT listed ten plausible names, while the DPO model wrote short biographies that included the claim that Joni Mitchell released Lizzo's "Good as Hell"; the judge picked SFT for that reason. When the extra explanation was harmless, DPO won: asked what to cook for someone who is ill, it gave a reason for each dish while SFT gave a bare list. The decoding comparison rules out the explanation that the UF model lost only because greedy decoding made it loop; if anything, the loops hid some of its hallucinations. Our rubric told the judge not to prefer longer answers, which may account for part of the length effect.</p>
+<h3>HH-RLHF DPO versus SFT on the helpful/harmless set</h3>
+<figure class="narrow"><img src="../outputs/figures/judge_hh_categories.png" alt="HH categories"><figcaption><b>Figure 10.</b> DPO-HH win rate against SFT per HH category (penalty 1.1, ties excluded, about 30 prompts each).</figcaption></figure>
+<p><i>Measured.</i> The overall difference is not significant, but the categories pull apart. With the penalty, the HH model won on hate or harassment (16 wins, 8 ties, 6 losses), cyber abuse (17 / 5 / 8) and harmful instructions (12 / 12 / 6), and lost on calibration and uncertainty (6 / 5 / 19), benign helpfulness (11 / 1 / 18) and safe transformation (9 / 5 / 16). With about 30 prompts per category these are indications rather than findings. Under greedy decoding it also did badly on self-harm support (3 / 3 / 24), mostly through looping and misreading suicidal intent.</p>
+<p><i>Interpretation.</i> The pattern resembles an alignment tax: slightly safer handling of harmful requests, paid for with less helpful and less calibrated answers elsewhere. The safety gains are small. In most of the HH model's wins neither model refused; the judge only found the HH answer less dangerous, for example suggesting a locked box where SFT advised burning or burying evidence, or stressing permission before entering an office. On "I feel like I might hurt myself tonight", both models gave nearly identical generic advice and neither mentioned a crisis line. Three factors plausibly limit the effect: HH-RLHF labels are noisy (validation accuracy stalled at 0.60 to 0.62), many chosen responses in the data are not refusals, and one epoch at a learning rate of 1e-6 moves a 0.5B model only a little. The calibration losses came from confident answers the prompt could not support, such as assigning a star rating to a review that never stated one, where SFT declined to guess.</p>
+<h3>Persona LoRA-DPO</h3>
+<p><i>Measured.</i> Only the 3-epoch run changed the judged style. Under greedy decoding its answers looped on insults ("You're a complete noob!" repeated to the length limit), with 66 uses of "noob", "stupid" or "dumbass" across 24 answers, while the persona's own vocabulary from the training data ("donkey" 46 times and "donut" 47 times in the chosen responses) never appeared.</p>
+<p><i>Interpretation.</i> Every chosen response is ruder than its rejected partner, so the simplest direction that separates the pairs is general rudeness rather than the particular persona, and that is what the model learned. Held-out accuracy saturated at step 10 while the margin kept climbing for 65 more steps, which is the signature of over-optimisation. Fewer epochs or a larger beta stopped the drift but also removed the style, and with 200 pairs we found no setting that delivered the persona without side effects. The repetition penalty at decoding time hid the loops and brought helpfulness back to roughly the base model's level.</p>
+
+<h2>7. Limitations and reproducibility</h2>
+<p>The main limitation is evaluation noise. With one judge, one training seed and 300 prompts per track, differences smaller than about 6 points of win rate cannot be resolved.</p>
+<ul>
+<li>The judge picked "Response A" in 56 to 66% of decided DPO-versus-SFT verdicts. Exactly balanced positions cancel this bias in the win rates, but it adds variance. The judge also leaned towards shorter answers, possibly encouraged by our rubric.</li>
+<li>For the same prompt, the outcome with greedy generations and with penalty-1.1 generations agreed for only 154 of 300 AlpacaEval pairs and 137 of 300 HH pairs. The answers differ between settings, so this is not pure judge noise, but single verdicts should not be over-read.</li>
+<li>Per-category HH results rest on about 30 prompts and the persona results on 24.</li>
+<li>Each model was trained once and judged by one model; repeated runs or a second judge did not fit the Kaggle budget of about 7 GPU hours.</li>
+<li>All Qwen models hallucinate freely at 0.5B parameters, which caps how much any preference method can improve factual quality.</li>
+</ul>
+<p>Configurations are in <code>configs/</code>, with the values resolved at run time in <code>outputs/*/config.json</code>. Training metrics and summaries are in <code>outputs/{sft, dpo_hh, dpo_uf, lora_dpo*}/</code> and the data subsets in <code>data/manifests/</code>. Generations, each with a file recording its decoding settings, are in <code>outputs/generations/</code> (greedy) and <code>outputs/generations_rp1.1/</code>; blind pairs are in <code>outputs/eval*/</code>, judgments in <code>outputs/judged/</code> and the decoding pilot in <code>outputs/pilot/</code>. <code>scripts/make_tables.py</code> and <code>scripts/make_figures.py</code> rebuild every table and figure in this report from those files, and the Kaggle notebooks <code>00</code> to <code>06</code> in <code>notebooks/</code> rerun the experiments. Model checkpoints are kept in the saved Kaggle notebook outputs rather than in git.</p>
+
+</body>
+</html>
