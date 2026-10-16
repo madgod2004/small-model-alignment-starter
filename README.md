@@ -6,7 +6,7 @@ supervised fine-tuning (SFT) on 30k instruction–response pairs, then two **fro
 SmolLM2-360M-Instruct. Models are compared with blind, position-balanced pairwise judgments from a
 Kaggle model-proxy judge (`google/gemini-3.6-flash`).
 
-**Report:** [`report/report.pdf`](report/report.pdf) (source: `report/report.html`, printed to PDF with headless Chrome).
+**Report:** [`report/report.pdf`](report/report.pdf).
 
 ## Where the implementation lives
 
@@ -79,7 +79,7 @@ Full tables (configurations, training metrics, per-category results, judge diagn
 | Judgments + summaries | `outputs/judged/{greedy,rp1.1}/` |
 | Decoding pilot | `outputs/pilot/` |
 | Figures | `outputs/figures/` |
-| Report (PDF + HTML source) | `report/` |
+| Report | `report/report.pdf` |
 | Logs | `outputs/logs/` |
 
 Checkpoints (~2 GB each) are not in git; they are kept in the saved Kaggle notebook outputs.
